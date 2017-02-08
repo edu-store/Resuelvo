@@ -1,3 +1,14 @@
 #main-toolbar #activity-button {
-  background-image: url(../activity/activity-icon.svg);
+  background-image: url(../activity/icon.svg);
+}
+
+#canvas {
+	width: 1200px;
+	height: 845px;
+	/*background-color: #ffffff !important;*/
+	background-image: url('../img/pantalla_1.png') !important;
+}
+
+.toolbar #stop-button {
+  background-image: url('../img/activity-stop.png') !important;
 }
