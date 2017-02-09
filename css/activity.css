@@ -5,10 +5,32 @@
 #canvas {
 	width: 1200px;
 	height: 845px;
-	/*background-color: #ffffff !important;*/
-	background-image: url('../img/pantalla_1.png') !important;
+	background-color: #ffffff !important;
+	
 }
 
 .toolbar #stop-button {
   background-image: url('../img/activity-stop.png') !important;
+}
+
+.hidden {
+    display: none;
+}
+
+#page1 {
+	height: 100%;
+	width: 100%;
+	background-image: url('../img/pantalla_1.png') !important;
+}
+
+#page2 {
+	height: 100%;
+	width: 100%;
+	background-image: url('../img/pantalla_2.png') !important;
+}
+
+#page3 {
+	height: 100%;
+	width: 100%;
+	background-image: url('../img/pantalla_3.png') !important;
 }
