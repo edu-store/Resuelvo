@@ -1,12 +1,13 @@
 "user strict";
 
 define(function (require) {
-    var activity = require("sugar-web/activity/activity");
-    var datastore = require("sugar-web/datastore");
-    var jquery = require("jquery");
-    var interact = require("interact");
-    var Mustache = require("mustache");
-    var templates = require("../js/templates.js");
+    var activity    = require("sugar-web/activity/activity");
+    var datastore   = require("sugar-web/datastore");
+    var jquery      = require("jquery");
+    var interact    = require("interact");
+    var Mustache    = require("mustache");
+    var templates   = require("../js/templates.js");
+    var naturales   = require("../js/naturales.js");
 
     // Manipulate the DOM only when it is ready.
     require(['domReady!'], function (doc) {
@@ -33,25 +34,29 @@ define(function (require) {
 	    $(document).ready(function(){
 	    	console.log(uri);
 	        output = Mustache.render(templates[uri].template, templates[0].content);
-	        $("#canvas").html(output);
+	        $('#canvas').html(output);
 	    });
 
-	    $('.pantalla_1').on('click', function(){
+	    $('#canvas').on('click', 'button.pantalla_1', function(){
         	uri = $(this).attr('data');
         	id = $(this).attr('id');
-        	console.log(uri);
 	    	output = Mustache.render(templates[uri].template, templates[0].content.concepts[temas[id]]);
-	        $("#canvas").html(output);
+	        $('#canvas').html(output);
 	    });
 
 	    $('#canvas').on('click', 'button.pantalla_2', function(){
 		    uri = $(this).attr('data');
         	id = $(this).attr('id');
         	ejercicio = Math.floor((Math.random() * 1) + 1);
-        	console.log(templates[0].content.problems[temas[id]][ejercicio]);
 	    	output = Mustache.render(templates[uri].template, templates[0].content.problems[temas[id]][ejercicio]);
-	        $("#canvas").html(output);
+	        $('#canvas').html(output);
 		});
+
+        $('#canvas').on('click', 'button#btn_nv', function(){
+            ejercicio = Math.floor((Math.random() * 5) + 1);
+            output = Mustache.render(templates[uri].template, templates[0].content.problems[temas[id]][ejercicio]);
+            $('#canvas').html(output);
+        });
 
     });
     
