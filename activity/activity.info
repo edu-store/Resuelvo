@@ -1,6 +1,6 @@
 [Activity]
 name = Resuelvo Activity
-activity_version = 1
+activity_version = 0.1
 bundle_id = org.sugarlabs.ResuelvoActivity
 exec = sugar-activity-web
 icon = activity-icon

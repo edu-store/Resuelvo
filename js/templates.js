@@ -22,6 +22,6 @@ define(function (require) {
         },
         {'template' : '<div id="page1"> {{#topics}}<button type="button" id="{{id}}" class="pantalla_1" data="2">{{nombre}}</button> <br/> {{/topics}} </div>'},
         {'template' : '<div id="page2"> <h1>{{tema}}</h1> <p>{{concepto}}</p> <p>{{ejemplo}}</p> <button type="button" id="{{id}}" class="pantalla_2" data="3">SIGUIENTE</button> </div>'},
-        {'template' : '<div id="page3"> <p>{{problema}}</p> <label>Datos</label> {{#datos}}<input/>{{/datos}} <label>Operación</label> {{#operacion}}<input/>{{/operacion}} <label>Respuesta</label> <input/> <button type="button" id="btn_ini" data="1">INICIO</button> <button type="button" data="content" id="btn_nv">NUEVO</button> </div>'}
+        {'template' : '<div id="page3"> <p>{{ejercicio}}</p> <label>Datos</label> {{#datos}}<input/>{{/datos}} <label>Operación</label> {{#operacion}}<input/>{{/operacion}} <label>Respuesta</label> <input/> <button type="button" id="btn_ini" data="1">INICIO</button> <button type="button" data="content" id="btn_nv">NUEVO</button> </div>'}
     ];
 });
