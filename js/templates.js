@@ -11,7 +11,7 @@ define(function (require) {
                     { 'nombre' : 'Medidas de Capacidad', 'id' : 'btn_mc', 'img' : 'img/btn.png' }
                 ],
                 'concepts' : [
-                    { 'tema' : 'Numeros Naturales', 'concepto' : 'Son aquellos símbolos que nos permiten representar la cantidad de elementos que tiene un conjunto.', 'ejemplo' : '1, 2, 3, ..., 9', 'id' : 'btn_nn' },
+                    { 'tema' : 'Números Naturales', 'concepto' : 'Son aquellos símbolos que nos permiten representar la cantidad de elementos que tiene un conjunto.', 'ejemplo' : '1, 2, 3, ..., 9', 'id' : 'btn_nn' },
                     { 'tema' : 'Numeros Decimales', 'concepto' : 'Un número decimal es aquel que se puede expresar mediante una fracción decimal. Consta de dos partes: entera y decimal.', 'ejemplo' : '1.1, 2.5, 4.8, ..., 9.9', 'id' : 'btn_nd' },
                     { 'tema' : 'Numeros Fraccionarios', 'concepto' : 'En un número fraccionario o fracción, el denominador indica las partes en que se divide la unidad y el numerador indica las partes que se toman.', 'ejemplo' : '1/10, 1/2, 2/1, ..., 9/90', 'id' : 'btn_nf' },
                     { 'tema' : 'Medidas de Logitud', 'concepto' : 'La longitud determina la distancia que hay entre dos puntos, o dicho de otra manera, longitud es la cantidad de espacio que hay entre dos puntos.', 'ejemplo' : '1m, 1cm, 1km, ..., 1M', 'id' : 'btn_ml' },
@@ -21,7 +21,7 @@ define(function (require) {
             }
         },
         {'template' : '<div id="page1"> {{#topics}}<button type="button" id="{{id}}" class="pantalla_1" data="2">{{nombre}}</button> <br/> {{/topics}} </div>'},
-        {'template' : '<div id="page2"> <h1>{{tema}}</h1> <p>{{concepto}}</p> <p>{{ejemplo}}</p> <button type="button" id="{{id}}" class="pantalla_2" data="3">SIGUIENTE</button> </div>'},
-        {'template' : '<div id="page3"> <p>{{ejercicio}}</p> <label>Datos</label> {{#datos}}<input/>{{/datos}} <label>Operación</label> {{#operacion}}<input/>{{/operacion}} <label>Respuesta</label> <input/> <button type="button" id="btn_ini" data="1">INICIO</button> <button type="button" data="content" id="btn_nv">NUEVO</button> </div>'}
+        {'template' : '<div id="page2"> <h1 class="object" id="tema">{{tema}}</h1> <p class="object" id="concepto">{{concepto}}</p> <p class="object" id="ejemplo">{{ejemplo}}</p> <button type="button" id="{{id}}" class="pantalla_2 object" data="3">SIGUIENTE</button> </div>'},
+        {'template' : '<div id="page3"> <p class="object" id="problema">{{ejercicio}}</p> <label class="object" id="datos-label">Datos</label> <div id="datos"> {{#datos}}<input type="text" class="object dato"/>{{/datos}} </div> <label class="object" id="operacion-label">Operación</label> {{#operacion}}<input type="text" class="object operacion"/>{{/operacion}} <label class="object" id="respuesta-label">Respuesta</label> <input type="text" class="object" id="respuesta"/> <button type="button" class="object" id="btn_ini" data="1">INICIO</button> <button type="button" class="object" data="content" id="btn_nv">NUEVO</button> </div>'}
     ];
 });

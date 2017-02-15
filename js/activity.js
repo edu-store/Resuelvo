@@ -14,14 +14,6 @@ define(function (require) {
     var peso            = require("../js/peso.js");
     var capacidad       = require("../js/capacidad.js");
 
-    var mi_imagen = new Image();
-    var imagen = '../Resuelvo/img/activity-stop.png';
-
-    function load_image() {
-        mi_imagen.src = imagen;
-        return 'Tamaño de imagen: ' + mi_imagen.height+'x'+mi_imagen.width;
-    }
-
     function random(array) {
         return Math.floor(Math.random() * array.length);
     }
@@ -62,7 +54,6 @@ define(function (require) {
 	    	'btn_mp' : 4,
 	    	'btn_mc' : 5
 	    };
-	    var ejercicio = 1;
 
     	// Initialize the activity.
         activity.setup();
@@ -72,8 +63,6 @@ define(function (require) {
 
 	    $(document).ready(function(){
 	        output = Mustache.render(templates[uri].template, templates[0].content);
-            var nada = load_image();
-            output = output + '<p style="position:absolute; top: 200px;">' + nada + '</p>';
 	        $('#canvas').html(output);
 	    });
 
@@ -89,11 +78,23 @@ define(function (require) {
         	id = $(this).attr('id');
 	    	output = Mustache.render(templates[uri].template, select_matrix(temas[id]));
 	        $('#canvas').html(output);
+            var espacio = 440;
+            var espaciador = 40;
+            $('#datos').children().each(function(index) {
+                $(this).css('top', espacio + 'px');
+                espacio+=espaciador;
+            });
 		});
 
         $('#canvas').on('click', 'button#btn_nv', function(){
             output = Mustache.render(templates[uri].template, select_matrix(temas[id]));
             $('#canvas').html(output);
+            var espacio = 440;
+            $('#datos').children().each(function(index) {
+                var espaciador = 40;
+                $(this).css('top', espacio + 'px');
+                espacio+=espaciador;
+            });
         });
 
         $('#canvas').on('click', 'button#btn_ini', function(){

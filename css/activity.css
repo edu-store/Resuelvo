@@ -1,5 +1,32 @@
-#main-toolbar #activity-button {
-  background-image: url(../activity/activity-icon.svg);
+
+/** Reglas para los estilos de fuetes **/
+@import url(../font/fonts.css?family=Cantarell-Regular);
+@import url(../font/fonts.css?family=Comfortaa-Bold);
+
+
+/** Reglas de estilos globales **/
+body {
+	font-family: 'Cantarell-Regular';
+}
+
+h1 {
+	font-family: 'Comfortaa-Bold';
+}
+
+button {
+	background-color: transparent;
+	font-family: 'Comfortaa-Bold';
+}
+
+button:hover, button:focus, button:active {
+	background-color: transparent;
+	border: none;
+}
+
+input[type="text"] {
+	border-radius: 0;
+	border-color: white;
+	background-color: white;
 }
 
 #canvas {
@@ -8,28 +35,144 @@
 	background-color: #ffffff !important;
 }
 
-.toolbar #stop-button {
-  background-image: url('../img/activity-stop.png') !important;
-}
-
 .hidden {
     display: none;
 }
 
+.object {
+	position: absolute;
+}
+
+/** Reglas de estilos para la barra de herramientas **/
+#main-toolbar #activity-button {
+  background-image: url(../activity/activity-icon.svg);
+}
+
+.toolbar #stop-button {
+  background-image: url('../img/activity-stop.png') !important;
+}
+
+/** Regalas de estilos del menus de seleccion de tema **/
 #page1 {
 	height: 100%;
 	width: 100%;
 	background-image: url('../img/pantalla_1.png') !important;
 }
 
+/** Regalas de estilos del patalla de conceptos y ejemplos **/
 #page2 {
 	height: 100%;
 	width: 100%;
 	background-image: url('../img/pantalla_2.png') !important;
 }
 
+#tema {
+	color: white;
+	top: 120px;
+	left: 170px;
+	font-size: 40px;
+}
+
+#concepto {
+	color: white;
+	width: 470px;
+	top: 170px;
+	left: 160px;
+	font-size: 25px;
+}
+
+#ejemplo {
+	color: white;
+	top: 325px;
+	left: 190px;
+	font-size: 40px;
+}
+
+button.pantalla_2 {
+	color: white;
+	top: 620px;
+	left: 455px;
+	font-size: 30px;
+}
+
+button.pantalla_2:hover{
+	color: #659cff;
+}
+
+/** Regalas de estilos de resolucion de ejerccios **/
 #page3 {
 	height: 100%;
 	width: 100%;
 	background-image: url('../img/pantalla_3.png') !important;
+}
+
+#problema {
+	color: #333333;
+	width: 700px;
+	top: 50px;
+	left: 210px;
+	font-size: 20px;
+}
+
+#datos-label {
+	color: #333333;
+	top: 400px;
+	left: 100px;
+	font-size: 20px;
+}
+
+.dato {
+	width: 30px;
+	top: 440px;
+	left: 100px;
+	font-size: 20px;
+}
+
+#operacion-label {
+	color: #333333;
+	top: 400px;
+	left: 650px;
+	font-size: 20px;
+}
+
+.operacion {
+	width: 10px;
+	top: 440px;
+	left: 650px;
+	font-size: 20px;
+}
+
+#respuesta-label {
+	color: #333333;
+	top: 630px;
+	left: 400px;
+	font-size: 20px;
+}
+
+#respuesta {
+	top: 670px;
+	left: 400px;
+	font-size: 20px;
+}
+
+#btn_ini {
+	color: white;
+	top: 660px;
+	left: 137px;
+	font-size: 30px;
+}
+
+#btn_ini:hover {
+	color: #e4cb22;
+}
+
+#btn_nv {
+	color: white;
+	top: 680px;
+	left: 880px;
+	font-size: 30px;
+}
+
+#btn_nv:hover {
+	color: #18a47a;
 }
