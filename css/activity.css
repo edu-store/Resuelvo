@@ -25,8 +25,11 @@ button:hover, button:focus, button:active {
 
 input[type="text"] {
 	border-radius: 0;
-	border-color: white;
-	background-color: white;
+    border: 2px solid white;
+    background-color: white;
+    padding: 4px;
+    line-height: 22px;
+    outline: 0;
 }
 
 #canvas {
@@ -99,6 +102,12 @@ button.pantalla_2:hover{
 	color: #659cff;
 }
 
+.panel {
+	background-color: rgba(242, 242, 242, 0.9);
+	border-bottom: 5px solid #cccccc;
+	border-right: 5px solid #cccccc;
+}
+
 /** Regalas de estilos de resolucion de ejerccios **/
 #page3 {
 	height: 100%;
@@ -106,26 +115,46 @@ button.pantalla_2:hover{
 	background-image: url('../img/pantalla_3.png') !important;
 }
 
+#problema-panel {
+	width: 730px;
+	height: 260px;
+	top: 60px;
+	left: 195px;
+}
+
 #problema {
 	color: #333333;
 	width: 700px;
-	top: 50px;
-	left: 210px;
+	top: 0px;
+	left: 15px;
 	font-size: 20px;
+}
+
+#datos-panel {
+	width: 340px;
+	height: 180px;
+	top: 390px;
+	left: 80px;
 }
 
 #datos-label {
 	color: #333333;
-	top: 400px;
-	left: 100px;
+	top: 0px;
+	left: 15px;
 	font-size: 20px;
 }
 
 .dato {
-	width: 30px;
-	top: 440px;
-	left: 100px;
+	top: 30px;
+	left: 15px;
 	font-size: 20px;
+}
+
+#operacion-panel {
+	width: 400px;
+	height: 180px;
+	top: 400px;
+	left: 650px;
 }
 
 #operacion-label {
@@ -136,7 +165,13 @@ button.pantalla_2:hover{
 }
 
 .operacion {
-	width: 10px;
+	border-radius: 0;
+    border: 2px solid white;
+    background-color: white;
+    padding: 4px;
+    line-height: 22px;
+    outline: 0;
+	width: 50px;
 	top: 440px;
 	left: 650px;
 	font-size: 20px;

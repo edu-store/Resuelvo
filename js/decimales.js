@@ -1,38 +1,38 @@
 define(function (require) {
     return [
         {
-            'ejercicio' : 'A Víctor le quedan 96 tapas de gaseosa, que son 27 menos de los que tenía cuando empezó a jugar. ¿Cuántas tapas tenía al principio?',
-            'datos' : [ '96', '27' ],
-            'operacion' : [ '96', '+', '27', '=', '123' ],
-            'repuesta' : '123',
+            'ejercicio' : 'Meylin fue a una dulcería y compró: 0.75 libra de cajeta de coco, 1.25 libra de cajeta de leche y 2.50 libras de manjar. ¿Cuántas libras de dulce compró en total?',
+            'datos' : [ '0.75', '1.25', '2.50' ],
+            'operacion' : [ '0.75', '+', '1.25', '+', '2.50', '=', '4.50' ],
+            'repuesta' : '4.50',
             'signo' : '+'
         },
         {
-            'ejercicio' : 'En el mes de marzo vienen 48 golondrinas, en abril nacen 84 y en junio 23. ¿Cuántas golondrinas hay a finales de junio?',
-            'datos' : [ '48', '84', '23' ],
-            'operacion' : [ '48', '+', '84', '+', '23', '=', '155' ],
-            'repuesta' : '155',
+            'ejercicio' : 'En una carrera de relevos, uno de los equipos está integrado por Melchor, Gaspar y Baltasar. Durante la competencia Melchor empleó 15.87 segundos en completar su recorrido; Gaspar lo hizo en 14.60 segundos y Baltasar tardó 14.92 segundos. Calcule el tiempo total empleado por el equipo.',
+            'datos' : [ '15.87', '14.60', '14.92' ],
+            'operacion' : [ '15.87', '+', '14.60', '+', '14.92', '=', '45.39' ],
+            'repuesta' : '45.39',
             'signo' : '+'
         },
         {
-            'ejercicio' : 'Un montañero está subiendo el volcán San Cristóbal. Durante el primer día sube 230 metros, el segundo día sube otros 147 metros y el tercer día 97 metros. ¿A qué altura ha llegado al final del tercer día?',
-            'datos' : [ '230', '147', '97' ],
-            'operacion' : [ '230', '+', '147', '+', '97', '=', '474' ],
-            'repuesta' : '474',
+            'ejercicio' : 'De un depósito con agua se sacan 184.50 l y después 128.75 l, finalmente se sacan 84.50 l. Al final quedan en el depósito 160 l. ¿Qué cantidad de agua había en el depósito?',
+            'datos' : [ '184.50', '128.75', '84.50', '160' ],
+            'operacion' : [ '184.50', '+', '128.75', '+', '84.50', '+', '160', '=', '557.75' ],
+            'repuesta' : '557.75',
             'signo' : '+'
         },
         {
-            'ejercicio' : 'Don Pablo nació en 1,909 y vivió 87 años. ¿En qué año murió?',
-            'datos' : [ '1909', '87' ],
-            'operacion' : [ '1909', '+', '87', '=', '1,996' ],
-            'repuesta' : '1,996',
-            'signo' : '+'
+            'ejercicio' : 'Una jarra vacía pesa 0.64 kg, y llena de agua pesa 1.728 kg. ¿Cuánto pesa el agua?',
+            'datos' : [ '1.728', '0.64' ],
+            'operacion' : [ '1.728', '-', '0.64', '=', '1.088' ],
+            'repuesta' : '1.088',
+            'signo' : '-'
         },
         {
-            'ejercicio' : 'Pilar va a comprar con C$ 335 y regresa con C$ 187. ¿Cuánto gastó??',
-            'datos' : [ '335', '187' ],
-            'operacion' : [ '335', '-', '187', '=', '148' ],
-            'repuesta' : '148',
+            'ejercicio' : 'Carlos mide 114.60 cm de alto y Pedro 168.50 cm. ¿Cuántos cm es más pequeño Carlos?',
+            'datos' : [ '168.50', '114.60' ],
+            'operacion' : [ '168.50', '-', '114.60', '=', '53.90' ],
+            'repuesta' : '53.90',
             'signo' : '-'
         }
     ];

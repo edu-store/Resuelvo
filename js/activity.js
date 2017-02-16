@@ -78,22 +78,31 @@ define(function (require) {
         	id = $(this).attr('id');
 	    	output = Mustache.render(templates[uri].template, select_matrix(temas[id]));
 	        $('#canvas').html(output);
-            var espacio = 440;
-            var espaciador = 40;
+            var espacio = 30;
             $('#datos').children().each(function(index) {
                 $(this).css('top', espacio + 'px');
-                espacio+=espaciador;
+                espacio+=40;
+            });
+            espacio = 650;
+            $('#operacion').children().each(function(index) {
+                $(this).css('left', espacio + 'px');
+                espacio+=70;
             });
 		});
 
         $('#canvas').on('click', 'button#btn_nv', function(){
             output = Mustache.render(templates[uri].template, select_matrix(temas[id]));
             $('#canvas').html(output);
-            var espacio = 440;
+            var espacio = 30;
             $('#datos').children().each(function(index) {
                 var espaciador = 40;
                 $(this).css('top', espacio + 'px');
-                espacio+=espaciador;
+                espacio+=40;
+            });
+            espacio = 650;
+            $('#operacion').children().each(function(index) {
+                $(this).css('left', espacio + 'px');
+                espacio+=70;
             });
         });
 

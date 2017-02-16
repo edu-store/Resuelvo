@@ -1,39 +1,39 @@
 define(function (require) {
     return [
         {
-            'ejercicio' : 'A Víctor le quedan 96 tapas de gaseosa, que son 27 menos de los que tenía cuando empezó a jugar. ¿Cuántas tapas tenía al principio?',
-            'datos' : [ '96', '27' ],
-            'operacion' : [ '96', '+', '27', '=', '123' ],
-            'repuesta' : '123',
+            'ejercicio' : ' José y Sofía tienen una cometa cada uno. José tiene 90 metros de hilo para elevar su cometa y Sofía 56 metros. ¿Cuántos metros tienen entre los dos?',
+            'datos' : [ '90', '56' ],
+            'operacion' : [ '90', '+', '56', '=', '146' ],
+            'repuesta' : '146',
             'signo' : '+'
         },
         {
-            'ejercicio' : 'En el mes de marzo vienen 48 golondrinas, en abril nacen 84 y en junio 23. ¿Cuántas golondrinas hay a finales de junio?',
-            'datos' : [ '48', '84', '23' ],
-            'operacion' : [ '48', '+', '84', '+', '23', '=', '155' ],
-            'repuesta' : '155',
+            'ejercicio' : 'Un sastre compró 18 metros de tela para confeccionar 6 pantalones y 24 metros para confeccionar 6 chaquetas. ¿Cuántos metros de tela ha comprado?  ',
+            'datos' : [ '18', '24' ],
+            'operacion' : [ '18', '+', '24', '=', '42' ],
+            'repuesta' : '42',
             'signo' : '+'
         },
         {
-            'ejercicio' : 'Un montañero está subiendo el volcán San Cristóbal. Durante el primer día sube 230 metros, el segundo día sube otros 147 metros y el tercer día 97 metros. ¿A qué altura ha llegado al final del tercer día?',
-            'datos' : [ '230', '147', '97' ],
-            'operacion' : [ '230', '+', '147', '+', '97', '=', '474' ],
-            'repuesta' : '474',
+            'ejercicio' : 'En los entrenamientos de natación Roberto nadó el primer día 60 yardas, el segundo día 62 yardas y el tercero 65 yardas. ¿Cuántas yardas nadó en los tres días?',
+            'datos' : [ '60', '62', '65' ],
+            'operacion' : [ '60', '+', '62', '+', '65', '=', '187' ],
+            'repuesta' : '187',
             'signo' : '+'
         },
         {
-            'ejercicio' : 'Don Pablo nació en 1,909 y vivió 87 años. ¿En qué año murió?',
-            'datos' : [ '1909', '87' ],
-            'operacion' : [ '1909', '+', '87', '=', '1,996' ],
-            'repuesta' : '1,996',
+            'ejercicio' : 'La distancia desde la casa de Laura al colegio es de 1,720 metros. Cuando ha recorrido 325 metros se encuentra con su amiga Inés. ¿Cuánto les queda por recorrer?',
+            'datos' : [ '1,720', '325' ],
+            'operacion' : [ '1,720', '-', '325', '=', '1,395' ],
+            'repuesta' : '1,395',
             'signo' : '+'
         },
         {
-            'ejercicio' : 'Pilar va a comprar con C$ 335 y regresa con C$ 187. ¿Cuánto gastó??',
-            'datos' : [ '335', '187' ],
-            'operacion' : [ '335', '-', '187', '=', '148' ],
-            'repuesta' : '148',
-            'signo' : '-'
+            'ejercicio' : 'Están construyendo un nuevo puente que cruce el río. Lo están construyendo en tramos; ya llevan 12 tramos construidos de 20 metros cada uno. ¿Qué longitud del puente han construido por ahora? ',
+            'datos' : [ '12', '20' ],
+            'operacion' : [ '12', 'x', '20', '=', '240' ],
+            'repuesta' : '240',
+            'signo' : 'x'
         }
     ];
 });

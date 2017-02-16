@@ -1,39 +1,39 @@
 define(function (require) {
     return [
         {
-            'ejercicio' : 'A Víctor le quedan 96 tapas de gaseosa, que son 27 menos de los que tenía cuando empezó a jugar. ¿Cuántas tapas tenía al principio?',
-            'datos' : [ '96', '27' ],
-            'operacion' : [ '96', '+', '27', '=', '123' ],
-            'repuesta' : '123',
-            'signo' : '+'
-        },
-        {
-            'ejercicio' : 'En el mes de marzo vienen 48 golondrinas, en abril nacen 84 y en junio 23. ¿Cuántas golondrinas hay a finales de junio?',
-            'datos' : [ '48', '84', '23' ],
-            'operacion' : [ '48', '+', '84', '+', '23', '=', '155' ],
-            'repuesta' : '155',
-            'signo' : '+'
-        },
-        {
-            'ejercicio' : 'Un montañero está subiendo el volcán San Cristóbal. Durante el primer día sube 230 metros, el segundo día sube otros 147 metros y el tercer día 97 metros. ¿A qué altura ha llegado al final del tercer día?',
-            'datos' : [ '230', '147', '97' ],
-            'operacion' : [ '230', '+', '147', '+', '97', '=', '474' ],
-            'repuesta' : '474',
-            'signo' : '+'
-        },
-        {
-            'ejercicio' : 'Don Pablo nació en 1,909 y vivió 87 años. ¿En qué año murió?',
-            'datos' : [ '1909', '87' ],
-            'operacion' : [ '1909', '+', '87', '=', '1,996' ],
-            'repuesta' : '1,996',
-            'signo' : '+'
-        },
-        {
-            'ejercicio' : 'Pilar va a comprar con C$ 335 y regresa con C$ 187. ¿Cuánto gastó??',
-            'datos' : [ '335', '187' ],
-            'operacion' : [ '335', '-', '187', '=', '148' ],
-            'repuesta' : '148',
+            'ejercicio' : 'Una cartera puede llevar sin romperse 12 kilos. Si ya hemos puesto 7 kilos, ¿cuántos kilos más podemos poner sin que se rompa?',
+            'datos' : [ '12', '7' ],
+            'operacion' : [ '12', '-', '7', '=', '5' ],
+            'repuesta' : '5',
             'signo' : '-'
+        },
+        {
+            'ejercicio' : 'Si 4 naranjas del mismo tamaño pesan 1 kg. ¿Cuánto pesarán 44 naranjas del mismo tamaño?',
+            'datos' : [ '44', '4' ],
+            'operacion' : [ '44', '&divide;', '4', '=', '11' ],
+            'repuesta' : '11',
+            'signo' : '&divide;'
+        },
+        {
+            'ejercicio' : 'Juan va a comprar con su padre. Lleva en una mano una bolsa con 5 kg y en la otra mano, una bolsa con 4 kg. Su padre lleva otras dos bolsas con 8 kg y 9 kg. ¿Cuántos kilos llevan entre los dos?',
+            'datos' : [ '5', '4', '8', '9' ],
+            'operacion' : [ '5', '+', '4', '+', '8', '+', '9', '=', '26' ],
+            'repuesta' : '26',
+            'signo' : '+'
+        },
+        {
+            'ejercicio' : 'Una furgoneta lleva 5 cajas de manzanas con 20 kg cada una. ¿Cuántos kilos de manzanas lleva?',
+            'datos' : [ '5', '20' ],
+            'operacion' : [ '5', 'x', '20', '=', '100' ],
+            'repuesta' : '100',
+            'signo' : 'x'
+        },
+        {
+            'ejercicio' : 'Antonio pesa 45 kg. Su padre pesa el doble. ¿Cuánto pesa el padre de Antonio?',
+            'datos' : [ '45', '2' ],
+            'operacion' : [ '45', 'x', '2', '=', '90' ],
+            'repuesta' : '90',
+            'signo' : 'x'
         }
     ];
 });

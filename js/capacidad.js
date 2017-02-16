@@ -1,39 +1,39 @@
 define(function (require) {
     return [
         {
-            'ejercicio' : 'A Víctor le quedan 96 tapas de gaseosa, que son 27 menos de los que tenía cuando empezó a jugar. ¿Cuántas tapas tenía al principio?',
-            'datos' : [ '96', '27' ],
-            'operacion' : [ '96', '+', '27', '=', '123' ],
-            'repuesta' : '123',
-            'signo' : '+'
+            'ejercicio' : 'En un recipiente caben 10 litros de agua. ¿Cuántos litros caben en 5 recipientes del mismo tamaño?',
+            'datos' : [ '10', '5' ],
+            'operacion' : [ '10', 'x', '5', '=', '50' ],
+            'repuesta' : '50',
+            'signo' : 'x'
         },
         {
-            'ejercicio' : 'En el mes de marzo vienen 48 golondrinas, en abril nacen 84 y en junio 23. ¿Cuántas golondrinas hay a finales de junio?',
-            'datos' : [ '48', '84', '23' ],
-            'operacion' : [ '48', '+', '84', '+', '23', '=', '155' ],
-            'repuesta' : '155',
-            'signo' : '+'
-        },
-        {
-            'ejercicio' : 'Un montañero está subiendo el volcán San Cristóbal. Durante el primer día sube 230 metros, el segundo día sube otros 147 metros y el tercer día 97 metros. ¿A qué altura ha llegado al final del tercer día?',
-            'datos' : [ '230', '147', '97' ],
-            'operacion' : [ '230', '+', '147', '+', '97', '=', '474' ],
-            'repuesta' : '474',
-            'signo' : '+'
-        },
-        {
-            'ejercicio' : 'Don Pablo nació en 1,909 y vivió 87 años. ¿En qué año murió?',
-            'datos' : [ '1909', '87' ],
-            'operacion' : [ '1909', '+', '87', '=', '1,996' ],
-            'repuesta' : '1,996',
-            'signo' : '+'
-        },
-        {
-            'ejercicio' : 'Pilar va a comprar con C$ 335 y regresa con C$ 187. ¿Cuánto gastó??',
-            'datos' : [ '335', '187' ],
-            'operacion' : [ '335', '-', '187', '=', '148' ],
-            'repuesta' : '148',
+            'ejercicio' : 'Un recipiente tiene una capacidad de 50 litros. Sacamos del recipiente 10 botellas de litro.',
+            'datos' : [ '50', '10' ],
+            'operacion' : [ '50', '-', '10', '=', '40' ],
+            'repuesta' : '40',
             'signo' : '-'
+        },
+        {
+            'ejercicio' : 'Una familia está compuesta por 5 personas. Cada una de ellas bebe un litro de leche diario. ¿Cuántos litros de leche necesitan a la semana?',
+            'datos' : [ '5', '7' ],
+            'operacion' : [ '5', 'x', '7', '=', '35' ],
+            'repuesta' : '35',
+            'signo' : 'x'
+        },
+        {
+            'ejercicio' : 'En mi casa hay 4 bidones de aceite. Cada bidón tiene 5 litros. ¿Cuántos litros de aceite hay en total?',
+            'datos' : [ '4', '5' ],
+            'operacion' : [ '4', 'x', '5', '=', '20' ],
+            'repuesta' : '20',
+            'signo' : 'x'
+        },
+        {
+            'ejercicio' : 'Una bañera tiene una capacidad de 248 litros. Quieres llenarla con un cubo de 8 litros. ¿Cuántos cubos necesitarás?',
+            'datos' : [ '248', '8' ],
+            'operacion' : [ '248', '&divide;', '8', '=', '31' ],
+            'repuesta' : '31',
+            'signo' : '&divide;'
         }
     ];
 });

@@ -23,13 +23,13 @@ define(function (require) {
         },
         {
             'ejercicio' : 'Don Pablo nació en 1,909 y vivió 87 años. ¿En qué año murió?',
-            'datos' : [ '1909', '87' ],
-            'operacion' : [ '1909', '+', '87', '=', '1,996' ],
+            'datos' : [ '1,909', '87' ],
+            'operacion' : [ '1,909', '+', '87', '=', '1,996' ],
             'repuesta' : '1,996',
             'signo' : '+'
         },
         {
-            'ejercicio' : 'Pilar va a comprar con C$ 335 y regresa con C$ 187. ¿Cuánto gastó??',
+            'ejercicio' : 'Pilar va a comprar con C$ 335 y regresa con C$ 187. ¿Cuánto gastó?',
             'datos' : [ '335', '187' ],
             'operacion' : [ '335', '-', '187', '=', '148' ],
             'repuesta' : '148',

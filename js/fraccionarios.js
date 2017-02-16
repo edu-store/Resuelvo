@@ -1,38 +1,38 @@
 define(function (require) {
     return [
         {
-            'ejercicio' : 'A Víctor le quedan 96 tapas de gaseosa, que son 27 menos de los que tenía cuando empezó a jugar. ¿Cuántas tapas tenía al principio?',
-            'datos' : [ '96', '27' ],
-            'operacion' : [ '96', '+', '27', '=', '123' ],
-            'repuesta' : '123',
+            'ejercicio' : ' El día lunes Enrique estudió 1/4 de hora, el martes 3/4 de hora y el miércoles 2/4 horas. ¿Cuántas horas ha estudiado Enrique?',
+            'datos' : [ '1/4', '3/4', '2/4' ],
+            'operacion' : [ '1/4', '+', '3/4', '+', '2/4', '=', '6/4' ],
+            'repuesta' : '6/4',
             'signo' : '+'
         },
         {
-            'ejercicio' : 'En el mes de marzo vienen 48 golondrinas, en abril nacen 84 y en junio 23. ¿Cuántas golondrinas hay a finales de junio?',
-            'datos' : [ '48', '84', '23' ],
-            'operacion' : [ '48', '+', '84', '+', '23', '=', '155' ],
-            'repuesta' : '155',
+            'ejercicio' : 'En una pintura 3/10 de las figuras son reses y 1/10 de las figuras son peces, ¿Qué parte de la pintura muestra a ambos?',
+            'datos' : [ '3/10', '1/10' ],
+            'operacion' : [ '3/10', '+', '1/10', '=', '4/10' ],
+            'repuesta' : '4/10',
             'signo' : '+'
         },
         {
-            'ejercicio' : 'Un montañero está subiendo el volcán San Cristóbal. Durante el primer día sube 230 metros, el segundo día sube otros 147 metros y el tercer día 97 metros. ¿A qué altura ha llegado al final del tercer día?',
-            'datos' : [ '230', '147', '97' ],
-            'operacion' : [ '230', '+', '147', '+', '97', '=', '474' ],
-            'repuesta' : '474',
+            'ejercicio' : 'Una caja tiene 60 bombones. Eva comió 1/3 y Ana 2/3 ¿Cuánto se comieron entre las 2?',
+            'datos' : [ '1/3', '2/3' ],
+            'operacion' : [ '1/3', '+', '2/3', '=', '3/3' ],
+            'repuesta' : '3/3',
             'signo' : '+'
         },
         {
-            'ejercicio' : 'Don Pablo nació en 1,909 y vivió 87 años. ¿En qué año murió?',
-            'datos' : [ '1909', '87' ],
-            'operacion' : [ '1909', '+', '87', '=', '1,996' ],
-            'repuesta' : '1,996',
+            'ejercicio' : 'Don Juan sembró un huerto, en el terreno sembro 1/4 de sandía y 1/4 de melón ¿Cúanto le quedó sin sembrar?',
+            'datos' : [ '1/4', '1/4' ],
+            'operacion' : [ '1/4', '+', '1/4', '=', '2/4' ],
+            'repuesta' : '2/4',
             'signo' : '+'
         },
         {
-            'ejercicio' : 'Pilar va a comprar con C$ 335 y regresa con C$ 187. ¿Cuánto gastó??',
-            'datos' : [ '335', '187' ],
-            'operacion' : [ '335', '-', '187', '=', '148' ],
-            'repuesta' : '148',
+            'ejercicio' : 'Doña María tiene 5/9 de una caja de chocolates y le da a su hija Elizabeth 2/9. ¿Cuánto le queda?',
+            'datos' : [ '5/9', '2/9' ],
+            'operacion' : [ '5/9', '-', '2/9', '=', '3/9' ],
+            'repuesta' : '3/9',
             'signo' : '-'
         }
     ];
