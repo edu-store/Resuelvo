@@ -83,7 +83,7 @@ define(function (require) {
                 $(this).css('top', espacio + 'px');
                 espacio+=40;
             });
-            espacio = 650;
+            espacio = 15;
             $('#operacion').children().each(function(index) {
                 $(this).css('left', espacio + 'px');
                 espacio+=70;
@@ -99,7 +99,7 @@ define(function (require) {
                 $(this).css('top', espacio + 'px');
                 espacio+=40;
             });
-            espacio = 650;
+            espacio = 15;
             $('#operacion').children().each(function(index) {
                 $(this).css('left', espacio + 'px');
                 espacio+=70;

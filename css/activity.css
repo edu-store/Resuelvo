@@ -9,6 +9,21 @@ body {
 	font-family: 'Cantarell-Regular';
 }
 
+#canvas {
+	width: 1200px;
+	height: 845px;
+}
+
+.object {
+	position: absolute;
+}
+
+.panel {
+	background-color: rgba(242, 242, 242, 0.9);
+	border-bottom: 5px solid #cccccc;
+	border-right: 5px solid #cccccc;
+}
+
 h1 {
 	font-family: 'Comfortaa-Bold';
 }
@@ -32,41 +47,27 @@ input[type="text"] {
     outline: 0;
 }
 
-#canvas {
-	width: 1200px;
-	height: 845px;
-	background-color: #ffffff !important;
-}
-
-.hidden {
-    display: none;
-}
-
-.object {
-	position: absolute;
-}
-
 /** Reglas de estilos para la barra de herramientas **/
 #main-toolbar #activity-button {
   background-image: url(../activity/activity-icon.svg);
 }
 
 .toolbar #stop-button {
-  background-image: url('../img/activity-stop.png') !important;
+  background-image: url('../img/activity-stop.png');
 }
 
 /** Regalas de estilos del menus de seleccion de tema **/
 #page1 {
 	height: 100%;
 	width: 100%;
-	background-image: url('../img/pantalla_1.png') !important;
+	background: url('../img/pantalla_1.png') 0 0 no-repeat;
 }
 
 /** Regalas de estilos del patalla de conceptos y ejemplos **/
 #page2 {
 	height: 100%;
 	width: 100%;
-	background-image: url('../img/pantalla_2.png') !important;
+	background: url('../img/pantalla_2.png') 0 0 no-repeat;
 }
 
 #tema {
@@ -102,22 +103,16 @@ button.pantalla_2:hover{
 	color: #659cff;
 }
 
-.panel {
-	background-color: rgba(242, 242, 242, 0.9);
-	border-bottom: 5px solid #cccccc;
-	border-right: 5px solid #cccccc;
-}
-
 /** Regalas de estilos de resolucion de ejerccios **/
 #page3 {
 	height: 100%;
 	width: 100%;
-	background-image: url('../img/pantalla_3.png') !important;
+	background: url('../img/pantalla_3.png') 0 0 no-repeat;
 }
 
 #problema-panel {
 	width: 730px;
-	height: 260px;
+	height: 230px;
 	top: 60px;
 	left: 195px;
 }
@@ -131,9 +126,9 @@ button.pantalla_2:hover{
 }
 
 #datos-panel {
-	width: 340px;
-	height: 180px;
-	top: 390px;
+	width: 290px;
+	height: 230px;
+	top: 350px;
 	left: 80px;
 }
 
@@ -151,16 +146,16 @@ button.pantalla_2:hover{
 }
 
 #operacion-panel {
-	width: 400px;
-	height: 180px;
-	top: 400px;
-	left: 650px;
+	width: 650px;
+	height: 120px;
+	top: 390px;
+	left: 490px;
 }
 
 #operacion-label {
 	color: #333333;
-	top: 400px;
-	left: 650px;
+	top: 0px;
+	left: 15px;
 	font-size: 20px;
 }
 
@@ -172,28 +167,58 @@ button.pantalla_2:hover{
     line-height: 22px;
     outline: 0;
 	width: 50px;
-	top: 440px;
-	left: 650px;
+	top: 30px;
+	left: 15px;
 	font-size: 20px;
+}
+
+#respuesta-panel {
+	width: 340px;
+	height: 100px;
+	top: 640px;
+	left: 400px;
 }
 
 #respuesta-label {
 	color: #333333;
-	top: 630px;
-	left: 400px;
+	top: 0px;
+	left: 15px;
 	font-size: 20px;
 }
 
 #respuesta {
-	top: 670px;
-	left: 400px;
+	top: 40px;
+	left: 15px;
 	font-size: 20px;
+}
+
+#btn_rv {
+	color: white;
+	top: 40px;
+	left: 210px;
+	font-size: 25px;
+	border-radius: 0px;
+	width: 110px;
+	height: 30px;
+	background-image: url('../img/btn_rv.png');
+}
+
+#btn_rv:hover {
+	color: #c0392b;
+}
+
+#cont_btn_ini {
+	width: 170px;
+	height: 202px;
+	top: 642px;
+	left: 137px;
+	background-image: url('../img/señal_inicio.png');
 }
 
 #btn_ini {
 	color: white;
-	top: 660px;
-	left: 137px;
+	top: 70px;
+	left: 35px;
 	font-size: 30px;
 }
 
@@ -201,10 +226,18 @@ button.pantalla_2:hover{
 	color: #e4cb22;
 }
 
+#cont_btn_nv {
+	width: 237px;
+	height: 137px;
+	top: 707px;
+	left: 880px;
+	background-image: url('../img/señal_nuevo.png');
+}
+
 #btn_nv {
 	color: white;
-	top: 680px;
-	left: 880px;
+	top: 25px;
+	left: 50px;
 	font-size: 30px;
 }
 
