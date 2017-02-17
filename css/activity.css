@@ -11,7 +11,7 @@ body {
 
 #canvas {
 	width: 1200px;
-	height: 845px;
+	height: 835px;
 }
 
 .object {
@@ -39,6 +39,8 @@ button:hover, button:focus, button:active {
 }
 
 input[type="text"] {
+	color: #333333;
+	font-family: 'Cantarell-Regular';
 	border-radius: 0;
     border: 2px solid white;
     background-color: white;
@@ -114,7 +116,7 @@ button.pantalla_2:hover{
 	width: 730px;
 	height: 230px;
 	top: 60px;
-	left: 195px;
+	left: 233px;
 }
 
 #problema {
@@ -126,7 +128,7 @@ button.pantalla_2:hover{
 }
 
 #datos-panel {
-	width: 290px;
+	width: 240px;
 	height: 230px;
 	top: 350px;
 	left: 80px;
@@ -145,11 +147,24 @@ button.pantalla_2:hover{
 	font-size: 20px;
 }
 
+#signos {
+	top: 390px;
+    left: 460px;
+    z-index: 1;
+}
+
+#signos h1 {
+	color: #333333;
+    margin: 0;
+    font-size: 30px;
+}
+
 #operacion-panel {
 	width: 650px;
-	height: 120px;
-	top: 390px;
-	left: 490px;
+    height: 150px;
+    top: 390px;
+    left: 448px;
+    border-left: 40px solid #cccccc;
 }
 
 #operacion-label {
@@ -176,7 +191,7 @@ button.pantalla_2:hover{
 	width: 340px;
 	height: 100px;
 	top: 640px;
-	left: 400px;
+	left: 428px;
 }
 
 #respuesta-label {
@@ -210,7 +225,7 @@ button.pantalla_2:hover{
 #cont_btn_ini {
 	width: 170px;
 	height: 202px;
-	top: 642px;
+	top: 632px;
 	left: 137px;
 	background-image: url('../img/señal_inicio.png');
 }
@@ -229,7 +244,7 @@ button.pantalla_2:hover{
 #cont_btn_nv {
 	width: 237px;
 	height: 137px;
-	top: 707px;
+	top: 697px;
 	left: 880px;
 	background-image: url('../img/señal_nuevo.png');
 }
