@@ -75,8 +75,17 @@ define(function (require) {
     }
 
     function outSigno(id) {
-        $('#signos').children('#' + id).remove();
+        $('#signos').children('#' + id + '.nuevo').remove();
     }
+
+    function compSigno(element) {
+        $(element).removeClass('nuevo');
+    }
+
+    var modItem = function(event) {
+        var draggableElement = event.relatedTarget;
+        compSigno(draggableElement);
+    };
 
     var leaveItem = function(event) {
         var draggableElement = event.relatedTarget, dropzoneElement = event.target;
@@ -174,6 +183,7 @@ define(function (require) {
         objects.dropzone({
             accept:'.movimiento',
             overlap: 0.75,
+            ondropactivate:modItem,
             ondrop:stopItem,
             ondragleave:leaveItem
         });
