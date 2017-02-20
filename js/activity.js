@@ -6,13 +6,23 @@ define(function (require) {
     var jquery          = require("jquery");
     var interact        = require("interact");
     var Mustache        = require("mustache");
+    // Matriz de pantillas de MustacheJS
     var templates       = require("../js/templates.js");
+    // Matrices de ejerccios
     var naturales       = require("../js/naturales.js");
     var decimales       = require("../js/decimales.js");
     var fraccionarios   = require("../js/fraccionarios.js");
     var longitud        = require("../js/longitud.js");
     var peso            = require("../js/peso.js");
     var capacidad       = require("../js/capacidad.js");
+
+    var signos_objs = {
+        'suma' : '<img id="suma" class="movimiento object nuevo" data="+" src="img/suma.png">',
+        'resta': '<img id="resta" class="movimiento object nuevo" data="-" src="img/resta.png">',
+        'multi': '<img id="multi" class="movimiento object nuevo" data="*" src="img/multiplicacion.png">',
+        'divi' : '<img id="divi" class="movimiento object nuevo" data="/" src="img/division.png">', 
+        'igual': '<img id="igual" class="movimiento object nuevo" data="=" src="img/igual.png">'
+    };
 
     function random(array) {
         return Math.floor(Math.random() * array.length);
@@ -39,6 +49,55 @@ define(function (require) {
                 return capacidad[random(capacidad)];
         }
     }
+
+    // funcion de movimiento para objetos html
+    var moveItem = function(event) {
+        // Current element
+        var target = event.target;
+        // Get axis values + movement change
+        if (!target.hasAttribute('data-x')) {
+            x0 = $(target).position().top;
+            y0 = $(target).position().left;
+        }
+        x = (parseFloat(target.getAttribute('data-x')) || 0) + event.dx;
+        y = (parseFloat(target.getAttribute('data-y')) || 0) + event.dy;
+        // Transform element
+        target.style.top = x0 + 'px';
+        target.style.left = y0 + 'px';
+        target.style.webkitTransform = target.style.transform = 'translate(' + x + 'px, ' + y + 'px)';
+        // Update element attributes
+        target.setAttribute('data-x', x);
+        target.setAttribute('data-y', y);
+    };
+
+    function addSigno(id) {
+        $('#signos').append(signos_objs[id]);
+    }
+
+    function outSigno(id) {
+        $('#signos').children('#' + id).remove();
+    }
+
+    var leaveItem = function(event) {
+        var draggableElement = event.relatedTarget, dropzoneElement = event.target;
+
+        dropzoneElement.setAttribute('value', ' ');
+        dropzoneElement.setAttribute('disabled', 'false');
+
+        var ident = draggableElement.getAttribute('id');
+        outSigno(ident);
+    };
+
+    var stopItem = function(event) {
+        var draggableElement = event.relatedTarget, dropzoneElement = event.target;
+
+        var opr = draggableElement.getAttribute('data');
+        dropzoneElement.setAttribute('value', opr);
+        dropzoneElement.setAttribute('disabled', 'true');
+
+        var ident = draggableElement.getAttribute('id');
+        addSigno(ident);
+    };
 
     // Manipulate the DOM only when it is ready.
     require(['domReady!'], function (doc) {
@@ -79,12 +138,12 @@ define(function (require) {
 	    	output = Mustache.render(templates[uri].template, select_matrix(temas[id]));
 	        $('#canvas').html(output);
             var espacio = 30;
-            $('#datos').children().each(function(index) {
+            $('#datos').children().each(function() {
                 $(this).css('top', espacio + 'px');
                 espacio+=40;
             });
             espacio = 15;
-            $('#operacion').children().each(function(index) {
+            $('#operacion').children().each(function() {
                 $(this).css('left', espacio + 'px');
                 espacio+=70;
             });
@@ -94,16 +153,29 @@ define(function (require) {
             output = Mustache.render(templates[uri].template, select_matrix(temas[id]));
             $('#canvas').html(output);
             var espacio = 30;
-            $('#datos').children().each(function(index) {
-                var espaciador = 40;
+            $('#datos').children().each(function() {
                 $(this).css('top', espacio + 'px');
                 espacio+=40;
             });
             espacio = 15;
-            $('#operacion').children().each(function(index) {
+            $('#operacion').children().each(function() {
                 $(this).css('left', espacio + 'px');
                 espacio+=70;
             });
+        });
+
+        var items = interact('.movimiento');
+        items.draggable({
+            initial:true,
+            onmove:moveItem
+        });
+
+        var objects = interact('.operacion');
+        objects.dropzone({
+            accept:'.movimiento',
+            overlap: 0.75,
+            ondrop:stopItem,
+            ondragleave:leaveItem
         });
 
         $('#canvas').on('click', 'button#btn_ini', function(){

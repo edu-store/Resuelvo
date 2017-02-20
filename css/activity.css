@@ -148,15 +148,37 @@ button.pantalla_2:hover{
 }
 
 #signos {
+	width: 30px;
+	height: 155px;
 	top: 390px;
-    left: 460px;
+    left: 455px;
     z-index: 1;
+    margin-left: 0px;
 }
 
-#signos h1 {
-	color: #333333;
-    margin: 0;
-    font-size: 30px;
+#suma {
+	top: 0px;
+    left: 0px;
+}
+
+#resta {
+	top: 40px;
+    left: 0px;
+}
+
+#multi {
+	top: 60px;
+    left: 0px;
+}
+
+#divi {
+	top: 100px;
+    left: 0px;
+}
+
+#igual {
+	top: 135px;
+	left: 0px;
 }
 
 #operacion-panel {
@@ -215,7 +237,7 @@ button.pantalla_2:hover{
 	border-radius: 0px;
 	width: 110px;
 	height: 30px;
-	background-image: url('../img/btn_rv.png');
+	background: url('../img/btn_rv.png') 0 0 no-repeat;
 }
 
 #btn_rv:hover {
@@ -227,7 +249,7 @@ button.pantalla_2:hover{
 	height: 202px;
 	top: 632px;
 	left: 137px;
-	background-image: url('../img/señal_inicio.png');
+	background: url('../img/señal_inicio.png') 0 0 no-repeat;
 }
 
 #btn_ini {
@@ -246,7 +268,7 @@ button.pantalla_2:hover{
 	height: 137px;
 	top: 697px;
 	left: 880px;
-	background-image: url('../img/señal_nuevo.png');
+	background: url('../img/señal_nuevo.png') 0 0 no-repeat;
 }
 
 #btn_nv {

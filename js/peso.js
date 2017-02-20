@@ -24,16 +24,16 @@ define(function (require) {
         {
             'ejercicio' : 'Una furgoneta lleva 5 cajas de manzanas con 20 kg cada una. ¿Cuántos kilos de manzanas lleva?',
             'datos' : [ '5', '20' ],
-            'operacion' : [ '5', 'x', '20', '=', '100' ],
+            'operacion' : [ '5', '*', '20', '=', '100' ],
             'repuesta' : '100',
-            'signo' : 'x'
+            'signo' : '*'
         },
         {
             'ejercicio' : 'Antonio pesa 45 kg. Su padre pesa el doble. ¿Cuánto pesa el padre de Antonio?',
             'datos' : [ '45', '2' ],
-            'operacion' : [ '45', 'x', '2', '=', '90' ],
+            'operacion' : [ '45', '*', '2', '=', '90' ],
             'repuesta' : '90',
-            'signo' : 'x'
+            'signo' : '*'
         }
     ];
 });

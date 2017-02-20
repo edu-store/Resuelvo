@@ -31,9 +31,9 @@ define(function (require) {
         {
             'ejercicio' : 'Están construyendo un nuevo puente que cruce el río. Lo están construyendo en tramos; ya llevan 12 tramos construidos de 20 metros cada uno. ¿Qué longitud del puente han construido por ahora? ',
             'datos' : [ '12', '20' ],
-            'operacion' : [ '12', 'x', '20', '=', '240' ],
+            'operacion' : [ '12', '*', '20', '=', '240' ],
             'repuesta' : '240',
-            'signo' : 'x'
+            'signo' : '*'
         }
     ];
 });
