@@ -16,7 +16,7 @@ define(function (require) {
     var peso            = require("../js/peso.js");
     var capacidad       = require("../js/capacidad.js");
 
-    var signos_objs = {
+    var signos_objs     = {
         'suma' : '<img id="suma" class="movimiento object nuevo" data="+" src="img/suma.png">',
         'resta': '<img id="resta" class="movimiento object nuevo" data="-" src="img/resta.png">',
         'multi': '<img id="multi" class="movimiento object nuevo" data="*" src="img/multiplicacion.png">',
@@ -62,7 +62,7 @@ define(function (require) {
         x = (parseFloat(target.getAttribute('data-x')) || 0) + event.dx;
         y = (parseFloat(target.getAttribute('data-y')) || 0) + event.dy;
         // Transform element
-        target.style.top = x0 + 'px';
+        target.style.top  = x0 + 'px';
         target.style.left = y0 + 'px';
         target.style.webkitTransform = target.style.transform = 'translate(' + x + 'px, ' + y + 'px)';
         // Update element attributes
@@ -78,20 +78,15 @@ define(function (require) {
         $('#signos').children('#' + id + '.nuevo').remove();
     }
 
-    function compSigno(element) {
-        $(element).removeClass('nuevo');
-    }
-
     var modItem = function(event) {
-        var draggableElement = event.relatedTarget;
-        compSigno(draggableElement);
+        event.relatedTarget.classList.remove('nuevo');
     };
 
     var leaveItem = function(event) {
         var draggableElement = event.relatedTarget, dropzoneElement = event.target;
 
         dropzoneElement.setAttribute('value', ' ');
-        dropzoneElement.setAttribute('disabled', 'false');
+        dropzoneElement.removeAttribute('disabled');
 
         var ident = draggableElement.getAttribute('id');
         outSigno(ident);
@@ -111,10 +106,10 @@ define(function (require) {
     // Manipulate the DOM only when it is ready.
     require(['domReady!'], function (doc) {
 
-    	var uri    = 1;
-    	var output = '';
-    	var id     = 0;
-    	var temas  = {
+    	var uri      = 1;
+    	var output   = '';
+    	var id       = 0;
+    	var temas    = {
 	    	'btn_nn' : 0,
 	    	'btn_nd' : 1,
 	    	'btn_nf' : 2,
@@ -122,6 +117,8 @@ define(function (require) {
 	    	'btn_mp' : 4,
 	    	'btn_mc' : 5
 	    };
+        var matriz   = new Object();
+        var aciertos = [0];
 
     	// Initialize the activity.
         activity.setup();
@@ -144,7 +141,8 @@ define(function (require) {
 	    $('#canvas').on('click', 'button.pantalla_2', function(){
 		    uri = $(this).attr('data');
         	id = $(this).attr('id');
-	    	output = Mustache.render(templates[uri].template, select_matrix(temas[id]));
+            matriz = select_matrix(temas[id]);
+	    	output = Mustache.render(templates[uri].template, matriz);
 	        $('#canvas').html(output);
             var espacio = 30;
             $('#datos').children().each(function() {
@@ -159,7 +157,8 @@ define(function (require) {
 		});
 
         $('#canvas').on('click', 'button#btn_nv', function(){
-            output = Mustache.render(templates[uri].template, select_matrix(temas[id]));
+            matriz = select_matrix(temas[id]);
+            output = Mustache.render(templates[uri].template, matriz);
             $('#canvas').html(output);
             var espacio = 30;
             $('#datos').children().each(function() {
@@ -186,6 +185,59 @@ define(function (require) {
             ondropactivate:modItem,
             ondrop:stopItem,
             ondragleave:leaveItem
+        });
+
+        $('#canvas').on('click', 'button#btn_rv', function(){
+            console.log(matriz.operacion);
+            var aprovar = matriz.datos.length + matriz.operacion.length + 1;
+
+            var datos = [];
+            var operacion = [];
+            var respuesta = '';
+
+            $('#datos').children('input').each(function(index) {
+                datos[index] = $(this).val();
+            });
+
+            $('#operacion').children('input').each(function(index) {
+                operacion[index] = $(this).val();
+            });
+
+            $('#respuesta-panel').children('input').each(function() {
+                respuesta = $(this).val();
+            });
+
+            $.each(datos, function(index, value){
+                var indice = $.inArray(value, matriz.datos);
+                if ( indice != -1 ) {
+                    $.each(aciertos, function(i, v){
+                        if(indice !=  aciertos[i]){
+                            aciertos[index] = indice;
+                        }
+                    });
+                }
+            });
+            console.log(aciertos);
+
+
+            if (aprovar == aciertos.length) {
+                $('input').each(function() {
+                    $(this).css('border', '2px solid green');
+                });
+                matriz = select_matrix(temas[id]);
+                output = Mustache.render(templates[uri].template, matriz);
+                $('#canvas').html(output);
+                var espacio = 30;
+                $('#datos').children().each(function() {
+                    $(this).css('top', espacio + 'px');
+                    espacio+=40;
+                });
+                espacio = 15;
+                $('#operacion').children().each(function() {
+                    $(this).css('left', espacio + 'px');
+                    espacio+=70;
+                });
+            }
         });
 
         $('#canvas').on('click', 'button#btn_ini', function(){
