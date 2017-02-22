@@ -118,7 +118,6 @@ define(function (require) {
 	    	'btn_mc' : 5
 	    };
         var matriz   = new Object();
-        var aciertos = [0];
 
     	// Initialize the activity.
         activity.setup();
@@ -190,33 +189,78 @@ define(function (require) {
         $('#canvas').on('click', 'button#btn_rv', function(){
             console.log(matriz.operacion);
             var aprovar = matriz.datos.length + matriz.operacion.length + 1;
+            console.log(aprovar);
+            var aciertos = [-1];
+            var contador = 0;
 
             var datos = [];
             var operacion = [];
             var respuesta = '';
 
             $('#datos').children('input').each(function(index) {
-                datos[index] = $(this).val();
-            });
-
-            $('#operacion').children('input').each(function(index) {
-                operacion[index] = $(this).val();
-            });
-
-            $('#respuesta-panel').children('input').each(function() {
-                respuesta = $(this).val();
-            });
-
-            $.each(datos, function(index, value){
-                var indice = $.inArray(value, matriz.datos);
+                var indice = $.inArray($(this).val(), matriz.datos);
+                var existe = 0;
                 if ( indice != -1 ) {
                     $.each(aciertos, function(i, v){
                         if(indice !=  aciertos[i]){
-                            aciertos[index] = indice;
-                        }
+                            existe = 1;
+                        } 
                     });
+                    if (existe == 1) {
+                        $(this).css('border', '2px solid red');
+                        aciertos[contador] = indice;
+                        contador++;
+                    } else {
+                        aciertos[contador] = '';
+                    }
                 }
             });
+
+            $('#operacion').children('input').each(function(index) {
+                var indice = $.inArray($(this).val(), matriz.operacion);
+                var existe = 0;
+                if ( indice != -1 ) {
+                    $.each(aciertos, function(i, v){
+                        if(indice !=  aciertos[i]){
+                            existe = 1;
+                        } 
+                    });
+                    if (existe == 1) {
+                        $(this).css('border', '2px solid red');
+                        aciertos[contador] = indice;
+                        contador++;
+                    } else {
+                        aciertos[contador] = '';
+                    }
+                }
+            });
+
+            $('#respuesta-panel').children('input').each(function() {
+                console.log(matriz.respuesta);
+                if ( $(this).val() == matriz.respuesta ) {
+                        $(this).css('border', '2px solid red');
+                        aciertos[contador] = $(this).val();
+                        contador++;
+                } else {
+                    aciertos[contador] = '';
+                }
+            });
+
+            /*$.each(datos, function(index, value){
+                var indice = $.inArray(value, matriz.datos);
+                var existe = 0;
+                if ( indice != -1 ) {
+                    $.each(aciertos, function(i, v){
+                        if(indice !=  aciertos[i]){
+                            existe = 1;
+                        } 
+                    });
+                    if (existe == 1) {
+                        aciertos[index] = indice;
+                        contador++;
+                    }
+                }
+            });*/
             console.log(aciertos);
 
 
