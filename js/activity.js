@@ -247,12 +247,12 @@ define(function (require) {
                 var espacio = 30;
                 $('#datos').children().each(function() {
                     $(this).css('top', espacio + 'px');
-                    espacio+=40;
+                    espacio += 40;
                 });
                 espacio = 15;
                 $('#operacion').children().each(function() {
                     $(this).css('left', espacio + 'px');
-                    espacio+=70;
+                    espacio += 70;
                 });
             }
         });
