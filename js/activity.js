@@ -187,9 +187,7 @@ define(function (require) {
         });
 
         $('#canvas').on('click', 'button#btn_rv', function(){
-            console.log(matriz.operacion);
             var aprovar = matriz.datos.length + matriz.operacion.length + 1;
-            console.log(aprovar);
             var aciertos = [-1];
             var contador = 0;
 
@@ -210,8 +208,6 @@ define(function (require) {
                         $(this).css('border', '2px solid red');
                         aciertos[contador] = indice;
                         contador++;
-                    } else {
-                        aciertos[contador] = '';
                     }
                 }
             });
@@ -229,40 +225,17 @@ define(function (require) {
                         $(this).css('border', '2px solid red');
                         aciertos[contador] = indice;
                         contador++;
-                    } else {
-                        aciertos[contador] = '';
                     }
                 }
             });
 
             $('#respuesta-panel').children('input').each(function() {
-                console.log(matriz.respuesta);
                 if ( $(this).val() == matriz.respuesta ) {
                         $(this).css('border', '2px solid red');
                         aciertos[contador] = $(this).val();
                         contador++;
-                } else {
-                    aciertos[contador] = '';
                 }
             });
-
-            /*$.each(datos, function(index, value){
-                var indice = $.inArray(value, matriz.datos);
-                var existe = 0;
-                if ( indice != -1 ) {
-                    $.each(aciertos, function(i, v){
-                        if(indice !=  aciertos[i]){
-                            existe = 1;
-                        } 
-                    });
-                    if (existe == 1) {
-                        aciertos[index] = indice;
-                        contador++;
-                    }
-                }
-            });*/
-            console.log(aciertos);
-
 
             if (aprovar == aciertos.length) {
                 $('input').each(function() {
