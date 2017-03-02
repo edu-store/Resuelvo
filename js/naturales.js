@@ -101,58 +101,58 @@ define(function (require) {
         {
             'ejercicio' : 'En una pajarería hay 252 canarios. Los colocamos en jaulas de 6 en 6 ¿Cuántas jaulas serán necesarias? ',
             'datos' : [ '252', '6' ],
-            'operacion' : [ '252', '%', '6','=','42' ],
+            'operacion' : [ '252', '/', '6','=','42' ],
             'respuesta' : '42',
-            'signo'     : '%'
+            'signo'     : '/'
         },
         {
             'ejercicio' : 'Entre 8 ganaderos han enviado al matadero por igual cantidad 600 reses. ¿Cuántas rese habrá enviado cada uno?',
             'datos' : [ '600', '8' ],
-            'operacion' : [ '600', '%', '8','=','75' ],
+            'operacion' : [ '600', '/', '8','=','75' ],
             'respuesta' : '75',
-            'signo'     : '%'
+            'signo'     : '/'
         },
         {
             'ejercicio' : 'Un barco sale de puerto Corinto cada 4 días. ¿Cuántas veces habrá salido en 192 días?',
             'datos' : [ '192', '4' ],
-            'operacion' : [ '192', '%', '4','=','48' ],
+            'operacion' : [ '192', '/', '4','=','48' ],
             'respuesta' : '48',
-            'signo'     : '%'
+            'signo'     : '/'
         },
         {
             'ejercicio' : 'Un coleccionista pega 8 sellos en cada hoja de su álbum. ¿Cuántas hojas necesitará para guardar los 96 sellos que tiene?',
             'datos' : [ '96', '8' ],
-            'operacion' : [ '96', '%', '8','=','12' ],
+            'operacion' : [ '96', '/', '8','=','12' ],
             'respuesta' : '12',
-            'signo'     : '%'
+            'signo'     : '/'
         },
           {
             'ejercicio' : 'El capitán de una compañía de 162 soldados quiere formar filas de 9 soldados. ¿Cuántas filas podrá formar?',
             'datos' : [ '162', '9' ],
-            'operacion' : [ '162', '%', '9','=','18' ],
+            'operacion' : [ '162', '/', '9','=','18' ],
             'respuesta' : '12',
-            'signo'     : '%'
+            'signo'     : '/'
         },
         {
             'ejercicio' : 'Con 950 vacas hemos formado 5 rebaños. ¿Cuántas vacas tienen cada rebaño?',
             'datos' : [ '950', '5' ],
-            'operacion' : [ '950', '%', '5','=','190' ],
+            'operacion' : [ '950', '/', '5','=','190' ],
             'respuesta' : '190',
-            'signo'     : '%'
+            'signo'     : '/'
         },
         {
             'ejercicio' : 'Un granjero ha recogido 1,872 huevos de gallina. ¿Cuántas docenas ha recogido?',
             'datos' : [ '1872', '12' ],
-            'operacion' : [ '1872', '%', '12','=','156' ],
+            'operacion' : [ '1872', '/', '12','=','156' ],
             'respuesta' : '156',
-            'signo'     : '%'
+            'signo'     : '/'
         },
         {
             'ejercicio' : 'Un panadero ha hecho 4,104 rosquillas. Para su venta las empaqueta en cajas de 2 docenas. ¿Cuántas cajas puede llenar?',
             'datos' : [ '4104', '24' ],
-            'operacion' : [ '4104', '%', '24','=','171' ],
+            'operacion' : [ '4104', '/', '24','=','171' ],
             'respuesta' : '171',
-            'signo'     : '%'
+            'signo'     : '/'
         },
          {
             'ejercicio' : 'Samuel compró 8 córdobas de caramelos con un billete de 50 córdobas. ¿Cuánto es el cambio que le corresponde a Samuel?',
