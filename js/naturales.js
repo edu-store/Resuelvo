@@ -16,9 +16,9 @@ define(function (require) {
         },
         {
             'ejercicio' : 'Un montañero está subiendo el volcán San Cristóbal. Durante el primer día sube 230 metros, el segundo día sube otros 147 metros y el tercer día 97 metros. ¿A qué altura ha llegado al final del tercer día?',
-            'datos' : [ '230', '147', '97' ],
+            'datos' : [ '230 metros', '147 metros', '97 metros' ],
             'operacion' : [ '230', '+', '147', '+', '97', '=', '474' ],
-            'respuesta' : '474',
+            'respuesta' : 'Llego a 474 metros',
             'signo'     : '+'
         },
         {
