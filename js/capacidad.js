@@ -79,15 +79,15 @@ define(function (require) {
         },
         {
             'ejercicio' : 'En un barril caben 200 litros de agua ¿Cuántos barriles se necesitan para almacenar 1,600 litros?',
-            'datos'     : [ '1.6', '200'],
-            'operacion' : [ '144', '/', '200','=', '8' ],
+            'datos'     : [ '1,600', '200'],
+            'operacion' : [ '1,600', '/', '200','=', '8' ],
             'respuesta' : '8',
             'signo'     : '/'
         },
         {
             'ejercicio' : 'Un pueblo tiene instalado un depósito de 5,000 galones para almacenar agua en época de sequía, si se consumen 100 galones por día ¿En cuántos días se consume todo el depósito?',
             'datos'     : [ '5', '100'],
-            'operacion' : [ '5000', '/', '100','=', '50' ],
+            'operacion' : [ '5,000', '/', '100','=', '50' ],
             'respuesta' : '50',
             'signo'     : '/'
         },

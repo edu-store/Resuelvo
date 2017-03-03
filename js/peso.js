@@ -44,9 +44,9 @@ define(function (require) {
         },
         {
             'ejercicio' : 'Don Marcelino lleva en su camión 7 vacas. Cada vaca pesa 675 kilos. ¿Qué peso soporta el camión?',
-            'datos'     : [ '7', '0675' ],
-            'operacion' : [ '7', '*', '675', '=', '4725' ],
-            'respuesta' : '4725',
+            'datos'     : [ '7', '675' ],
+            'operacion' : [ '7', '*', '675', '=', '4,725' ],
+            'respuesta' : '4,725',
             'signo'     : '*'
         },
         {
@@ -59,8 +59,8 @@ define(function (require) {
         {
             'ejercicio' : 'Un litro de aceite pesa 975 gramos. ¿Cuántos gramos pesan cuatro litros?',
             'datos'     : [ '975', '4' ],
-            'operacion' : [ '975', '*', '4', '=', '3900'],
-            'respuesta' : '3900',
+            'operacion' : [ '975', '*', '4', '=', '3,900'],
+            'respuesta' : '3,900',
             'signo'     : '*'
         },
         {
@@ -85,7 +85,7 @@ define(function (require) {
             'signo'     : '-'
         },
         {
-            'ejercicio' : 'Un huevo de gallina pesa 65 g. ¿Cuánto pesa media docena de huevos?',
+            'ejercicio' : 'Un huevo de gallina pesa 65 gramos. ¿Cuánto pesa media docena de huevos?',
             'datos'     : [ '65', '6' ],
             'operacion' : [ '65', '*', '16', '=', '390'],
             'respuesta' : '390',

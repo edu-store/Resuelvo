@@ -73,8 +73,8 @@ define(function (require) {
         {
             'ejercicio' : 'Un metro tiene 100 centímetros. ¿Cuántos centímetros hay en 60 metros?',
             'datos'     : [ '100', '60' ],
-            'operacion' : [ '100', '*', '60', '=', '6000' ],
-            'respuesta' : '6000',
+            'operacion' : [ '100', '*', '60', '=', '6,000' ],
+            'respuesta' : '6,000',
             'signo'     : '*'
         },
          {

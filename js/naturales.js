@@ -58,8 +58,8 @@ define(function (require) {
         },
         {
             'ejercicio' : ' De los 5,284 huevos incubados salieron 4,615 polluelos. ¿Cuántos huevos se estropearon?',
-            'datos' : [ '5284', '4615' ],
-            'operacion' : [ '5284', '-', '4615', '=', '669' ],
+            'datos' : [ '5,284', '4,615' ],
+            'operacion' : [ '5,284', '-', '4,615', '=', '669' ],
             'respuesta' : '669',
             'signo'     : '-'
         },
@@ -73,8 +73,8 @@ define(function (require) {
         {
             'ejercicio' : 'Un autobús realizó 4 viajes en un día. En cada viaje transportó a 45 pasajeros. Si cada pasaje vale 10 córdobas, ¿cuál fue el ingreso del día?',
             'datos' : [ '4', '45','10' ],
-            'operacion' : [ '4', '*', '45', '*', '10','=','1800' ],
-            'respuesta' : '19800',
+            'operacion' : [ '4', '*', '45', '*', '10','=','1,800' ],
+            'respuesta' : '1,800',
             'signo'     : '*'
         },
         {
@@ -86,16 +86,16 @@ define(function (require) {
         },
         {
             'ejercicio' : 'Un ramo tiene 35 rosas. Si cada rosa vale 4 córdobas, ¿cuánto vale el ramo?',
-            'datos' : [ '9', '3' ],
-            'operacion' : [ '9', '*', '3','=','27' ],
-            'respuesta' : '27',
+            'datos' : [ '35', '4' ],
+            'operacion' : [ '35', '*', '4','=','140' ],
+            'respuesta' : '140',
             'signo'     : '*'
         },
         {
             'ejercicio' : 'Un ciclista ha recorrido 9 km. y otro una distancia que es el triple de la anterior. ¿Cuántos km. ha recorrido el segundo ciclista? ',
-            'datos' : [ '35', '4' ],
-            'operacion' : [ '35', '*', '4','=','140' ],
-            'respuesta' : '140',
+            'datos' : [ '9', '3' ],
+            'operacion' : [ '9', '*', '3','=','27' ],
+            'respuesta' : '27',
             'signo'     : '*'
         },
         {
@@ -142,24 +142,24 @@ define(function (require) {
         },
         {
             'ejercicio' : 'Un granjero ha recogido 1,872 huevos de gallina. ¿Cuántas docenas ha recogido?',
-            'datos' : [ '1872', '12' ],
-            'operacion' : [ '1872', '/', '12','=','156' ],
+            'datos' : [ '1,872', '12' ],
+            'operacion' : [ '1,872', '/', '12','=','156' ],
             'respuesta' : '156',
             'signo'     : '/'
         },
         {
             'ejercicio' : 'Un panadero ha hecho 4,104 rosquillas. Para su venta las empaqueta en cajas de 2 docenas. ¿Cuántas cajas puede llenar?',
-            'datos' : [ '4104', '24' ],
-            'operacion' : [ '4104', '/', '24','=','171' ],
+            'datos' : [ '4,104', '24' ],
+            'operacion' : [ '4,104', '/', '24','=','171' ],
             'respuesta' : '171',
             'signo'     : '/'
         },
          {
             'ejercicio' : 'Samuel compró 8 córdobas de caramelos con un billete de 50 córdobas. ¿Cuánto es el cambio que le corresponde a Samuel?',
             'datos' : [ '50', '8' ],
-            'operacion' : [ '4104', '-', '24','=','171' ],
+            'operacion' : [ '50', '*', '8','=','171' ],
             'respuesta' : '171',
-            'signo'     : '-'
+            'signo'     : '*'
         },
         {
             'ejercicio' : 'En una hacienda peren 156 crias, 75 son machos. ¿Cuál es la cantidad de hembras?',
@@ -168,15 +168,12 @@ define(function (require) {
             'respuesta' : '81',
             'signo'     : '-'
         },
-         {
+        {
             'ejercicio' : 'Ricardo sacó en el examen de matematicas 95 puntos y Carlos obtuvo 83. ¿Cuántos puntos sacó de más Ricardo?',
             'datos' : [ '95', '83' ],
             'operacion' : [ '95', '-', '83','=','12' ],
             'respuesta' : '12',
             'signo'     : '-'
         }
-        
-	 
-	 
     ];
 });
