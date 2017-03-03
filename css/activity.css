@@ -249,7 +249,7 @@ button.pantalla_2:hover{
 	height: 202px;
 	top: 632px;
 	left: 137px;
-	background: url('../img/señal_inicio.png') 0 0 no-repeat;
+	background: url('../img/senal_inicio.png') 0 0 no-repeat;
 }
 
 #btn_ini {
@@ -268,7 +268,7 @@ button.pantalla_2:hover{
 	height: 137px;
 	top: 697px;
 	left: 880px;
-	background: url('../img/señal_nuevo.png') 0 0 no-repeat;
+	background: url('../img/senal_nuevo.png') 0 0 no-repeat;
 }
 
 #btn_nv {
