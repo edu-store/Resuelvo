@@ -19,7 +19,8 @@ body {
 }
 
 .panel {
-	background-color: rgba(242, 242, 242, 0.9);
+	/*background-color: rgba(242, 242, 242, 1);*/
+	background-color: #D8E2EC;
 	border-bottom: 5px solid #cccccc;
 	border-right: 5px solid #cccccc;
 }
@@ -62,7 +63,7 @@ input[type="text"] {
 #page1 {
 	height: 100%;
 	width: 100%;
-	background: url('../img/pantalla_1.png') 0 0 no-repeat;
+	/*background: url('../img/pantalla_1.png') 0 0 no-repeat;*/
 }
 
 /** Regalas de estilos del patalla de conceptos y ejemplos **/
@@ -75,8 +76,8 @@ input[type="text"] {
 #tema {
 	color: white;
 	top: 120px;
-	left: 170px;
-	font-size: 40px;
+	left: 150px;
+	font-size: 35px;
 }
 
 #concepto {
@@ -96,7 +97,7 @@ input[type="text"] {
 
 button.pantalla_2 {
 	color: white;
-	top: 620px;
+	top: 610px;
 	left: 455px;
 	font-size: 30px;
 }
@@ -113,18 +114,18 @@ button.pantalla_2:hover{
 }
 
 #problema-panel {
-	width: 730px;
+	width: 800px;
 	height: 230px;
 	top: 60px;
-	left: 233px;
+	left: 200px;
 }
 
 #problema {
 	color: #333333;
-	width: 700px;
-	top: 0px;
+	width: 770px;
+	top: -20px;
 	left: 15px;
-	font-size: 20px;
+	font-size: 30px;
 }
 
 #datos-panel {
@@ -142,9 +143,15 @@ button.pantalla_2:hover{
 }
 
 .dato {
+	border-radius: 0;
+    border: 2px solid white;
+    background-color: white;
+    line-height: 22px;
+    outline: 0;
 	top: 30px;
 	left: 15px;
 	font-size: 20px;
+	width: 180px;
 }
 
 #signos {
@@ -200,18 +207,18 @@ button.pantalla_2:hover{
 	border-radius: 0;
     border: 2px solid white;
     background-color: white;
-    padding: 4px;
+    /*padding: 4px;*/
     line-height: 22px;
     outline: 0;
 	width: 50px;
 	top: 30px;
 	left: 15px;
-	font-size: 20px;
+	font-size: 15px;
 }
 
 #respuesta-panel {
-	width: 340px;
-	height: 100px;
+	width: 400px;
+	height: 130px;
 	top: 640px;
 	left: 428px;
 }
@@ -224,15 +231,22 @@ button.pantalla_2:hover{
 }
 
 #respuesta {
+	border-radius: 0;
+    border: 2px solid white;
+    background-color: white;
+    /*padding: 4px;*/
+    line-height: 22px;
+    outline: 0;
 	top: 40px;
 	left: 15px;
 	font-size: 20px;
+	width: 75px;
 }
 
 #btn_rv {
 	color: white;
-	top: 40px;
-	left: 210px;
+	top: 80px;
+	left: 140px;
 	font-size: 25px;
 	border-radius: 0px;
 	width: 110px;
