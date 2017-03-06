@@ -19,10 +19,12 @@ body {
 }
 
 .panel {
-	/*background-color: rgba(242, 242, 242, 1);*/
-	background-color: #D8E2EC;
+	/*
+	background-color: rgba(242, 242, 242, 1);
 	border-bottom: 5px solid #cccccc;
 	border-right: 5px solid #cccccc;
+	*/
+	background-color: #ff6666;
 }
 
 h1 {
@@ -110,7 +112,9 @@ button.pantalla_2:hover{
 #page3 {
 	height: 100%;
 	width: 100%;
-	background: url('../img/pantalla_3.png') 0 0 no-repeat;
+	/*background: url('../img/pantalla_3.png') 0 0 no-repeat;*/
+	background-color: #49ffcb;
+
 }
 
 #problema-panel {
@@ -245,7 +249,7 @@ button.pantalla_2:hover{
 	height: 202px;
 	top: 632px;
 	left: 137px;
-	background: url('../img/señal_inicio.png') 0 0 no-repeat;
+	background: url('../img/senal_inicio.png') 0 0 no-repeat;
 }
 
 #btn_ini {
@@ -264,7 +268,7 @@ button.pantalla_2:hover{
 	height: 137px;
 	top: 697px;
 	left: 880px;
-	background: url('../img/señal_nuevo.png') 0 0 no-repeat;
+	background: url('../img/senal_nuevo.png') 0 0 no-repeat;
 }
 
 #btn_nv {
