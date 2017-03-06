@@ -60,7 +60,7 @@ define(function (require) {
             'ejercicio' : 'Si cada manzana de café tecnificado puede producir 36.75 quintales del grano de oro como promedio, ¿cuántos quintales producirán 36.50 manzanas?',
             'datos'     : [ '36.75 quintales', '36.5 manzanas' ],
             'operacion' : [ '36.75', '*', '36.5', '=', '1341.375' ],
-            'respuesta' : '1341.375',
+            'respuesta' : 'Produciran 1341.375 quintales',
             'signo'     : '*'
         },
         {

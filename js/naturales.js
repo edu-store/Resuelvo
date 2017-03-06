@@ -160,6 +160,7 @@ define(function (require) {
             'operacion' : [ '50', '-', '8','=','42' ],
             'respuesta' : 'El cambio es 42 cordobas',
             'signo'     : '-'
+
         },
         {
             'ejercicio' : 'En una hacienda peren 156 crias, 75 son machos. ¿Cuál es la cantidad de hembras?',
@@ -168,15 +169,12 @@ define(function (require) {
             'respuesta' : 'Hay 81 hembras',
             'signo'     : '-'
         },
-         {
+        {
             'ejercicio' : 'Ricardo sacó en el examen de matematicas 95 puntos y Carlos obtuvo 83. ¿Cuántos puntos sacó de más Ricardo?',
             'datos' : [ '95 puntos ', '83 puntos' ],
             'operacion' : [ '95', '-', '83','=','12' ],
             'respuesta' : 'Saco 12 puntos mas',
             'signo'     : '-'
         }
-        
-	 
-	 
     ];
 });
