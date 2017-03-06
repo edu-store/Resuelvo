@@ -32,14 +32,16 @@ h1 {
 }
 
 button {
-	background-color: transparent;
+	/*background-color: transparent;*/
 	font-family: 'Comfortaa-Bold';
+	font-size: 25px;
+	height: 40px;
 }
 
-button:hover, button:focus, button:active {
+/*button:hover, button:focus, button:active {
 	background-color: transparent;
 	border: none;
-}
+}*/
 
 input {
 	color: #333333;
@@ -66,13 +68,39 @@ input {
 	height: 100%;
 	width: 100%;
 	/*background: url('../img/pantalla_1.png') 0 0 no-repeat;*/
+	background-color: #49ffcb;
 }
+
+#titulo {
+	font-size: 100px;
+    left: 330px;
+}
+
+button.pantalla_1 {
+	width: 330px;
+	height: 40px;
+	background-color: #659cff;
+}
+
+button.pantalla_1:hover{
+	color: #659cff;
+	background-color: white;
+}
+
 
 /** Regalas de estilos del patalla de conceptos y ejemplos **/
 #page2 {
 	height: 100%;
 	width: 100%;
-	background: url('../img/pantalla_2.png') 0 0 no-repeat;
+	/*background: url('../img/pantalla_2.png') 0 0 no-repeat;*/
+	background-color: #49ffcb;
+}
+
+#fondo {
+	top: 120px;
+    left: 120px;
+    width: 540px;
+    height: 300px;
 }
 
 #tema {
@@ -101,11 +129,15 @@ button.pantalla_2 {
 	color: white;
 	top: 610px;
 	left: 455px;
-	font-size: 30px;
+	font-size: 25px;
+	width: 150px;
+	height: 40px;
+	background-color: #659cff;
 }
 
 button.pantalla_2:hover{
 	color: #659cff;
+	background-color: white;
 }
 
 /** Regalas de estilos de resolucion de ejerccios **/
@@ -118,6 +150,7 @@ button.pantalla_2:hover{
 }
 
 #problema-panel {
+	background-color: white;
 	width: 800px;
 	height: 230px;
 	top: 60px;
@@ -140,7 +173,8 @@ button.pantalla_2:hover{
 }
 
 #datos-label {
-	color: #333333;
+	/*color: #333333;*/
+	color: white;
 	top: 0px;
 	left: 15px;
 	font-size: 25px;
@@ -154,10 +188,8 @@ button.pantalla_2:hover{
 }
 
 #signos {
-	width: 30px;
-	height: 155px;
-	top: 390px;
-    left: 455px;
+	top: 400px;
+    left: 200px;
     z-index: 1;
     margin-left: 0px;
 }
@@ -168,34 +200,35 @@ button.pantalla_2:hover{
 }
 
 #resta {
-	top: 40px;
-    left: 0px;
+	top: 20px;
+    left: 60px;
 }
 
 #multi {
-	top: 60px;
-    left: 0px;
+	top: 0px;
+    left: 120px;
 }
 
 #divi {
-	top: 100px;
-    left: 0px;
+	top: 0px;
+    left: 180px;
 }
 
 #igual {
-	top: 135px;
-	left: 0px;
+	top: 10px;
+	left: 240px;
 }
 
 #operacion-panel {
 	width: 1048px;
     height: 150px;
     top: 390px;
-    left: 40px;
+    left: 60px;
 }
 
 #operacion-label {
-	color: #333333;
+	/*color: #333333;*/
+	color: white;
 	top: 0px;
 	left: 15px;
 	font-size: 25px;
@@ -203,20 +236,22 @@ button.pantalla_2:hover{
 
 .operacion {
 	width: 90px;
-	top: 50px;
+	top: 60px;
 	left: 15px;
+	height: 30px;
 	font-size: 20px;
 }
 
 #respuesta-panel {
-	width: 400px;
-	height: 130px;
-	top: 640px;
-	left: 428px;
+	width: 500px;
+	height: 150px;
+	top: 620px;
+	left: 375px;
 }
 
 #respuesta-label {
-	color: #333333;
+	/*color: #333333;*/
+	color: white;
 	top: 0px;
 	left: 15px;
 	font-size: 25px;
@@ -224,24 +259,26 @@ button.pantalla_2:hover{
 
 #respuesta {
 	top: 40px;
-	left: 15px;
+	left: 210px;
 	font-size: 20px;
 	width: 90px;
 }
 
 #btn_rv {
 	color: white;
-	top: 80px;
-	left: 140px;
+	top: 95px;
+	left: 190px;
 	font-size: 25px;
-	border-radius: 0px;
-	width: 110px;
-	height: 30px;
-	background: url('../img/btn_rv.png') 0 0 no-repeat;
+	/*border-radius: 0px;*/
+	width: 130px;
+	height: 40px;
+	background-color: #18a47a;
+	/*background: url('../img/btn_rv.png') 0 0 no-repeat;*/
 }
 
 #btn_rv:hover {
-	color: #c0392b;
+	color: #18a47a;
+	background-color: white;
 }
 
 #cont_btn_ini {
@@ -249,18 +286,22 @@ button.pantalla_2:hover{
 	height: 202px;
 	top: 632px;
 	left: 137px;
-	background: url('../img/senal_inicio.png') 0 0 no-repeat;
+	/*background: url('../img/senal_inicio.png') 0 0 no-repeat;*/
 }
 
 #btn_ini {
 	color: white;
-	top: 70px;
+	top: 90px;
 	left: 35px;
 	font-size: 30px;
+	width: 130px;
+	height: 40px;
+	background-color: #e4cb22;
 }
 
 #btn_ini:hover {
 	color: #e4cb22;
+	background-color: white;
 }
 
 #cont_btn_nv {
@@ -268,16 +309,20 @@ button.pantalla_2:hover{
 	height: 137px;
 	top: 697px;
 	left: 880px;
-	background: url('../img/senal_nuevo.png') 0 0 no-repeat;
+	/*background: url('../img/senal_nuevo.png') 0 0 no-repeat;*/
 }
 
 #btn_nv {
 	color: white;
 	top: 25px;
 	left: 50px;
-	font-size: 30px;
+	font-size: 25px;
+	width: 130px;
+	height: 40px;
+	background-color: #c0392b;
 }
 
 #btn_nv:hover {
-	color: #18a47a;
+	color: #c0392b;
+	background-color: white;
 }

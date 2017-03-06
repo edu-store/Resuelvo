@@ -2,5 +2,13 @@
 
 ==> 06.03.2017 ===========
 --> Por hacer:
-	* Colocar imagen de fondo del menu principal de la activida.
+	* Terminar la pantalla del menu principal
+	* Cambiar los colores de la pantalla de ejercicios para que tengan mejor contraste.
+	* Cambiar el tamaño de las casillas donde se ingresaran los numeros.
+	* Cambiar el tamaño de la letra en las casillas de la operacion
 	* Cambiar la posición de las ventanas de datos.
+	* Cambiar la matriz para que los inputs de los datos acepten la unidad de medida.
+	* Agregar a la metriz texto para que la respuesta este complementa por texto que responda la pregunta.
+
+--> Terminado:
+	* Todo se ha terinado optando por simplificar el diseño para cumpli con los requerientos de tiempo y gusto del educativo asignado.

@@ -86,16 +86,16 @@ define(function (require) {
         },
         {
             'ejercicio' : 'Para distribuir 175.5 litros de aceite en botellas con capacidad de 1.5 litros. ¿Cuántas botellas necesitaré?',
-            'datos'     : [ '175.5 litros', '1.5 litros  ],
+            'datos'     : [ '175.5 litros', '1.5 litros' ],
             'operacion' : [ '175.5', '/', '1.5', '=', '117' ],
             'respuesta' : 'Necesitare 117 botellas',
             'signo'     : '/'
         },
         {
             'ejercicio' : 'María y Vanesa son vecinas, y todas las semanas van juntas de compra. La semana pasada María gastó 450.75 córdobas, exactamente 3 veces más de lo que gastó Vanesa. ¿Cuánto dinero se gastó Vanesa?',
-            'datos'     : [ '450.75 cordobas', '3' ],
+            'datos'     : [ '450.75 córdobas', '3' ],
             'operacion' : [ '450.75', '/', '3', '=', '150.25' ],
-            'respuesta' : 'Vanesa gastó 150.25 cordobas',
+            'respuesta' : 'Vanesa gastó 150.25 córdobas',
             'signo'     : '/'
         },
         {

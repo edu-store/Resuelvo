@@ -131,6 +131,13 @@ define(function (require) {
 	    $(document).ready(function(){
 	        output = Mustache.render(templates[uri].template, templates[0].content);
 	        $('#canvas').html(output);
+            var alto = 300;
+            var ancho = 90;
+            $('.pantalla_1').each(function(index) {
+                if (index == 3) { ancho=700;  alto=300}
+                $(this).css({'top': alto+'px', 'left':ancho+'px'})
+                alto+=100;
+            });
 	    });
 
 	    $('#canvas').on('click', 'button.pantalla_1', function(){
@@ -156,6 +163,12 @@ define(function (require) {
                 $(this).css('left', espacio + 'px');
                 espacio+=100;
             });
+            var cadena_respuesta = matriz.respuesta;
+            cadena_respuesta = cadena_respuesta.split(/\d/);
+            $('#respuesta').prev('p').text(cadena_respuesta[0]);
+            $('#respuesta').prev('p').css({'color':'white', 'font-size':'20px', 'top':'20px', 'left':'15px'});
+            $('#respuesta').next('p').text(cadena_respuesta[(cadena_respuesta.length - 1)]);
+            $('#respuesta').next('p').css({'color':'white', 'font-size':'20px', 'top':'20px', 'left':'315px'});
 		});
 
         $('#canvas').on('click', 'button#btn_nv', function(){
@@ -172,6 +185,12 @@ define(function (require) {
                 $(this).css('left', espacio + 'px');
                 espacio+=100;
             });
+            var cadena_respuesta = matriz.respuesta;
+            cadena_respuesta = cadena_respuesta.split(/\d/);
+            $('#respuesta').prev('p').text(cadena_respuesta[0]);
+            $('#respuesta').prev('p').css({'color':'white', 'font-size':'20px', 'top':'20px', 'left':'15px'});
+            $('#respuesta').next('p').text(cadena_respuesta[(cadena_respuesta.length - 1)]);
+            $('#respuesta').next('p').css({'color':'white', 'font-size':'20px', 'top':'20px', 'left':'315px'});
         });
 
         var items = interact('.movimiento');
