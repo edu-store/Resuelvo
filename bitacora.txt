@@ -1,0 +1,6 @@
+=== BITACORA RESUELVO ====
+
+==> 06.03.2017 ===========
+--> Por hacer:
+	* Colocar imagen de fondo del menu principal de la activida.
+	* Cambiar la posición de las ventanas de datos.

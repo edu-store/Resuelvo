@@ -19,10 +19,12 @@ body {
 }
 
 .panel {
-	/*background-color: rgba(242, 242, 242, 1);*/
-	background-color: #D8E2EC;
+	/*
+	background-color: rgba(242, 242, 242, 1);
 	border-bottom: 5px solid #cccccc;
 	border-right: 5px solid #cccccc;
+	*/
+	background-color: #ff6666;
 }
 
 h1 {
@@ -39,15 +41,15 @@ button:hover, button:focus, button:active {
 	border: none;
 }
 
-input[type="text"] {
+input {
 	color: #333333;
 	font-family: 'Cantarell-Regular';
 	border-radius: 0;
     border: 2px solid white;
     background-color: white;
-    padding: 4px;
     line-height: 22px;
     outline: 0;
+    font-size: 20px;
 }
 
 /** Reglas de estilos para la barra de herramientas **/
@@ -110,14 +112,16 @@ button.pantalla_2:hover{
 #page3 {
 	height: 100%;
 	width: 100%;
-	background: url('../img/pantalla_3.png') 0 0 no-repeat;
+	/*background: url('../img/pantalla_3.png') 0 0 no-repeat;*/
+	background-color: #49ffcb;
+
 }
 
 #problema-panel {
 	width: 800px;
 	height: 230px;
 	top: 60px;
-	left: 200px;
+	left: 40px;
 }
 
 #problema {
@@ -125,30 +129,25 @@ button.pantalla_2:hover{
 	width: 770px;
 	top: -20px;
 	left: 15px;
-	font-size: 30px;
+	font-size: 25px;
 }
 
 #datos-panel {
 	width: 240px;
 	height: 230px;
-	top: 350px;
-	left: 80px;
+	top: 60px;
+	left: 886px;
 }
 
 #datos-label {
 	color: #333333;
 	top: 0px;
 	left: 15px;
-	font-size: 20px;
+	font-size: 25px;
 }
 
 .dato {
-	border-radius: 0;
-    border: 2px solid white;
-    background-color: white;
-    line-height: 22px;
-    outline: 0;
-	top: 30px;
+	top: 40px;
 	left: 15px;
 	font-size: 20px;
 	width: 180px;
@@ -189,31 +188,24 @@ button.pantalla_2:hover{
 }
 
 #operacion-panel {
-	width: 650px;
+	width: 1048px;
     height: 150px;
     top: 390px;
-    left: 448px;
-    border-left: 40px solid #cccccc;
+    left: 40px;
 }
 
 #operacion-label {
 	color: #333333;
 	top: 0px;
 	left: 15px;
-	font-size: 20px;
+	font-size: 25px;
 }
 
 .operacion {
-	border-radius: 0;
-    border: 2px solid white;
-    background-color: white;
-    /*padding: 4px;*/
-    line-height: 22px;
-    outline: 0;
-	width: 50px;
-	top: 30px;
+	width: 90px;
+	top: 50px;
 	left: 15px;
-	font-size: 15px;
+	font-size: 20px;
 }
 
 #respuesta-panel {
@@ -227,20 +219,14 @@ button.pantalla_2:hover{
 	color: #333333;
 	top: 0px;
 	left: 15px;
-	font-size: 20px;
+	font-size: 25px;
 }
 
 #respuesta {
-	border-radius: 0;
-    border: 2px solid white;
-    background-color: white;
-    /*padding: 4px;*/
-    line-height: 22px;
-    outline: 0;
 	top: 40px;
 	left: 15px;
 	font-size: 20px;
-	width: 75px;
+	width: 90px;
 }
 
 #btn_rv {

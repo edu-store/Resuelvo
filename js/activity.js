@@ -24,6 +24,9 @@ define(function (require) {
         'igual': '<img id="igual" class="movimiento object nuevo" data="=" src="img/igual.png">'
     };
 
+    var alto            = 945;
+    var ancho           = 1200;
+
     function random(array) {
         return Math.floor(Math.random() * array.length);
     }
@@ -143,7 +146,7 @@ define(function (require) {
             matriz = select_matrix(temas[id]);
 	    	output = Mustache.render(templates[uri].template, matriz);
 	        $('#canvas').html(output);
-            var espacio = 30;
+            var espacio = 40;
             $('#datos').children().each(function() {
                 $(this).css('top', espacio + 'px');
                 espacio+=40;
@@ -151,7 +154,7 @@ define(function (require) {
             espacio = 15;
             $('#operacion').children().each(function() {
                 $(this).css('left', espacio + 'px');
-                espacio+=70;
+                espacio+=100;
             });
 		});
 
@@ -159,7 +162,7 @@ define(function (require) {
             matriz = select_matrix(temas[id]);
             output = Mustache.render(templates[uri].template, matriz);
             $('#canvas').html(output);
-            var espacio = 30;
+            var espacio = 40;
             $('#datos').children().each(function() {
                 $(this).css('top', espacio + 'px');
                 espacio+=40;
@@ -167,7 +170,7 @@ define(function (require) {
             espacio = 15;
             $('#operacion').children().each(function() {
                 $(this).css('left', espacio + 'px');
-                espacio+=70;
+                espacio+=100;
             });
         });
 
@@ -244,7 +247,7 @@ define(function (require) {
                 matriz = select_matrix(temas[id]);
                 output = Mustache.render(templates[uri].template, matriz);
                 $('#canvas').html(output);
-                var espacio = 30;
+                var espacio = 40;
                 $('#datos').children().each(function() {
                     $(this).css('top', espacio + 'px');
                     espacio += 40;
@@ -252,7 +255,7 @@ define(function (require) {
                 espacio = 15;
                 $('#operacion').children().each(function() {
                     $(this).css('left', espacio + 'px');
-                    espacio += 70;
+                    espacio += 100;
                 });
             }
         });
