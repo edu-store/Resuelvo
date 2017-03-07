@@ -71,8 +71,16 @@ input {
 	background-color: #49ffcb;
 }
 
+#rotulo {
+	    width: 550px;
+    height: 160px;
+    top: 45px;
+    left: 300px
+}
+
 #titulo {
 	font-size: 100px;
+	color: white;
     left: 330px;
 }
 
