@@ -196,6 +196,11 @@ define(function (require) {
         var items = interact('.movimiento');
         items.draggable({
             initial:true,
+            restrict: {
+                restriction: document.getElementById('canvas'),
+                endOnly: true,
+                elementRect: { top: 0, left: 0, bottom: 1, right: 1 }
+            },
             onmove:moveItem
         });
 
@@ -252,7 +257,7 @@ define(function (require) {
             });
 
             $('#respuesta-panel').children('input').each(function() {
-                if ( $(this).val() == matriz.respuesta ) {
+                if ( $(this).val() == matriz.resp_num ) {
                         $(this).css('border', '2px solid red');
                         aciertos[contador] = $(this).val();
                         contador++;
@@ -260,27 +265,41 @@ define(function (require) {
             });
 
             if (aprovar == aciertos.length) {
-                $('input').each(function() {
-                    $(this).css('border', '2px solid green');
-                });
-                matriz = select_matrix(temas[id]);
-                output = Mustache.render(templates[uri].template, matriz);
-                $('#canvas').html(output);
-                var espacio = 40;
-                $('#datos').children().each(function() {
-                    $(this).css('top', espacio + 'px');
-                    espacio += 40;
-                });
-                espacio = 15;
-                $('#operacion').children().each(function() {
-                    $(this).css('left', espacio + 'px');
-                    espacio += 100;
-                });
+                $('#canvas div#myModal').css('display', 'block');
             }
         });
 
         $('#canvas').on('click', 'button#btn_ini', function(){
             location.reload();
+        });
+
+        $('#canvas').on('click', 'button.close', function() {
+            $('input').each(function() {
+                $(this).css('border', '2px solid green');
+            });
+            matriz = select_matrix(temas[id]);
+            output = Mustache.render(templates[uri].template, matriz);
+            $('#canvas').html(output);
+            var espacio = 40;
+            $('#datos').children().each(function() {
+                $(this).css('top', espacio + 'px');
+                espacio += 40;
+            });
+            espacio = 15;
+            $('#operacion').children().each(function() {
+                $(this).css('left', espacio + 'px');
+                espacio += 100;
+            });
+            var cadena_respuesta = matriz.respuesta;
+            cadena_respuesta = cadena_respuesta.split(/\d/);
+            $('#respuesta').prev('p').text(cadena_respuesta[0]);
+            $('#respuesta').prev('p').css({'color':'white', 'font-size':'20px', 'top':'20px', 'left':'15px'});
+            $('#respuesta').next('p').text(cadena_respuesta[(cadena_respuesta.length - 1)]);
+            $('#respuesta').next('p').css({'color':'white', 'font-size':'20px', 'top':'20px', 'left':'315px'});
+        });
+
+        $('#canvas').on('click', 'button#myBtn', function() {
+            $('#myModal').css('display', 'block');
         });
 
     });

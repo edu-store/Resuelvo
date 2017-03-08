@@ -237,14 +237,14 @@ button.pantalla_2:hover{
 #operacion-label {
 	/*color: #333333;*/
 	color: white;
-	top: 0px;
+	top: 10px;
 	left: 15px;
 	font-size: 25px;
 }
 
 .operacion {
 	width: 90px;
-	top: 60px;
+	top: 70px;
 	left: 15px;
 	height: 30px;
 	font-size: 20px;
@@ -266,7 +266,7 @@ button.pantalla_2:hover{
 }
 
 #respuesta {
-	top: 40px;
+	top: 45px;
 	left: 210px;
 	font-size: 20px;
 	width: 90px;
@@ -333,4 +333,56 @@ button.pantalla_2:hover{
 #btn_nv:hover {
 	color: #c0392b;
 	background-color: white;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    text-align: center;
+    height: 40%;
+}
+
+.modal-content h1 {
+	font-size: 80px;
+	color: #18a47a;
+}
+
+.modal-content h3 {
+	font-size: 35px;
+	color: #5599ff;
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 25px;
+    /*font-weight: bold;*/
+    background-color: #18a47a;
+}
+
+.close:hover,
+.close:focus {
+    color: #18a47a;
+	background-color: white;
+    text-decoration: none;
+    cursor: pointer;
 }

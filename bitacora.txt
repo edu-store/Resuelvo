@@ -12,3 +12,10 @@
 
 --> Terminado:
 	* Todo se ha terinado optando por simplificar el diseño para cumpli con los requerientos de tiempo y gusto del educativo asignado.
+	* Se cambio el diseño de la actividad a favor de un diseño mas simple para avansar mas rapido y resolver con mayor eficasi 
+	  los cambios en el diseño.
+	* Se agragaron todos los cambios en la matriz.
+
+==> 08.03.2017 ===========
+--> Por hacer:
+	* Cambiar la funcion de validacion de los ejercicios.
