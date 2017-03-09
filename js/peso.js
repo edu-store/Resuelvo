@@ -4,7 +4,8 @@ define(function (require) {
             'ejercicio' : 'Una cartera puede llevar sin romperse 12 kilos. Si ya hemos puesto 7 kilos, ¿cuántos kilos más podemos poner sin que se rompa?',
             'datos'     : [ '12 kilos', '7 kilos' ],
             'operacion' : [ '12', '-', '7', '=', '5' ],
-            'respuesta' : 'Podemos poner 5 kilos',
+            'respuesta' : 'Podemos poner 5 kilos.',
+            'resp_num'  : '5',
             'signo'     : '-'
         },
         {
@@ -12,6 +13,7 @@ define(function (require) {
             'datos'     : [ '44 kg', '4 kg' ],
             'operacion' : [ '44', '/', '4', '=', '11' ],
             'respuesta' : 'Pesaran 11 kg.',
+            'resp_num'  : '11',
             'signo'     : '/'
         },
         {
@@ -19,6 +21,7 @@ define(function (require) {
             'datos'     : [ '5 kg', '4 kg', '8 kg', '9 kg' ],
             'operacion' : [ '5', '+', '4', '+', '8', '+', '9', '=', '26' ],
             'respuesta' : 'Llevan 26 kg.',
+            'resp_num'  : '26',
             'signo'     : '+'
         },
         {
@@ -26,6 +29,7 @@ define(function (require) {
             'datos'     : [ '5 cajas', '20 kg' ],
             'operacion' : [ '5', '*', '20', '=', '100' ],
             'respuesta' : 'Lleva 100 kg.',
+            'resp_num'  : '100',
             'signo'     : '*'
         },
         {
@@ -33,41 +37,47 @@ define(function (require) {
             'datos'     : [ '45 kg', '2' ],
             'operacion' : [ '45', '*', '2', '=', '90' ],
             'respuesta' : 'Pesa 90 kg.',
+            'resp_num'  : '90',
             'signo'     : '*'
         },
         {
             'ejercicio' : 'Con un saco de 30 kilos, ¿cuántas bolsas de medio kilo podemos llenar?',
             'datos'     : [ '30 kilos', '0.5 kilos' ],
             'operacion' : [ '30', '/', '0.5', '=', '60' ],
-            'respuesta' : '60 Bolsas',
+            'respuesta' : '60 bolsas.',
+            'resp_num'  : '60',
             'signo'     : '/'
         },
         {
             'ejercicio' : 'Don Marcelino lleva en su camión 7 vacas. Cada vaca pesa 675 kilos. ¿Qué peso soporta el camión?',
             'datos'     : [ '7 vacas', '675 kilos' ],
             'operacion' : [ '7', '*', '675', '=', '4725' ],
-            'respuesta' : 'Soporta 4725 kilos',
+            'respuesta' : 'Soporta 4725 kilos.',
+            'resp_num'  : '4725',
             'signo'     : '*'
         },
         {
             'ejercicio' : 'Marta ha hecho una tortilla de patatas con: 5 patatas de 200 g, 4 huevos de 65 g, 3 g de sal, 87 g de aceite. ¿Cuántos gramos pesa la tortilla?',
             'datos'     : [ '200 gramos', '65 gramas','3 gramos','87 gramos' ],
             'operacion' : [ '200', '+', '65', '+', '87', '=', '355' ],
-            'respuesta' : 'Pesa 355 gramos',
+            'respuesta' : 'Pesa 355 gramos.',
+            'resp_num'  : '355',
             'signo'     : '+'
         },
         {
             'ejercicio' : 'Un litro de aceite pesa 975 gramos. ¿Cuántos gramos pesan cuatro litros?',
             'datos'     : [ '975 gramos', '4' ],
             'operacion' : [ '975', '*', '4', '=', '3900'],
-            'respuesta' : 'Pesan 3900 gramos',
+            'respuesta' : 'Pesan 3900 gramos.',
+            'resp_num'  : '3900',
             'signo'     : '*'
         },
         {
             'ejercicio' : 'Un comerciante compró 800 kilos de trigo y luego vendió 380 kilos. ¿Cuántos kilos le quedaron?',
             'datos'     : [ '800 kilos', '380 kilos' ],
             'operacion' : [ '800', '-', '380', '=', '420'],
-            'respuesta' : 'Quedaron 420 kilos',
+            'respuesta' : 'Quedaron 420 kilos.',
+            'resp_num'  : '420',
             'signo'     : '-'
         },
         {

@@ -171,14 +171,14 @@ define(function (require) {
             espacio = 15;
             $('#operacion').children().each(function() {
                 $(this).css('left', espacio + 'px');
-                espacio+=100;
+                espacio+=110;
             });
             var cadena_respuesta = matriz.respuesta;
             cadena_respuesta = cadena_respuesta.split(/\d/);
             $('#respuesta').prev('p').text(cadena_respuesta[0]);
             $('#respuesta').prev('p').css({'color':'white', 'font-size':'20px', 'top':'20px', 'left':'15px'});
             $('#respuesta').next('p').text(cadena_respuesta[(cadena_respuesta.length - 1)]);
-            $('#respuesta').next('p').css({'color':'white', 'font-size':'20px', 'top':'20px', 'left':'315px'});
+            $('#respuesta').next('p').css({'color':'white', 'font-size':'20px', 'top':'20px', 'left':'320px'});
 		});
 
         $('#canvas').on('click', 'button#btn_nv', function(){
@@ -193,14 +193,14 @@ define(function (require) {
             espacio = 15;
             $('#operacion').children().each(function() {
                 $(this).css('left', espacio + 'px');
-                espacio+=100;
+                espacio+=110;
             });
             var cadena_respuesta = matriz.respuesta;
             cadena_respuesta = cadena_respuesta.split(/\d/);
             $('#respuesta').prev('p').text(cadena_respuesta[0]);
             $('#respuesta').prev('p').css({'color':'white', 'font-size':'20px', 'top':'20px', 'left':'15px'});
             $('#respuesta').next('p').text(cadena_respuesta[(cadena_respuesta.length - 1)]);
-            $('#respuesta').next('p').css({'color':'white', 'font-size':'20px', 'top':'20px', 'left':'315px'});
+            $('#respuesta').next('p').css({'color':'white', 'font-size':'20px', 'top':'20px', 'left':'320px'});
         });
 
         var items = interact('.movimiento');
@@ -299,14 +299,14 @@ define(function (require) {
             espacio = 15;
             $('#operacion').children().each(function() {
                 $(this).css('left', espacio + 'px');
-                espacio += 100;
+                espacio += 110;
             });
             var cadena_respuesta = matriz.respuesta;
             cadena_respuesta = cadena_respuesta.split(/\d/);
             $('#respuesta').prev('p').text(cadena_respuesta[0]);
             $('#respuesta').prev('p').css({'color':'white', 'font-size':'20px', 'top':'20px', 'left':'15px'});
             $('#respuesta').next('p').text(cadena_respuesta[(cadena_respuesta.length - 1)]);
-            $('#respuesta').next('p').css({'color':'white', 'font-size':'20px', 'top':'20px', 'left':'315px'});
+            $('#respuesta').next('p').css({'color':'white', 'font-size':'20px', 'top':'20px', 'left':'320px'});
         });
 
         $('#canvas').on('click', 'button#myBtn', function() {

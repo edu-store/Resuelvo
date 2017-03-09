@@ -30,6 +30,7 @@
 --> Por hacer:
 	* Cambio de color en el input al colocar un signo sobre el.
 	* Cambiar la pantalla de concepto para que el mensaje quede al centro y agregar un boton para regresar al inicio.
+	* Cambiar todas las matrices para que acepten la nueva funcion de validacion de ejercicio.
 
 --> Terminado:
 	* El indicador de arratre correcto en los input al arrastrar un signo se termino correctamente.
