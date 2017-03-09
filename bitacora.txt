@@ -14,8 +14,23 @@
 	* Todo se ha terinado optando por simplificar el diseño para cumpli con los requerientos de tiempo y gusto del educativo asignado.
 	* Se cambio el diseño de la actividad a favor de un diseño mas simple para avansar mas rapido y resolver con mayor eficasi 
 	  los cambios en el diseño.
-	* Se agragaron todos los cambios en la matriz.
+	* Se agragaron todos los cambios en la matriz para que aparescan las unidades en los datos y la respuesta contesten a la pregunta.
 
 ==> 08.03.2017 ===========
 --> Por hacer:
 	* Cambiar la funcion de validacion de los ejercicios.
+
+--> Terminado:
+	* La funcion de la validacion se termino correctamentamente.
+
+--> Problemas:
+	* La matriz contiene varios erros por lo que la funcion de validacion no siempre resuelve el ejercicio.
+
+==> 09.03.2017 ===========
+--> Por hacer:
+	* Cambio de color en el input al colocar un signo sobre el.
+	* Cambiar la pantalla de concepto para que el mensaje quede al centro y agregar un boton para regresar al inicio.
+
+--> Terminado:
+	* El indicador de arratre correcto en los input al arrastrar un signo se termino correctamente.
+	* Se agrego exitosamente el boton para regresar al menu principal en la pantalla de conceptos.

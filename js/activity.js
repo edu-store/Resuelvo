@@ -85,6 +85,11 @@ define(function (require) {
         event.relatedTarget.classList.remove('nuevo');
     };
 
+    var enterItem =  function (event) {
+        var dropzoneElement = event.target;
+        dropzoneElement.classList.add('on-op');
+    };
+
     var leaveItem = function(event) {
         var draggableElement = event.relatedTarget, dropzoneElement = event.target;
 
@@ -92,6 +97,7 @@ define(function (require) {
         dropzoneElement.removeAttribute('disabled');
 
         var ident = draggableElement.getAttribute('id');
+        dropzoneElement.classList.remove('on-op');
         outSigno(ident);
     };
 
@@ -139,6 +145,10 @@ define(function (require) {
                 alto+=100;
             });
 	    });
+
+        $('#canvas').on('click', 'button#pantalla_0', function(){
+            location.reload();
+        });
 
 	    $('#canvas').on('click', 'button.pantalla_1', function(){
         	uri = $(this).attr('data');
@@ -209,6 +219,7 @@ define(function (require) {
             accept:'.movimiento',
             overlap: 0.75,
             ondropactivate:modItem,
+            ondragenter:enterItem,
             ondrop:stopItem,
             ondragleave:leaveItem
         });
