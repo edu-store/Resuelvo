@@ -73,12 +73,26 @@ define(function (require) {
         target.setAttribute('data-y', y);
     };
 
-    function addSigno(id) {
-        $('#signos').append(signos_objs[id]);
+    function addSigno(draggableElement, dropzoneElement) {
+        var arrastrable     = $(draggableElement);
+        var zona_arrastre   = $(dropzoneElement);
+        var opr = arrastrable.attr('data');
+        zona_arrastre.val(opr);
+        zona_arrastre.prop('disabled', true);
+
+        var ident = arrastrable.attr('id');
+        $('#signos').append(signos_objs[ident]);
     }
 
-    function outSigno(id) {
-        $('#signos').children('#' + id + '.nuevo').remove();
+    function outSigno(draggableElement, dropzoneElement) {
+        var arrastrable     = $(draggableElement);
+        var zona_arrastre   = $(dropzoneElement);
+        zona_arrastre.val(' ');
+        zona_arrastre.prop('disabled', false);
+        zona_arrastre.removeClass('on-op');
+
+        var ident = arrastrable.attr('id');
+        $('#signos').children('#' + ident + '.nuevo').remove();
     }
 
     var modItem = function(event) {
@@ -92,25 +106,32 @@ define(function (require) {
 
     var leaveItem = function(event) {
         var draggableElement = event.relatedTarget, dropzoneElement = event.target;
-
-        dropzoneElement.setAttribute('value', ' ');
-        dropzoneElement.removeAttribute('disabled');
-
-        var ident = draggableElement.getAttribute('id');
-        dropzoneElement.classList.remove('on-op');
-        outSigno(ident);
+        outSigno(draggableElement, dropzoneElement);
     };
 
     var stopItem = function(event) {
         var draggableElement = event.relatedTarget, dropzoneElement = event.target;
-
-        var opr = draggableElement.getAttribute('data');
-        dropzoneElement.setAttribute('value', opr);
-        dropzoneElement.setAttribute('disabled', 'true');
-
-        var ident = draggableElement.getAttribute('id');
-        addSigno(ident);
+        addSigno(draggableElement, dropzoneElement);
     };
+
+    function nexec(matriz) {
+        var espacio = 40;
+        $('#datos').children().each(function() {
+            $(this).css('top', espacio + 'px');
+            espacio+=40;
+        });
+        espacio = 15;
+        $('#operacion').children().each(function() {
+            $(this).css('left', espacio + 'px');
+            espacio+=110;
+        });
+        var cadena_respuesta = matriz.respuesta;
+        cadena_respuesta = cadena_respuesta.split(/\d/);
+        $('#respuesta').prev('p').text(cadena_respuesta[0]);
+        $('#respuesta').prev('p').css({'color':'white', 'font-size':'20px', 'top':'20px', 'left':'15px'});
+        $('#respuesta').next('p').text(cadena_respuesta[(cadena_respuesta.length - 1)]);
+        $('#respuesta').next('p').css({'color':'white', 'font-size':'20px', 'top':'20px', 'left':'320px'});
+    }
 
     // Manipulate the DOM only when it is ready.
     require(['domReady!'], function (doc) {
@@ -163,44 +184,14 @@ define(function (require) {
             matriz = select_matrix(temas[id]);
 	    	output = Mustache.render(templates[uri].template, matriz);
 	        $('#canvas').html(output);
-            var espacio = 40;
-            $('#datos').children().each(function() {
-                $(this).css('top', espacio + 'px');
-                espacio+=40;
-            });
-            espacio = 15;
-            $('#operacion').children().each(function() {
-                $(this).css('left', espacio + 'px');
-                espacio+=110;
-            });
-            var cadena_respuesta = matriz.respuesta;
-            cadena_respuesta = cadena_respuesta.split(/\d/);
-            $('#respuesta').prev('p').text(cadena_respuesta[0]);
-            $('#respuesta').prev('p').css({'color':'white', 'font-size':'20px', 'top':'20px', 'left':'15px'});
-            $('#respuesta').next('p').text(cadena_respuesta[(cadena_respuesta.length - 1)]);
-            $('#respuesta').next('p').css({'color':'white', 'font-size':'20px', 'top':'20px', 'left':'320px'});
+            nexec(matriz);
 		});
 
         $('#canvas').on('click', 'button#btn_nv', function(){
             matriz = select_matrix(temas[id]);
             output = Mustache.render(templates[uri].template, matriz);
             $('#canvas').html(output);
-            var espacio = 40;
-            $('#datos').children().each(function() {
-                $(this).css('top', espacio + 'px');
-                espacio+=40;
-            });
-            espacio = 15;
-            $('#operacion').children().each(function() {
-                $(this).css('left', espacio + 'px');
-                espacio+=110;
-            });
-            var cadena_respuesta = matriz.respuesta;
-            cadena_respuesta = cadena_respuesta.split(/\d/);
-            $('#respuesta').prev('p').text(cadena_respuesta[0]);
-            $('#respuesta').prev('p').css({'color':'white', 'font-size':'20px', 'top':'20px', 'left':'15px'});
-            $('#respuesta').next('p').text(cadena_respuesta[(cadena_respuesta.length - 1)]);
-            $('#respuesta').next('p').css({'color':'white', 'font-size':'20px', 'top':'20px', 'left':'320px'});
+            nexec(matriz);
         });
 
         var items = interact('.movimiento');
@@ -269,9 +260,9 @@ define(function (require) {
 
             $('#respuesta-panel').children('input').each(function() {
                 if ( $(this).val() == matriz.resp_num ) {
-                        $(this).css('border', '2px solid red');
-                        aciertos[contador] = $(this).val();
-                        contador++;
+                    $(this).css('border', '2px solid red');
+                    aciertos[contador] = $(this).val();
+                    contador++;
                 }
             });
 
@@ -291,22 +282,7 @@ define(function (require) {
             matriz = select_matrix(temas[id]);
             output = Mustache.render(templates[uri].template, matriz);
             $('#canvas').html(output);
-            var espacio = 40;
-            $('#datos').children().each(function() {
-                $(this).css('top', espacio + 'px');
-                espacio += 40;
-            });
-            espacio = 15;
-            $('#operacion').children().each(function() {
-                $(this).css('left', espacio + 'px');
-                espacio += 110;
-            });
-            var cadena_respuesta = matriz.respuesta;
-            cadena_respuesta = cadena_respuesta.split(/\d/);
-            $('#respuesta').prev('p').text(cadena_respuesta[0]);
-            $('#respuesta').prev('p').css({'color':'white', 'font-size':'20px', 'top':'20px', 'left':'15px'});
-            $('#respuesta').next('p').text(cadena_respuesta[(cadena_respuesta.length - 1)]);
-            $('#respuesta').next('p').css({'color':'white', 'font-size':'20px', 'top':'20px', 'left':'320px'});
+            nexec(matriz);
         });
 
         $('#canvas').on('click', 'button#myBtn', function() {

@@ -35,3 +35,10 @@
 --> Terminado:
 	* El indicador de arratre correcto en los input al arrastrar un signo se termino correctamente.
 	* Se agrego exitosamente el boton para regresar al menu principal en la pantalla de conceptos.
+
+==> 13.03.2017 ===========
+--> Por hacer:
+	* Resolucion de error de validacion de insercion de datos en los campos de texto de las operaciones.
+
+--> Terminado:
+	* El error se soluciono satisfactoriamente.
