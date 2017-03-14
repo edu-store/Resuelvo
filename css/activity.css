@@ -206,7 +206,7 @@ button.pantalla_2:hover{
 }
 
 #signos {
-	top: 400px;
+	top: 350px;
     left: 200px;
     z-index: 1;
     margin-left: 0px;
@@ -239,8 +239,8 @@ button.pantalla_2:hover{
 
 #operacion-panel {
 	width: 1048px;
-    height: 150px;
-    top: 390px;
+    height: 180px;
+    top: 340px;
     left: 60px;
 }
 
