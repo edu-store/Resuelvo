@@ -76,7 +76,7 @@ define(function (require) {
             'datos'     : ['12 personas', '2/3 personas'],
             'operacion' : ['12', '1', '*', '2', '3', '=', '8', '1'],
             'respuesta' : 'Son 8 guatemaltecos.',
-            'resp_num'  : '8',
+            'resp_num'  : ['8', '1'],
             'signo'     : '*'
         },
         {

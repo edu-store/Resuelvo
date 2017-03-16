@@ -45,6 +45,7 @@ define(function (require) {
             'datos'     : [ '45 rosales', '18 rosales' ],
             'operacion' : [ '45', '-', '18', '=', '27' ],
             'respuesta' : 'Tiene 27 rosales.',
+            'resp_num'  : '27',
             'signo'     : '-'
         },
          {

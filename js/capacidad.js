@@ -82,7 +82,7 @@ define(function (require) {
         },
         {
             'ejercicio' : 'Si en un balde caben 12 litros de leche ¿Cuántos baldes necesito para almacenar 144 litros?',
-            'datos'     : [ '144litros', '12 litros'],
+            'datos'     : [ '144 litros', '12 litros'],
             'operacion' : [ '144', '/', '12','=', '12' ],
             'respuesta' : 'Necesito 12 valdes.',
             'resp_num'  : '12',

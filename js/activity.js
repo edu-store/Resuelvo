@@ -160,7 +160,7 @@ define(function (require) {
         $('#respuesta').prev('p').text(cadena_respuesta[0]);
         $('#respuesta').prev('p').css({'color':'white', 'font-size':'20px', 'top':'20px', 'left':'15px'});
         alto = 45;
-        $('#respuesta-panel').children('input').each(function(){
+        $('#respuesta').children('input').each(function(){
             $(this).css('top', alto + 'px');
             alto+=35;
         });
@@ -253,7 +253,9 @@ define(function (require) {
         });
 
         $('#canvas').on('click', 'button#btn_rv', function(){
-            var aprovar = matriz.datos.length + matriz.operacion.length + 1;
+            var resp_cont = (Array.isArray(matriz.resp_num))?matriz.resp_num.length:1;
+            var aprovar = matriz.datos.length + matriz.operacion.length + resp_cont;
+            console.log(matriz.resp_num + '-' + resp_cont);
             var aciertos = [-1];
             var contador = 0;
 
@@ -261,7 +263,7 @@ define(function (require) {
             var operacion = [];
             var respuesta = '';
 
-            $('#datos').children('input').each(function(index) {
+            $('#datos').children('input').each(function() {
                 var indice = $.inArray($(this).val(), matriz.datos);
                 var existe = 0;
                 if ( indice != -1 ) {
@@ -278,7 +280,7 @@ define(function (require) {
                 }
             });
 
-            $('#operacion').children('input').each(function(index) {
+            $('#operacion').children('input').each(function() {
                 var indice = $.inArray($(this).val(), matriz.operacion);
                 var existe = 0;
                 if ( indice != -1 ) {
@@ -295,11 +297,39 @@ define(function (require) {
                 }
             });
 
-            $('#respuesta-panel').children('input').each(function() {
-                if ( $(this).val() == matriz.resp_num ) {
-                    $(this).css('border', '2px solid red');
-                    aciertos[contador] = $(this).val();
-                    contador++;
+            $('#respuesta').children('input').each(function() {
+                if(temas[id] == 2) {
+                    console.log('fraccionarios');
+                    if(matriz.resp_num[1][1]){
+                        console.log('1+');
+                    }
+                    else {
+                        console.log('-1');
+                        $each(matriz.resp_num, function(index, value){
+                            var indice = $.inArray($(this).val(), value);
+                            var existe = 0;
+                            if ( indice != -1 ) {
+                                $.each(aciertos, function(i, v){
+                                    if(indice !=  aciertos[i]){
+                                        existe = 1;
+                                    } 
+                                });
+                                if (existe == 1) {
+                                    $(this).css('border', '2px solid red');
+                                    aciertos[contador] = indice;
+                                    contador++;
+                                }
+                            }
+                        });
+                    }
+                } 
+                else {
+                    console.log('no fraccionarios');
+                    if ( $(this).val() == matriz.resp_num ) {
+                        $(this).css('border', '2px solid red');
+                        aciertos[contador] = $(this).val();
+                        contador++;
+                    }
                 }
             });
 

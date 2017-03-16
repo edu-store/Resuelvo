@@ -85,6 +85,7 @@ define(function (require) {
             'datos'     : [ '450 kilos', '167 kilos' ],
             'operacion' : [ '450', '-', '167', '=', '283'],
             'respuesta' : 'Puede llevar 283 kilos',
+            'resp_num'  : '283',
             'signo'     : '-'
         },
         {
@@ -92,6 +93,7 @@ define(function (require) {
             'datos'     : [ '275 kilos', '155 kilos' ],
             'operacion' : [ '275', '-', '155', '=', '120'],
             'respuesta' : 'Pesa 120 kilos',
+            'resp_num'  : '120',
             'signo'     : '-'
         },
         {
@@ -99,6 +101,7 @@ define(function (require) {
             'datos'     : [ '65 gramos', '6' ],
             'operacion' : [ '65', '*', '16', '=', '390'],
             'respuesta' : 'Pesan 390 gramos',
+            'resp_num'  : '390',
             'signo'     : '*'
         },
         {
@@ -106,6 +109,7 @@ define(function (require) {
             'datos'     : [ '20 libras', '2' ],
             'operacion' : [ '20', '/', '2', '=', '10'],
             'respuesta' : 'Se necesitan 10 bolsas',
+            'resp_num'  : '10',
             'signo'     : '/'
         },
         {
@@ -113,6 +117,7 @@ define(function (require) {
             'datos'     : [ '100 libras', '5 libras' ],
             'operacion' : [ '100', '/', '5', '=', '20'],
             'respuesta' : 'Necesito 20 bolsas',
+            'resp_num'  : '20',
             'signo'     : '/'
         }
     ];
