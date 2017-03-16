@@ -135,7 +135,7 @@ button.pantalla_1:hover{
 
 #pantalla_0 {
 	top: 700px;
-    left: 150px;
+    left: 110px;
     color: white;
     font-size: 30px;
     width: 130px;
@@ -146,7 +146,7 @@ button.pantalla_1:hover{
 button.pantalla_2 {
 	color: white;
 	top: 700px;
-    left: 880px;
+    left: 906px;
 	font-size: 25px;
 	width: 150px;
 	height: 40px;
@@ -172,7 +172,7 @@ button.pantalla_2:hover{
 	width: 800px;
 	height: 230px;
 	top: 60px;
-	left: 40px;
+	left: 53px;
 }
 
 #problema {
@@ -187,7 +187,7 @@ button.pantalla_2:hover{
 	width: 240px;
 	height: 230px;
 	top: 60px;
-	left: 886px;
+	left: 907px;
 }
 
 #datos-label {
@@ -207,7 +207,7 @@ button.pantalla_2:hover{
 
 #signos {
 	top: 350px;
-    left: 200px;
+    left: 230px;
     z-index: 1;
     margin-left: 0px;
 }
@@ -241,7 +241,7 @@ button.pantalla_2:hover{
 	width: 1048px;
     height: 180px;
     top: 340px;
-    left: 60px;
+    left: 76px;
 }
 
 #operacion-label {
@@ -271,9 +271,9 @@ input:disabled {
 
 #respuesta-panel {
 	width: 500px;
-	height: 150px;
-	top: 620px;
-	left: 375px;
+	height: 170px;
+	top: 600px;
+	left: 350px;
 }
 
 #respuesta-label {
@@ -293,8 +293,8 @@ input:disabled {
 
 #btn_rv {
 	color: white;
-	top: 95px;
-	left: 190px;
+	top: 120px;
+	left: 185px;
 	font-size: 25px;
 	/*border-radius: 0px;*/
 	width: 130px;
@@ -312,14 +312,14 @@ input:disabled {
 	width: 170px;
 	height: 202px;
 	top: 632px;
-	left: 137px;
+	left: 90px;
 	/*background: url('../img/senal_inicio.png') 0 0 no-repeat;*/
 }
 
 #btn_ini {
 	color: white;
 	top: 90px;
-	left: 35px;
+	left: 20px;
 	font-size: 30px;
 	width: 130px;
 	height: 40px;
@@ -335,14 +335,14 @@ input:disabled {
 	width: 237px;
 	height: 137px;
 	top: 697px;
-	left: 880px;
+	left: 907px;
 	/*background: url('../img/senal_nuevo.png') 0 0 no-repeat;*/
 }
 
 #btn_nv {
 	color: white;
 	top: 25px;
-	left: 50px;
+	left: 54px;
 	font-size: 25px;
 	width: 130px;
 	height: 40px;
