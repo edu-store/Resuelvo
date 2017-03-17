@@ -281,7 +281,9 @@ define(function (require) {
             });
 
             $('#operacion').children('input').each(function() {
-                var indice = $.inArray($(this).val(), matriz.operacion);
+                var input = ($(this).val() == '')?'1':$(this).val();
+                console.log(input);
+                var indice = $.inArray(input, matriz.operacion);
                 var existe = 0;
                 if ( indice != -1 ) {
                     $.each(aciertos, function(i, v){
@@ -298,34 +300,57 @@ define(function (require) {
             });
 
             $('#respuesta').children('input').each(function() {
+                var input = ($(this).val() == '')?'1':$(this).val();
+                console.log(input);
                 if(temas[id] == 2) {
                     console.log('fraccionarios');
                     if(matriz.resp_num[1][1]){
                         console.log('1+');
-                    }
-                    else {
-                        console.log('-1');
-                        $each(matriz.resp_num, function(index, value){
-                            var indice = $.inArray($(this).val(), value);
+                        var resrev = 0;
+                        console.log(resrev);
+                        $.each(matriz.resp_num, function(index, value){
+                            console.log(value);
+                            var indice = $.inArray(input, value);
                             var existe = 0;
-                            if ( indice != -1 ) {
+                            if (indice != -1) {
                                 $.each(aciertos, function(i, v){
                                     if(indice !=  aciertos[i]){
                                         existe = 1;
                                     } 
                                 });
-                                if (existe == 1) {
+                                if (existe == 1 && resrev <= 2) {
+                                    console.log('cal');
                                     $(this).css('border', '2px solid red');
                                     aciertos[contador] = indice;
                                     contador++;
+                                    resrev++;
+                                    console.log(resrev);
                                 }
                             }
                         });
                     }
+                    else {
+                        console.log('-1');
+                        console.log(matriz.resp_num);
+                        var indice = $.inArray(input, matriz.resp_num);
+                        var existe = 0;
+                        if ( indice != -1 ) {
+                            $.each(aciertos, function(i, v){
+                                if(indice !=  aciertos[i]){
+                                    existe = 1;
+                                } 
+                            });
+                            if (existe == 1) {
+                                $(this).css('border', '2px solid red');
+                                aciertos[contador] = indice;
+                                contador++;
+                            }
+                        }
+                    }
                 } 
                 else {
                     console.log('no fraccionarios');
-                    if ( $(this).val() == matriz.resp_num ) {
+                    if (input == matriz.resp_num) {
                         $(this).css('border', '2px solid red');
                         aciertos[contador] = $(this).val();
                         contador++;
