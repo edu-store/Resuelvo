@@ -24,9 +24,9 @@ define(function (require) {
         },
         {
             'ejercicio' : 'Una caja tiene 60 bombones. Eva comió 1/3 y Ana 2/3 ¿Cuánto se comieron entre las dos?',
-            'datos'     : ['1/3 bombones', '2/3 bombones'],
+            'datos'     : ['1/3 caja', '2/3 caja'],
             'operacion' : ['1', '3', '+', '2', '3', '=', '3', '3'],
-            'respuesta' : 'Comieron 3/3 de bombones.',
+            'respuesta' : 'Comieron 1 de la caja.',
             'resp_num'  : [
                 ['3', '3'],
                 ['1', '1']
@@ -35,7 +35,7 @@ define(function (require) {
         },
         {
             'ejercicio' : 'Don Juan sembró un huerto, en el terreno sembró 1/4 de sandía y 1/4 de melón ¿Cúanto le quedó sin sembrar?',
-            'datos'     : ['1/4 sandia', '1/4 melón'],
+            'datos'     : ['1/4 terreno', '1/4 terreno'],
             'operacion' : ['1', '4', '+', '1', '4', '=', '2', '4'],
             'respuesta' : 'Le quedo 2/4 por sembrar.',
             'resp_num'  : [
@@ -86,62 +86,6 @@ define(function (require) {
             'respuesta' : 'Sembro 3/8 de campo.',
             'resp_num'  : ['3', '8'],
             'signo'     : '*'
-        },
-        {
-            'ejercicio' : 'Un jardinero poda en la cancha de futbol. El primer día poda 3/8 partes de total, el segundo día poda 1/4 ¿cuánto lleva podado en los dos días?',
-            'datos'     : ['3/8 jardin', '1/4 jardin'],
-            'operacion' : ['3', '8', '+', '1', '4', '=', '5', '8'],
-            'respuesta' : 'Podó 3/8 del jardin.',
-            'resp_num'  : ['3', '8'],
-            'signo'     : '+'
-        },
-        {
-            'ejercicio' : 'Si un padre le da a su hija Rocío la mitad de una naranja y a su hijo Jorge la cuarta parte de la misma naranja ¿Qué porción de la naranja dio a sus dos hijos?',
-            'datos'     : ['1/2 naranja', '1/4 naranja'],
-            'operacion' : ['1', '2', '+', '1', '4', '=', '3', '4'],
-            'respuesta' : 'Dió 3/4 de porcion.',
-            'resp_num'  : ['3', '4'],
-            'signo'     : '+'
-        },
-        {
-            'ejercicio' : 'Don Juan sembró 1/4 de manzana de frijoles y 1/2 manzana de maíz. ¿Cuánto sembró en total?',
-            'datos'     : ['1/2 frijoles', '1/4 maiz'],
-            'operacion' : ['1', '2', '+', '1', '4', '=', '3', '4'],
-            'respuesta' : 'Sembró 3/4 de manzana.',
-            'resp_num'  : ['3', '4'],
-            'signo'     : '+'
-        },
-        {
-            'ejercicio' : 'Don Pedro heredó a sus 2 hijos, a Marcos le heredó 1/2 del ganado y a Juan 1/4 del ganado. ¿Cuánto heredó más a Marcos que a Juan?',
-            'datos'     : ['1/2 ganado', '1/4 ganado'],
-            'operacion' : ['1', '2', '-', '1', '4', '=', '1', '4'],
-            'respuesta' : 'Marcos heredó 1/4 mas que Juan.',
-            'resp_num'  : ['1', '4'],
-            'signo'     : '-'
-        },
-        {
-            'ejercicio' : 'Marcia y su familia se fueron de paseo a Granada durante 2 días, el primer día gastaron 1/3 del dinero que llevaban, el segundo día gastaron 1/5. ¿Cuánto gastaron más el primer día que el segundo?',
-            'datos'     : ['1/3 dinero', '1/5 ganado'],
-            'operacion' : ['1', '3', '+', '1', '5', '=', '2', '15'],
-            'respuesta' : 'El primer dia gasto 2/15 mas.',
-            'resp_num'  : ['2', '15'],
-            'signo'     : '+'
-        },
-        {
-            'ejercicio' : 'Mi mamá compró un queso que pesaba 3/4 de kilo, si lo partió en porciones de 3/8. ¿Cuántas porciones salieron?',
-            'datos'     : ['3/4 kilo', '3/8 porciones'],
-            'operacion' : ['3', '4', '/', '3', '8', '=', '2', '1'],
-            'respuesta' : 'Salieron 2 porciones.',
-            'resp_num'  : ['2', '1'],
-            'signo'     : '/'
-        },
-        {
-            'ejercicio' : 'Ana ha recorrido 600 metros, que es 1/4 del camino de su casa al colegio. ¿Qué distancia hay de su casa al colegio? ',
-            'datos'     : ['600 metros', '1/4 camino'],
-            'operacion' : ['600', '1', '/', '1', '4', '=', '2.4', '1'],
-            'respuesta' : 'Hay 2400  metros.',
-            'resp_num'  : ['2400', '1'],
-            'signo'     : '/'
         }
     ];
 });

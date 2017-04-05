@@ -41,10 +41,10 @@ define(function (require) {
             'signo'     : '*'
         },
          {
-            'ejercicio' : 'Un ciclista ha recorrido 9 kilómetros y otro una distancia que es el triple de la anterior. ¿Cuántos kilómetros ha recorrido el segundo ciclista?',
-            'datos'     : [ '9 kilometros', '3' ],
+            'ejercicio' : 'Un ciclista ha recorrido 9 kilómetros y otro una distancia que es 3 veces más de la anterior. ¿Cuántos kilómetros ha recorrido el segundo ciclista?',
+            'datos'     : [ '9 kilómetros', '3 veces más' ],
             'operacion' : [ '9', '*', '3', '=', '27' ],
-            'respuesta' : 'Han recorrido 27 kilometros.',
+            'respuesta' : 'Han recorrido 27 kilómetros.',
             'resp_num'  : '27',
             'signo'     : '*'
         },
@@ -83,13 +83,13 @@ define(function (require) {
         {
             'ejercicio' : 'Un metro tiene 100 centímetros. ¿Cuántos centímetros hay en 60 metros?',
             'datos'     : [ '100 centímetros', '60 metros' ],
-            'operacion' : [ '100', '*', '60', '=', '6000' ],
-            'respuesta' : 'Hay 6000 centímetros.',
-            'resp_num'  : '6000',
+            'operacion' : [ '100', '*', '60', '=', '6,000' ],
+            'respuesta' : 'Hay 6,000 centímetros.',
+            'resp_num'  : '6,000',
             'signo'     : '*'
         },
          {
-            'ejercicio' : 'Antonio dispone de 621 metros de alambre para cercar 3 jardines iguales. ¿Cuántos metros corresponden a cada jardín? ',
+            'ejercicio' : 'Antonio dispone de 621 metros de alambre para cercar 3 jardines iguales. ¿Cuántos metros corresponden a cada jardín?',
             'datos'     : [ '621 metros', '3 jardines' ],
             'operacion' : [ '621', '/', '3', '=', '207' ],
             'respuesta' : 'Corresponde 207 metros.',
