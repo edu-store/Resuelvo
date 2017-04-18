@@ -9,10 +9,10 @@ define(function (require) {
             'signo'     : '*'
         },
         {
-            'ejercicio' : 'Un recipiente tiene una capacidad de 50 litros. Sacamos del recipiente 10 botellas de litro.',
-            'datos'     : [ '50 litros', '10 botellas' ],
+            'ejercicio' : 'Un recipiente tiene una capacidad de 50 litros. Sacamos del recipiente 10 botellas de litro. ¿Cuánto queda en el recipiente?',
+            'datos'     : [ '50 litros', '10 litros' ],
             'operacion' : [ '50', '-', '10', '=', '40' ],
-            'respuesta' : '40',
+            'respuesta' : 'Qudan 40 litros.',
             'resp_num'  : '40',
             'signo'     : '-'
         },
@@ -99,7 +99,7 @@ define(function (require) {
         {
             'ejercicio' : 'Un pueblo tiene instalado un depósito de 5,000 galones para almacenar agua en época de sequía, si se consumen 100 galones por día ¿En cuántos días se consume todo el depósito?',
             'datos'     : [ '500 galones', '100 galones'],
-            'operacion' : [ '5000', '/', '100','=', '50' ],
+            'operacion' : [ '5,000', '/', '100','=', '50' ],
             'respuesta' : 'Se consumen en 50 dias.',
             'resp_num'  : '50',
             'signo'     : '/'

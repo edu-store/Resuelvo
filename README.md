@@ -74,4 +74,8 @@ Antes de su primer lanzamiento, usted debe:
 
 	* Haga que su actividad sea única en la interfaz Sugar cambiando el icono de `actividad activity/activity-icon.svg`. O si no tiene habilidades gráficas, puede preguntar en la comunidad si alguien puede hacerlo.
 
-Puede publicar directamente el paquete `XO`. Por lo tanto, sólo comprima en formato `zip` el contenido de su directorio de proyecto y cambie el nombre de la extencion de `.zip` a `.xo`.
+Puede publicar directamente el paquete `XO`. Para esto ejecute el siguiente comando en la raiz del proyecto:
+
+	$ python setup.py dist_xo
+	
+de esta manera se genera el archivo `*.xo` en la carpeta dist.

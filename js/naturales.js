@@ -33,10 +33,10 @@ define(function (require) {
             'signo'     : '+'
         },
         {
-            'ejercicio' : 'Pilar va a comprar con 335 cordobas y regresa con 187 cordobas. ¿Cuánto gastó?',
-            'datos'     : [ '335 cordobas', '187 cordobas' ],
+            'ejercicio' : 'Pilar va a comprar con 335 córdobas y regresa con 187 córdobas. ¿Cuántos córdobas gastó?',
+            'datos'     : [ '335 córdobas', '187 córdobas' ],
             'operacion' : [ '335', '-', '187', '=', '148' ],
-            'respuesta' : 'Gastó 148 córdoba.',
+            'respuesta' : 'Gastó 148 córdobas.',
             'resp_num'  : '148',
             'signo'     : '-'
         },
@@ -66,8 +66,8 @@ define(function (require) {
         },
         {
             'ejercicio' : ' De los 5,284 huevos incubados salieron 4,615 polluelos. ¿Cuántos huevos se estropearon?',
-            'datos'     : [ '5284 huevos', '4615 polluelos' ],
-            'operacion' : [ '5284', '-', '4615', '=', '669' ],
+            'datos'     : [ '5,284 huevos', '4,615 polluelos' ],
+            'operacion' : [ '5,284', '-', '4,615', '=', '669' ],
             'respuesta' : 'Se estropearon 669 huevos.',
             'resp_num'  : '669',
             'signo'     : '-'
@@ -105,10 +105,10 @@ define(function (require) {
             'signo'     : '*'
         },
         {
-            'ejercicio' : 'Un ciclista ha recorrido 9 km. y otro una distancia que es el triple de la anterior. ¿Cuántos km. ha recorrido el segundo ciclista? ',
-            'datos'     : [ '9 km', '3 km' ],
+            'ejercicio' : 'Un ciclista ha recorrido 9 kilómetros y otro una distancia que es 3 veces más de la anterior. ¿Cuántos kilómetros ha recorrido el segundo ciclista?',
+            'datos'     : [ '9 kilómetros', '3 veces más' ],
             'operacion' : [ '3', '*', '3','=','27' ],
-            'respuesta' : 'Ha recorrido 27 km.',
+            'respuesta' : 'Ha recorrido 27 kilómetros.',
             'resp_num'  : '27',
             'signo'     : '*'
         },
@@ -121,7 +121,7 @@ define(function (require) {
             'signo'     : '/'
         },
         {
-            'ejercicio' : 'Entre 8 ganaderos han enviado al matadero por igual cantidad 600 reses. ¿Cuántas rese habrá enviado cada uno?',
+            'ejercicio' : 'Entre 8 ganaderos han enviado al matadero por igual cantidad 600 reses. ¿Cuántas reses habrá enviado cada uno?',
             'datos'     : [ '600 reses', '8 ganaderos' ],
             'operacion' : [ '600', '/', '8','=','75' ],
             'respuesta' : 'Envian 75 reses.',
@@ -162,16 +162,16 @@ define(function (require) {
         },
         {
             'ejercicio' : 'Un granjero ha recogido 1,872 huevos de gallina. ¿Cuántas docenas ha recogido?',
-            'datos'     : [ '1872 huevos', '12' ],
-            'operacion' : [ '1872', '/', '12','=','156' ],
+            'datos'     : [ '1,872 huevos', '12' ],
+            'operacion' : [ '1,872', '/', '12','=','156' ],
             'respuesta' : 'Ha recogido 156 docenas.',
             'resp_num'  : '156',
             'signo'     : '/'
         },
         {
             'ejercicio' : 'Un panadero ha hecho 4,104 rosquillas. Para su venta las empaqueta en cajas de 2 docenas. ¿Cuántas cajas puede llenar?',
-            'datos'     : [ '4104 rosquillas', '24' ],
-            'operacion' : [ '4104', '/', '24','=','171' ],
+            'datos'     : [ '4,104 rosquillas', '24' ],
+            'operacion' : [ '4,104', '/', '24','=','171' ],
             'respuesta' : 'Puede llevar 171 cajas.',
             'resp_num'  : '171',
             'signo'     : '/'

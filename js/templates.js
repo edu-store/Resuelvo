@@ -3,9 +3,9 @@ define(function (require) {
         {
             'content'  : {
                 'topics' : [
-                    { 'nombre' : 'Numeros Naturales', 'id' : 'btn_nn', 'img' : 'img/btn.png' },
-                    { 'nombre' : 'Numeros Decimales', 'id' : 'btn_nd', 'img' : 'img/btn.png' },
-                    { 'nombre' : 'Numeros Fraccionarios', 'id' : 'btn_nf', 'img' : 'img/btn.png' },
+                    { 'nombre' : 'Números Naturales', 'id' : 'btn_nn', 'img' : 'img/btn.png' },
+                    { 'nombre' : 'Números Decimales', 'id' : 'btn_nd', 'img' : 'img/btn.png' },
+                    { 'nombre' : 'Números Fraccionarios', 'id' : 'btn_nf', 'img' : 'img/btn.png' },
                     { 'nombre' : 'Medidas de Logitud', 'id' : 'btn_ml', 'img' : 'img/btn.png' },
                     { 'nombre' : 'Medidas de Peso', 'id' : 'btn_mp', 'img' : 'img/btn.png' },
                     { 'nombre' : 'Medidas de Capacidad', 'id' : 'btn_mc', 'img' : 'img/btn.png' }

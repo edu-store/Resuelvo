@@ -24,9 +24,9 @@ define(function (require) {
         },
         {
             'ejercicio' : 'Una caja tiene 60 bombones. Eva comió 1/3 y Ana 2/3 ¿Cuánto se comieron entre las dos?',
-            'datos'     : ['1/3 bombones', '2/3 bombones'],
+            'datos'     : ['1/3 caja', '2/3 caja'],
             'operacion' : ['1', '3', '+', '2', '3', '=', '3', '3'],
-            'respuesta' : 'Comieron 3/3 de bombones.',
+            'respuesta' : 'Comieron 1 de la caja.',
             'resp_num'  : [
                 ['3', '3'],
                 ['1', '1']
@@ -35,7 +35,7 @@ define(function (require) {
         },
         {
             'ejercicio' : 'Don Juan sembró un huerto, en el terreno sembró 1/4 de sandía y 1/4 de melón ¿Cúanto le quedó sin sembrar?',
-            'datos'     : ['1/4 sandia', '1/4 melón'],
+            'datos'     : ['1/4 terreno', '1/4 terreno'],
             'operacion' : ['1', '4', '+', '1', '4', '=', '2', '4'],
             'respuesta' : 'Le quedo 2/4 por sembrar.',
             'resp_num'  : [
