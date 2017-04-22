@@ -81,7 +81,7 @@ define(function (require) {
         },
         {
             'ejercicio' : 'Un campesino aró 3/4 de un campo, luego sembró maíz en 1/2 de la parte arada. ¿Qué parte del campo sembró?',
-            'datos'     : [ '3/4  campo', '1/2 campo'],
+            'datos'     : [ '3/4 campo', '1/2 campo'],
             'operacion' : [ '3', '4', '*', '1', '2', '=', '3', '8'],
             'respuesta' : 'Sembro 3/8 de campo.',
             'resp_num'  : ['3', '8'],
