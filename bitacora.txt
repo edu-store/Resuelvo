@@ -1,0 +1,44 @@
+=== BITACORA RESUELVO ====
+
+==> 06.03.2017 ===========
+--> Por hacer:
+	* Terminar la pantalla del menu principal
+	* Cambiar los colores de la pantalla de ejercicios para que tengan mejor contraste.
+	* Cambiar el tamaño de las casillas donde se ingresaran los numeros.
+	* Cambiar el tamaño de la letra en las casillas de la operacion
+	* Cambiar la posición de las ventanas de datos.
+	* Cambiar la matriz para que los inputs de los datos acepten la unidad de medida.
+	* Agregar a la metriz texto para que la respuesta este complementa por texto que responda la pregunta.
+
+--> Terminado:
+	* Todo se ha terinado optando por simplificar el diseño para cumpli con los requerientos de tiempo y gusto del educativo asignado.
+	* Se cambio el diseño de la actividad a favor de un diseño mas simple para avansar mas rapido y resolver con mayor eficasi 
+	  los cambios en el diseño.
+	* Se agragaron todos los cambios en la matriz para que aparescan las unidades en los datos y la respuesta contesten a la pregunta.
+
+==> 08.03.2017 ===========
+--> Por hacer:
+	* Cambiar la funcion de validacion de los ejercicios.
+
+--> Terminado:
+	* La funcion de la validacion se termino correctamentamente.
+
+--> Problemas:
+	* La matriz contiene varios erros por lo que la funcion de validacion no siempre resuelve el ejercicio.
+
+==> 09.03.2017 ===========
+--> Por hacer:
+	* Cambio de color en el input al colocar un signo sobre el.
+	* Cambiar la pantalla de concepto para que el mensaje quede al centro y agregar un boton para regresar al inicio.
+	* Cambiar todas las matrices para que acepten la nueva funcion de validacion de ejercicio.
+
+--> Terminado:
+	* El indicador de arratre correcto en los input al arrastrar un signo se termino correctamente.
+	* Se agrego exitosamente el boton para regresar al menu principal en la pantalla de conceptos.
+
+==> 13.03.2017 ===========
+--> Por hacer:
+	* Resolucion de error de validacion de insercion de datos en los campos de texto de las operaciones.
+
+--> Terminado:
+	* El error se soluciono satisfactoriamente.

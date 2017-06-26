@@ -74,19 +74,16 @@ define(function (require) {
         {
             'ejercicio' : 'Andrea es guía turística. Dirige excursiones a las isletas de Granada. Su grupo tiene 12 personas y 2/3 son de Guatemala. ¿Cuántas personas son de Guatemala?',
             'datos'     : ['12 personas', '2/3 personas'],
-            'operacion' : ['12', '1', '*', '2', '3', '=', '8', '1', '24'],
+            'operacion' : ['12', '1', '*', '2', '3', '=', '8', '1'],
             'respuesta' : 'Son 8 guatemaltecos.',
-            'resp_num'  : [
-                ['8', '1'],
-                ['24', '3']
-            ],
+            'resp_num'  : ['8', '1'],
             'signo'     : '*'
         },
         {
             'ejercicio' : 'Un campesino aró 3/4 de un campo, luego sembró maíz en 1/2 de la parte arada. ¿Qué parte del campo sembró?',
-            'datos'     : [ '3/4 campo', '1/2 campo'],
+            'datos'     : [ '3/4  campo', '1/2 campo'],
             'operacion' : [ '3', '4', '*', '1', '2', '=', '3', '8'],
-            'respuesta' : 'Sembró 3/8 de campo.',
+            'respuesta' : 'Sembro 3/8 de campo.',
             'resp_num'  : ['3', '8'],
             'signo'     : '*'
         }

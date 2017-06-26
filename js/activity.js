@@ -193,13 +193,6 @@ define(function (require) {
 	    $(document).ready(function(){
 	        output = Mustache.render(templates[uri].template, templates[0].content);
 	        $('#canvas').html(output);
-            var alto = 450;
-            var ancho = 90;
-            $('.pantalla_1').each(function(index) {
-                if (index == 3) { ancho=700;  alto=450}
-                $(this).css({'top': alto+'px', 'left':ancho+'px'})
-                alto+=100;
-            });
 	    });
 
         $('#canvas').on('click', 'button#pantalla_0', function(){
