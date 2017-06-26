@@ -10,7 +10,7 @@ define(function (require) {
         },
         {
             'ejercicio' : 'En el mes de marzo vienen 48 golondrinas, en abril nacen 84 y en junio 23. ¿Cuántas golondrinas hay a finales de junio?',
-            'datos'     : [ '48 golondrinas', '84 golondrinas', '23 golondrinas' ],
+            'datos'     : [ {'dato':'48 golondrinas'}, {'dato':'84 golondrinas'}, {'dato':'23 golondrinas'} ],
             'operacion' : [ '48', '+', '84', '+', '23', '=', '155' ],
             'respuesta' : 'Habrán 155 golondrinas.',
             'resp_num'  : '155',

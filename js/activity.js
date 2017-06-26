@@ -115,15 +115,15 @@ define(function (require) {
     };
 
     function nexec(matriz) {
-        var espacio = 40;
-        $('#datos').children().each(function() {
-            $(this).css('top', espacio + 'px');
-            espacio+=40;
-        });
-        espacio = 15;
+        var espacio = 15;
+        var fr = 0;
+        var ancho = 135;
         $('#operacion').children().each(function() {
-            $(this).css('left', espacio + 'px');
-            espacio+=110;
+            if(fr == 1) ancho = 95;
+            else ancho = 135;
+            $(this).css({'left':espacio + 'px', 'width':ancho + 'px'});
+            if(fr == 1){ espacio += 100; fr = 0; }
+            else{ espacio += 140; fr = 1; }
         });
         var cadena_respuesta = matriz.respuesta;
         cadena_respuesta = cadena_respuesta.split(/\d/);
@@ -134,26 +134,32 @@ define(function (require) {
     }
 
     function nf_nexec(matriz) {
-        var espacio = 40;
-        var alto = 70;
+        var espacio = 25;
+        var alto = 50;
         var fr = 0;
-        $('#datos').children().each(function() {
-            $(this).css('top', espacio + 'px');
-            espacio+=40;
-        });
-        espacio = 15;
+        var ancho = 135;
         $('#operacion').children().each(function(index) {
-            $(this).css({'left' : espacio + 'px', 'top' : alto + 'px'});
-            alto+=50;
-            fr++;
-            if(fr == 2) {
-                espacio+=110;
-                alto=100;
-            } else if(fr == 3) {
-                espacio+=110;
-                alto=70;
-                fr=0;
-            }
+            if(fr == 2) ancho = 95;
+            else ancho = 135;
+            $(this).css({'left' : espacio + 'px', 'top' : alto + 'px', 'width':ancho + 'px'});
+            switch(fr) {
+                case 0:
+                    alto += 43;
+                    $(this).after('<hr class="object" style="top:'+alto+'px; left:'+espacio+'px; width:'+ancho+'px;"/>');
+                    fr = 1;
+                    alto += 19;
+                    break;
+                case 1:
+                    espacio += 140;
+                    alto = 80;
+                    fr = 2;
+                    break;
+                case 2:
+                    espacio += 100;
+                    alto = 50;
+                    fr = 0;
+                    break;
+                }
         });
         var cadena_respuesta = matriz.respuesta;
         cadena_respuesta = cadena_respuesta.split(/\d/);

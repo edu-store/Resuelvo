@@ -22,6 +22,7 @@ button {
 	background-color: transparent;
 	font-size: 25px;
 	height: 40px;
+    outline: none !important;
 }
 
 button:hover, button:focus, button:active {
@@ -30,16 +31,23 @@ button:hover, button:focus, button:active {
 }
 
 img:focus {
-    outline: none;
+    outline: none !important;
 }
 
 input {
 	color: #333333;
 	border-radius: 0;
-    border: 2px solid white;
-    line-height: 22px;
+    /*border: 2px solid white;*/
+    line-height: 27px;
     outline: 0;
-    font-size: 20px;
+    font-size: 25px;
+    text-align: center; 
+}
+
+hr {
+    height: 5px;
+    background-color: #ca9e67;
+    width: 135px;
 }
 
 /** Reglas de estilos para la barra de herramientas **/
@@ -105,9 +113,9 @@ input {
 	width: 330px;
 	height: 40px;
 	background-color: #659cff;
-}*/
+}
 
-/*button.pantalla_1:hover{
+button.pantalla_1:hover{
 	color: #659cff;
 	background-color: white;
 }*/
@@ -123,14 +131,16 @@ input {
 #tema {
 	color: #006838;
 	top: 220px;
-	left: 410px;
+	left: 370px;
 	font-size: 45px;
+    width: 470px;
+    text-align: center;
 }
 
 #concepto {
 	color: #bd1f2d;
     width: 500px;
-    top: 326px;
+    top: 310px;
     left: 357px;
     font-size: 35px;
     text-align: center;
@@ -165,47 +175,47 @@ button.pantalla_2 {
 #page3 {
 	height: 100%;
 	width: 100%;
-	/*background: url('../img/pantalla_3.png') 0 0 no-repeat;*/
+	background: url('../img/pantalla_3.png') 0 0 no-repeat;
 	background-color: #49ffcb;
 
 }
 
-#problema-panel {
+/*#problema-panel {
 	background-color: white;
-	width: 800px;
-	height: 230px;
-	top: 60px;
+	width: 516px;
+	height: 99px;
+	top: 56px;
 	left: 53px;
-}
+}*/
 
 #problema {
-	color: #333333;
-	width: 770px;
-	top: -20px;
-	left: 15px;
-	font-size: 25px;
+	color: #056734;
+	width: 500px;
+	top: 20px;
+	left: 64px;
+	font-size: 20px;
 }
 
-#datos-panel {
+/*#datos-panel {
 	width: 240px;
 	height: 230px;
 	top: 60px;
 	left: 907px;
-}
+}*/
 
 #datos-label {
-	/*color: #333333;*/
-	color: white;
-	top: 0px;
-	left: 15px;
-	font-size: 25px;
+	color: #056734;
+	top: 34px;
+	left: 940px;
+	font-size: 30px;
 }
 
-.dato {
-	top: 40px;
-	left: 15px;
+#datos {
+    color: #056734;
+	top: 50px;
+	left: 930px;
 	font-size: 20px;
-	width: 180px;
+	width: 130px;
 }
 
 #signos {
@@ -241,31 +251,38 @@ button.pantalla_2 {
 }
 
 #operacion-panel {
-	width: 1048px;
-    height: 180px;
-    top: 340px;
-    left: 76px;
+	width: 1118px;
+    height: 205px;
+    top: 175px;
+    left: 13px;
+    background-color: #deeee0;
+    border-style: solid;
+    border-width: 6px 27px 6px 27px;
+    border-color: #c2e0cc;
 }
 
 #operacion-label {
-	/*color: #333333;*/
-	color: white;
-	top: 10px;
-	left: 15px;
-	font-size: 25px;
+	color: #844523;
+	top: 5px;
+	left: 480px;
+    width: 180px;
+	font-size: 35px;
 }
 
 .operacion {
-	width: 100px;
-	top: 70px;
+	width: 135px;
+	top: 50px;
 	left: 15px;
-	height: 30px;
-	font-size: 20px;
+	height: 40px;
+	font-size: 35px;
+    background-color: #009640;
+    color: #1a1a1a;
+    border-radius: 10px;
 }
 
 .on-op {
-	color: #e4cb22 !important;
-    background-color: #e4cb22;
+	color: #ca9e67 !important;
+    background-color: #ca9e67;
 }
 
 input:disabled {
