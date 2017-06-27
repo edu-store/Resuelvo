@@ -220,7 +220,7 @@ button.pantalla_2 {
 
 #signos {
 	top: 350px;
-    left: 230px;
+    left: 465px;
     z-index: 1;
     margin-left: 0px;
 }
@@ -254,7 +254,7 @@ button.pantalla_2 {
 	width: 1118px;
     height: 205px;
     top: 175px;
-    left: 13px;
+    left: 14px;
     background-color: #deeee0;
     border-style: solid;
     border-width: 6px 27px 6px 27px;
@@ -290,25 +290,33 @@ input:disabled {
 }
 
 #respuesta-panel {
-	width: 500px;
-	height: 170px;
-	top: 600px;
-	left: 350px;
+	width: 645px;
+	height: 109px;
+	top: 400px;
+	left: 250px;
+    background-color: #deeee0;
+    border-style: solid;
+    border-width: 6px 27px 6px 27px;
+    border-color: #c2e0cc;
 }
 
 #respuesta-label {
-	/*color: #333333;*/
-	color: white;
-	top: 0px;
-	left: 15px;
-	font-size: 25px;
+	color: #844523;
+	top: 430px;
+	left: 60px;
+    width: 180px;
+	font-size: 35px;
 }
 
 .respuesta {
-	top: 45px;
-	left: 210px;
-	font-size: 20px;
-	width: 100px;
+	width: 135px;
+	top: 50px;
+	left: 15px;
+	height: 40px;
+	font-size: 35px;
+    background-color: #009640;
+    color: #1a1a1a;
+    border-radius: 10px;
 }
 
 #btn_rv {

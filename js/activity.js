@@ -74,8 +74,8 @@ define(function (require) {
     };
 
     function addSigno(draggableElement, dropzoneElement) {
-        var arrastrable     = $(draggableElement);
-        var zona_arrastre   = $(dropzoneElement);
+        var arrastrable   = $(draggableElement);
+        var zona_arrastre = $(dropzoneElement);
         var opr = arrastrable.attr('data');
         zona_arrastre.val(opr);
         zona_arrastre.prop('disabled', true);
@@ -85,8 +85,8 @@ define(function (require) {
     }
 
     function outSigno(draggableElement, dropzoneElement) {
-        var arrastrable     = $(draggableElement);
-        var zona_arrastre   = $(dropzoneElement);
+        var arrastrable   = $(draggableElement);
+        var zona_arrastre = $(dropzoneElement);
         zona_arrastre.val(' ');
         zona_arrastre.prop('disabled', false);
         zona_arrastre.removeClass('on-op');
@@ -122,7 +122,7 @@ define(function (require) {
             if(fr == 1) ancho = 95;
             else ancho = 135;
             $(this).css({'left':espacio + 'px', 'width':ancho + 'px'});
-            if(fr == 1){ espacio += 100; fr = 0; }
+            if(fr == 1){ espacio += 100; fr = 0; $(this).addClass('signo'); }
             else{ espacio += 140; fr = 1; }
         });
         var cadena_respuesta = matriz.respuesta;
@@ -157,6 +157,7 @@ define(function (require) {
                 case 2:
                     espacio += 100;
                     alto = 50;
+                    $(this).addClass('signo');
                     fr = 0;
                     break;
                 }
@@ -241,7 +242,7 @@ define(function (require) {
             onmove:moveItem
         });
 
-        var objects = interact('.operacion');
+        var objects = interact('.signo');
         objects.dropzone({
             accept:'.movimiento',
             overlap: 0.75,
