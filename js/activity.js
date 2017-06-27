@@ -128,9 +128,10 @@ define(function (require) {
         var cadena_respuesta = matriz.respuesta;
         cadena_respuesta = cadena_respuesta.split(/\d/);
         $('#respuesta').prev('p').text(cadena_respuesta[0]);
-        $('#respuesta').prev('p').css({'color':'white', 'font-size':'20px', 'top':'20px', 'left':'15px'});
+        $('#respuesta').prev('p').css({'color':'#844523', 'font-size':'20px', 'top':'25px', 'left':'15px'});
+        $('#respuesta').children('input').css('top', '25px');
         $('#respuesta').next('p').text(cadena_respuesta[(cadena_respuesta.length - 1)]);
-        $('#respuesta').next('p').css({'color':'white', 'font-size':'20px', 'top':'20px', 'left':'320px'});
+        $('#respuesta').next('p').css({'color':'#844523', 'font-size':'20px', 'top':'25px', 'left':'400px'});
     }
 
     function nf_nexec(matriz) {
@@ -144,10 +145,10 @@ define(function (require) {
             $(this).css({'left' : espacio + 'px', 'top' : alto + 'px', 'width':ancho + 'px'});
             switch(fr) {
                 case 0:
-                    alto += 43;
+                    alto += 39;
                     $(this).after('<hr class="object" style="top:'+alto+'px; left:'+espacio+'px; width:'+ancho+'px;"/>');
                     fr = 1;
-                    alto += 19;
+                    alto += 15;
                     break;
                 case 1:
                     espacio += 140;
@@ -165,14 +166,20 @@ define(function (require) {
         var cadena_respuesta = matriz.respuesta;
         cadena_respuesta = cadena_respuesta.split(/\d/);
         $('#respuesta').prev('p').text(cadena_respuesta[0]);
-        $('#respuesta').prev('p').css({'color':'white', 'font-size':'20px', 'top':'20px', 'left':'15px'});
-        alto = 45;
+        $('#respuesta').prev('p').css({'color':'#844523', 'font-size':'20px', 'top':'25px', 'left':'15px'});
+        alto = 8;
+        fr = 0;
         $('#respuesta').children('input').each(function(){
             $(this).css('top', alto + 'px');
-            alto+=35;
+            if(fr == 0) { 
+                alto += 39;
+                $(this).after('<hr class="object" style="top:'+alto+'px; left:250px; width:'+ancho+'px;"/>'); 
+                fr = 1;
+                alto += 15;
+            }
         });
         $('#respuesta').next('p').text(cadena_respuesta[(cadena_respuesta.length - 1)]);
-        $('#respuesta').next('p').css({'color':'white', 'font-size':'20px', 'top':'20px', 'left':'320px'});
+        $('#respuesta').next('p').css({'color':'#844523', 'font-size':'20px', 'top':'25px', 'left':'400px'});
     }
 
     // Manipulate the DOM only when it is ready.
@@ -263,7 +270,7 @@ define(function (require) {
             var operacion = [];
             var respuesta = '';
 
-            $('#datos').children('input').each(function() {
+            /*$('#datos').children('input').each(function() {
                 var indice = $.inArray($(this).val(), matriz.datos);
                 var existe = 0;
                 if ( indice != -1 ) {
@@ -278,7 +285,7 @@ define(function (require) {
                         contador++;
                     }
                 }
-            });
+            });*/
 
             $('#operacion').children('input').each(function() {
                 var input = ($(this).val() == '')?'1':$(this).val();
@@ -378,9 +385,9 @@ define(function (require) {
             else nexec(matriz);
         });
 
-        /*$('#canvas').on('click', 'button#myBtn', function() {
+        $('#canvas').on('click', 'button#myBtn', function() {
             $('#myModal').css('display', 'block');
-        });*/
+        });
 
     });
     

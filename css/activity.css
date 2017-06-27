@@ -41,13 +41,15 @@ input {
     line-height: 27px;
     outline: 0;
     font-size: 25px;
-    text-align: center; 
+    text-align: center;
+    border-style: hidden;
 }
 
 hr {
     height: 5px;
     background-color: #ca9e67;
     width: 135px;
+    border-style: hidden;
 }
 
 /** Reglas de estilos para la barra de herramientas **/
@@ -156,14 +158,12 @@ button.pantalla_1:hover{
 #pantalla_0 {
 	top: 680px;
     left: 15px;
-    color: white;
     font-size: 30px;
     width: 216px;
     height: 132px;
 }
 
 button.pantalla_2 {
-	color: white;
 	top: 660px !important;
     left: 888px !important;
 	font-size: 30px;
@@ -215,7 +215,7 @@ button.pantalla_2 {
 	top: 50px;
 	left: 930px;
 	font-size: 20px;
-	width: 130px;
+	width: 135px;
 }
 
 #signos {
@@ -302,7 +302,7 @@ input:disabled {
 
 #respuesta-label {
 	color: #844523;
-	top: 430px;
+	top: 445px;
 	left: 60px;
     width: 180px;
 	font-size: 35px;
@@ -311,7 +311,7 @@ input:disabled {
 .respuesta {
 	width: 135px;
 	top: 50px;
-	left: 15px;
+	left: 250px;
 	height: 40px;
 	font-size: 35px;
     background-color: #009640;
@@ -320,67 +320,55 @@ input:disabled {
 }
 
 #btn_rv {
-	color: white;
-	top: 120px;
-	left: 185px;
+	top: 525px;
+	left: 485px;
 	font-size: 25px;
-	/*border-radius: 0px;*/
-	width: 130px;
-	height: 40px;
-	background-color: #18a47a;
-	/*background: url('../img/btn_rv.png') 0 0 no-repeat;*/
+	width: 255px;
+	height: 160px;
+	background-color: transparent;
+	background: url('../img/btn_rv.png') 0 0 no-repeat;
 }
 
-#btn_rv:hover {
+/*#btn_rv:hover {
 	color: #18a47a;
 	background-color: white;
-}
+}*/
 
-#cont_btn_ini {
+/*#cont_btn_ini {
 	width: 170px;
 	height: 202px;
 	top: 632px;
 	left: 90px;
-	/*background: url('../img/senal_inicio.png') 0 0 no-repeat;*/
-}
+	
+}*/
 
 #btn_ini {
-	color: white;
-	top: 90px;
-	left: 20px;
-	font-size: 30px;
-	width: 130px;
-	height: 40px;
-	background-color: #e4cb22;
+	top: 680px;
+    left: 15px;
+    font-size: 30px;
+    width: 225px;
+    height: 140px;
+	background: url('../img/inicio.png') 0 0 no-repeat;
 }
 
-#btn_ini:hover {
+/*#btn_ini:hover {
 	color: #e4cb22;
 	background-color: white;
-}
-
-#cont_btn_nv {
-	width: 237px;
-	height: 137px;
-	top: 697px;
-	left: 907px;
-	/*background: url('../img/senal_nuevo.png') 0 0 no-repeat;*/
-}
+}*/
 
 #btn_nv {
-	color: white;
-	top: 25px;
-	left: 54px;
+	top: 680px;
+    left: 955px;
 	font-size: 30px;
-	width: 130px;
-	height: 40px;
-	background-color: #c0392b;
+	width: 227px;
+	height: 150px;
+	background: url('../img/nuevo.png') 0 0 no-repeat;
 }
 
-#btn_nv:hover {
+/*#btn_nv:hover {
 	color: #c0392b;
 	background-color: white;
-}
+}*/
 
 .modal {
     display: none;
