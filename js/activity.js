@@ -128,10 +128,10 @@ define(function (require) {
         var cadena_respuesta = matriz.respuesta;
         cadena_respuesta = cadena_respuesta.split(/\d/);
         $('#respuesta').prev('p').text(cadena_respuesta[0]);
-        $('#respuesta').prev('p').css({'color':'#844523', 'font-size':'20px', 'top':'25px', 'left':'15px'});
+        $('#respuesta').prev('p').css({'color':'#844523', 'font-size':'26px', 'top':'25px', 'left':'15px'});
         $('#respuesta').children('input').css('top', '25px');
         $('#respuesta').next('p').text(cadena_respuesta[(cadena_respuesta.length - 1)]);
-        $('#respuesta').next('p').css({'color':'#844523', 'font-size':'20px', 'top':'25px', 'left':'400px'});
+        $('#respuesta').next('p').css({'color':'#844523', 'font-size':'26px', 'top':'25px', 'left':'400px'});
     }
 
     function nf_nexec(matriz) {

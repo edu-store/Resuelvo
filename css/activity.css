@@ -190,10 +190,10 @@ button.pantalla_2 {
 
 #problema {
 	color: #056734;
-	width: 500px;
+	width: 680px;
 	top: 20px;
 	left: 64px;
-	font-size: 20px;
+	font-size: 26px;
 }
 
 /*#datos-panel {
@@ -205,21 +205,21 @@ button.pantalla_2 {
 
 #datos-label {
 	color: #056734;
-	top: 34px;
+	top: 30px;
 	left: 940px;
-	font-size: 30px;
+	font-size: 40px;
 }
 
 #datos {
     color: #056734;
 	top: 50px;
-	left: 930px;
-	font-size: 20px;
-	width: 135px;
+	left: 910px;
+	font-size: 26px;
+	width: 200px;
 }
 
 #signos {
-	top: 350px;
+	top: 440px;
     left: 465px;
     z-index: 1;
     margin-left: 0px;
@@ -253,7 +253,7 @@ button.pantalla_2 {
 #operacion-panel {
 	width: 1118px;
     height: 205px;
-    top: 175px;
+    top: 270px;
     left: 14px;
     background-color: #deeee0;
     border-style: solid;
@@ -292,7 +292,7 @@ input:disabled {
 #respuesta-panel {
 	width: 645px;
 	height: 109px;
-	top: 400px;
+	top: 500px;
 	left: 250px;
     background-color: #deeee0;
     border-style: solid;
@@ -302,7 +302,7 @@ input:disabled {
 
 #respuesta-label {
 	color: #844523;
-	top: 445px;
+	top: 540px;
 	left: 60px;
     width: 180px;
 	font-size: 35px;
@@ -313,14 +313,14 @@ input:disabled {
 	top: 50px;
 	left: 250px;
 	height: 40px;
-	font-size: 35px;
+	font-size: px;
     background-color: #009640;
     color: #1a1a1a;
     border-radius: 10px;
 }
 
 #btn_rv {
-	top: 525px;
+	top: 680px;
 	left: 485px;
 	font-size: 25px;
 	width: 255px;
@@ -348,7 +348,7 @@ input:disabled {
     font-size: 30px;
     width: 225px;
     height: 140px;
-	background: url('../img/inicio.png') 0 0 no-repeat;
+	background: url('../img/inicio_final.png') 0 0 no-repeat;
 }
 
 /*#btn_ini:hover {
