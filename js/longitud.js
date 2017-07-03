@@ -66,7 +66,7 @@ define(function (require) {
         },
         {//09
             'ejercicio' : 'Si un metro equivale a 1.09 yardas, ¿Cuántas yardas hay en 15 metros?',
-            'datos'     : [ { 'dato' : '1,09 yardas.' }, { 'dato' : '15 metros.' } ],
+            'datos'     : [ { 'dato' : '1.09 yardas.' }, { 'dato' : '15 metros.' } ],
             'operacion' : [ '1.09', '*', '15', '=', '16.35' ],
             'respuesta' : 'Hay 16.35 yardas.',
             'resp_num'  : '16.35',

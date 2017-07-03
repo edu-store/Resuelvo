@@ -166,7 +166,7 @@ define(function (require) {
         var cadena_respuesta = matriz.respuesta;
         cadena_respuesta = cadena_respuesta.split(/\d/);
         $('#respuesta').prev('p').text(cadena_respuesta[0]);
-        $('#respuesta').prev('p').css({'color':'#844523', 'font-size':'20px', 'top':'25px', 'left':'15px'});
+        $('#respuesta').prev('p').css({'color':'#844523', 'font-size':'26px', 'top':'25px', 'left':'15px'});
         alto = 8;
         fr = 0;
         $('#respuesta').children('input').each(function(){
@@ -179,7 +179,7 @@ define(function (require) {
             }
         });
         $('#respuesta').next('p').text(cadena_respuesta[(cadena_respuesta.length - 1)]);
-        $('#respuesta').next('p').css({'color':'#844523', 'font-size':'20px', 'top':'25px', 'left':'400px'});
+        $('#respuesta').next('p').css({'color':'#844523', 'font-size':'26px', 'top':'25px', 'left':'400px'});
     }
 
     // Manipulate the DOM only when it is ready.
@@ -261,7 +261,8 @@ define(function (require) {
 
         $('#canvas').on('click', 'button#btn_rv', function(){
             var resp_cont = (Array.isArray(matriz.resp_num))?matriz.resp_num.length:1;
-            var aprovar = matriz.datos.length + matriz.operacion.length + resp_cont;
+            //var aprovar = matriz.datos.length + matriz.operacion.length + resp_cont;
+            var aprovar = matriz.operacion.length + resp_cont;
             console.log(matriz.resp_num + '-' + resp_cont);
             var aciertos = [-1];
             var contador = 0;
