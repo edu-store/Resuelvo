@@ -1,122 +1,106 @@
 define(function (require) {
     return [
-        {
-            'ejercicio' : 'Una cartera puede llevar sin romperse 12 kilos. Si ya hemos puesto 7 kilos, ¿cuántos kilos más podemos poner sin que se rompa?',
-            'datos'     : [ '12 kilos', '7 kilos' ],
+        {//01
+            'ejercicio' : 'Una carreta puede llevar sin romperse 12 kilos. Si ya hemos puesto 7 kilos, ¿cuántos kilos más podemos poner sin que se rompa?',
+            'datos'     : [ { 'dato' : '12 kilos.' }, { 'dato' : '7 kilos.' } ],
             'operacion' : [ '12', '-', '7', '=', '5' ],
-            'respuesta' : 'Podemos poner 5 kilos.',
+            'respuesta' : 'Podemos poner 5 kilos más.',
             'resp_num'  : '5',
             'signo'     : '-'
         },
-        {
+        {//02
             'ejercicio' : 'Si 4 naranjas del mismo tamaño pesan 1 kilo. ¿Cuánto pesarán 44 naranjas del mismo tamaño?',
-            'datos'     : [ '44 naranjas', '4 naranjas' ],
+            'datos'     : [ { 'dato' : '44 naranjas.' }, { 'dato' :'4 naranjas.'} ],
             'operacion' : [ '44', '/', '4', '=', '11' ],
-            'respuesta' : 'Pesaran 11 kilos.',
+            'respuesta' : 'Pesarán 11 kilos.',
             'resp_num'  : '11',
             'signo'     : '/'
         },
-        {
-            'ejercicio' : 'Juan va a comprar con su padre. Lleva en una mano una bolsa con 5 kilos y en la otra mano, una bolsa con 4 kilos. Su padre lleva otras dos bolsas con 8 kilos y 9 kilos. ¿Cuántos kilos llevan entre los dos?',
-            'datos'     : [ '5 kilos', '4 kilos', '8 kilos', '9 kilos' ],
-            'operacion' : [ '5', '+', '4', '+', '8', '+', '9', '=', '26' ],
-            'respuesta' : 'Llevan 26 kilos.',
-            'resp_num'  : '26',
-            'signo'     : '+'
-        },
-        {
+        {//03
             'ejercicio' : 'Una furgoneta lleva 5 cajas de manzanas con 20 kilos cada una. ¿Cuántos kilos de manzanas lleva?',
-            'datos'     : [ '5 cajas', '20 kilos' ],
+            'datos'     : [ { 'dato' : '5 cajas de manzanas.' }, { 'dato' : '20 kilos.'} ],
             'operacion' : [ '5', '*', '20', '=', '100' ],
             'respuesta' : 'Lleva 100 kilos.',
             'resp_num'  : '100',
             'signo'     : '*'
         },
-        {
+        {//04
             'ejercicio' : 'Antonio pesa 45 kilos Su padre pesa el doble. ¿Cuánto pesa el padre de Antonio?',
-            'datos'     : [ '45 kilos', '2' ],
+            'datos'     : [ { 'dato' : 'Antonio 45 kilos.' }, { 'dato' : 'Su padre el doble.'} ],
             'operacion' : [ '45', '*', '2', '=', '90' ],
-            'respuesta' : 'Pesa 90 kilos.',
+            'respuesta' : 'El padre pesa 90 kilos.',
             'resp_num'  : '90',
             'signo'     : '*'
         },
-        {
+        {//05
             'ejercicio' : 'Con un saco de 30 kilos, ¿cuántas bolsas de medio kilo podemos llenar?',
-            'datos'     : [ '30 kilos', '0.5 kilos' ],
+            'datos'     : [ { 'dato' : '30 kilos.' }, { 'dato' : '0.5 kilos.'} ],
             'operacion' : [ '30', '/', '0.5', '=', '60' ],
-            'respuesta' : '60 bolsas.',
+            'respuesta' : 'Podemos llenar 60 bolsas.',
             'resp_num'  : '60',
             'signo'     : '/'
         },
-        {
+        {//06
             'ejercicio' : 'Don Marcelino lleva en su camión 7 vacas. Cada vaca pesa 675 kilos. ¿Qué peso soporta el camión?',
-            'datos'     : [ '7 vacas', '675 kilos' ],
+            'datos'     : [ { 'dato' : '7 vacas.' }, { 'dato' : '675 kilos.'} ],
             'operacion' : [ '7', '*', '675', '=', '4,725' ],
             'respuesta' : 'Soporta 4,725 kilos.',
             'resp_num'  : '4,725',
             'signo'     : '*'
         },
-        {
-            'ejercicio' : 'Marta ha hecho una tortilla de patatas con: 5 patatas de 200 g, 4 huevos de 65 g, 3 g de sal, 87 g de aceite. ¿Cuántos gramos pesa la tortilla?',
-            'datos'     : [ '200 gramos', '65 gramas','3 gramos','87 gramos' ],
-            'operacion' : [ '200', '+', '65', '+', '87', '=', '355' ],
-            'respuesta' : 'Pesa 355 gramos.',
-            'resp_num'  : '355',
-            'signo'     : '+'
-        },
-        {
+        {//07
             'ejercicio' : 'Un litro de aceite pesa 975 gramos. ¿Cuántos gramos pesan cuatro litros?',
-            'datos'     : [ '975 gramos', '4 litros' ],
-            'operacion' : [ '975', '*', '4', '=', '3,900'],
+            'datos'     : [ { 'dato' : '975 gramos.' }, { 'dato' : '4 litros.' } ],
+            'operacion' : [ '4', '*', '975', '=', '3,900' ],
             'respuesta' : 'Pesan 3,900 gramos.',
             'resp_num'  : '3,900',
             'signo'     : '*'
         },
-        {
+        {//08
             'ejercicio' : 'Un comerciante compró 800 kilos de trigo y luego vendió 380 kilos. ¿Cuántos kilos le quedaron?',
-            'datos'     : [ '800 kilos', '380 kilos' ],
-            'operacion' : [ '800', '-', '380', '=', '420'],
-            'respuesta' : 'Quedaron 420 kilos.',
+            'datos'     : [ { 'dato' : '800 kilos de trigo.' }, { 'dato' : 'vendió 380 kilos.'} ],
+            'operacion' : [ '800', '-', '380', '=', '420' ],
+            'respuesta' : 'Le quedaron 420 kilos.',
             'resp_num'  : '420',
             'signo'     : '-'
         },
-        {
+        {//09
             'ejercicio' : 'Un camión puede llevar sin romperse 450 kilos. Si ya hemos puesto 167 kilos, ¿cuántos kilos más podemos poner sin que se rompa?',
-            'datos'     : [ '450 kilos', '167 kilos' ],
-            'operacion' : [ '450', '-', '167', '=', '283'],
-            'respuesta' : 'Puede llevar 283 kilos',
+            'datos'     : [ { 'dato' : '450 kilos.' }, { 'dato' : '167 kilos.' } ],
+            'operacion' : [ '450', '-', '167', '=', '283' ],
+            'respuesta' : 'Podemos poner 283 kilos.',
             'resp_num'  : '283',
             'signo'     : '-'
         },
-        {
+        {//10
             'ejercicio' : 'Entre 2 carros de feria pesan 275 kilos. El más grande pesa 155 kilos ¿Cuánto pesa el más pequeño?',
-            'datos'     : [ '275 kilos', '155 kilos' ],
+            'datos'     : [ { 'dato' : '275 kilos.' }, { 'dato' : '155 kilos.' } ],
             'operacion' : [ '275', '-', '155', '=', '120'],
-            'respuesta' : 'Pesa 120 kilos',
+            'respuesta' : 'Pesa 120 kilos.',
             'resp_num'  : '120',
             'signo'     : '-'
         },
-        {
+        {//11
             'ejercicio' : 'Un huevo de gallina pesa 65 gramos. ¿Cuánto pesa media docena de huevos?',
-            'datos'     : [ '65 gramos', '6 huevos' ],
-            'operacion' : [ '65', '*', '16', '=', '390'],
-            'respuesta' : 'Pesan 390 gramos',
+            'datos'     : [ { 'dato' : '65 gramos.' }, { 'dato' : '6 huevos.'} ],
+            'operacion' : [ '6', '*', '65', '=', '390'],
+            'respuesta' : 'Pesan 390 gramos.',
             'resp_num'  : '390',
             'signo'     : '*'
         },
-        {
+        {//12
             'ejercicio' : 'Un balde de tomates en el mercado mayoreo pesa 20 libras, que empacaré en bolsas de 2 libras. ¿Cuántas bolsas necesito?',
-            'datos'     : [ '20 libras', '2 libras' ],
+            'datos'     : [ { 'dato' : '20 libras.' }, { 'dato' : '2 libras.' } ],
             'operacion' : [ '20', '/', '2', '=', '10'],
-            'respuesta' : 'Se necesitan 10 bolsas',
+            'respuesta' : 'Necesito 10 bolsas.',
             'resp_num'  : '10',
             'signo'     : '/'
         },
-        {
+        {//13
             'ejercicio' : 'Un quintal de maíz tiene 100 libras, que empacaré en bolsas de 5 libras. ¿Cuántas bolsas necesito?',
-            'datos'     : [ '100 libras', '5 libras' ],
+            'datos'     : [ { 'dato' : '100 libras.' }, { 'dato' : '5 libras.' } ],
             'operacion' : [ '100', '/', '5', '=', '20'],
-            'respuesta' : 'Necesito 20 bolsas',
+            'respuesta' : 'Necesito 20 bolsas.',
             'resp_num'  : '20',
             'signo'     : '/'
         }
