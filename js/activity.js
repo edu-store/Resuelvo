@@ -269,6 +269,7 @@ define(function (require) {
             var resp_cont = (Array.isArray(matriz.resp_num))?matriz.resp_num.length:1;
             //var aprovar = matriz.datos.length + matriz.operacion.length + resp_cont;
             var aprovar = matriz.operacion.length + resp_cont;
+            console.log(aprovar);
             var aciertos = [-1];
             var contador = 0;
 
@@ -296,6 +297,7 @@ define(function (require) {
             $('#operacion').children('input').each(function() {
                 var input = ($(this).val() == '')?'1':$(this).val();    //Colocar 1 si el input esta vacio.
                 var indice = $.inArray(input, matriz.operacion);        //Verificar si el valor del input esta en la matriz.
+                console.log(input + '-' + indice);
                 var existe = 0;
                 if ( indice != -1 ) {
                     $.each(aciertos, function(i, v){
@@ -363,6 +365,8 @@ define(function (require) {
                 }
             });
             
+            console.log(aciertos.length);
+
             if (aprovar == aciertos.length) {
                 $('#canvas div#Bien').css('display', 'block');
             }
