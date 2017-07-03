@@ -128,10 +128,13 @@ define(function (require) {
         var cadena_respuesta = matriz.respuesta;
         cadena_respuesta = cadena_respuesta.split(/\d/);
         $('#respuesta').prev('p').text(cadena_respuesta[0]);
-        $('#respuesta').prev('p').css({'color':'#844523', 'font-size':'26px', 'top':'25px', 'left':'15px'});
-        $('#respuesta').children('input').css('top', '25px');
+        espacio = 15;
+        $('#respuesta').prev('p').css({'color':'#844523', 'font-size':'26px', 'top':'25px', 'left':espacio + 'px'});
+        espacio = espacio + $('#respuesta').prev('p').width() + 15;
+        $('#respuesta').children('input').css({'top':'35px', 'left':espacio + 'px'});
         $('#respuesta').next('p').text(cadena_respuesta[(cadena_respuesta.length - 1)]);
-        $('#respuesta').next('p').css({'color':'#844523', 'font-size':'26px', 'top':'25px', 'left':'400px'});
+        espacio = espacio + $('#respuesta').children('input').width() + 15;
+        $('#respuesta').next('p').css({'color':'#844523', 'font-size':'26px', 'top':'25px', 'left':espacio + 'px'});
     }
 
     function nf_nexec(matriz) {
@@ -166,20 +169,23 @@ define(function (require) {
         var cadena_respuesta = matriz.respuesta;
         cadena_respuesta = cadena_respuesta.split(/\d/);
         $('#respuesta').prev('p').text(cadena_respuesta[0]);
-        $('#respuesta').prev('p').css({'color':'#844523', 'font-size':'26px', 'top':'25px', 'left':'15px'});
+        espacio = 15;
+        $('#respuesta').prev('p').css({'color':'#844523', 'font-size':'26px', 'top':'25px', 'left':espacio + 'px'});
         alto = 8;
         fr = 0;
+        espacio = espacio + $('#respuesta').prev('p').width() + 15;
         $('#respuesta').children('input').each(function(){
-            $(this).css('top', alto + 'px');
+            $(this).css({'top':alto + 'px', 'left':espacio+'px'});
             if(fr == 0) { 
                 alto += 39;
-                $(this).after('<hr class="object" style="top:'+alto+'px; left:250px; width:'+ancho+'px;"/>'); 
+                $(this).after('<hr class="object" style="top:'+alto+'px; left:'+espacio+'px; width:'+ancho+'px;"/>'); 
                 fr = 1;
                 alto += 15;
             }
         });
         $('#respuesta').next('p').text(cadena_respuesta[(cadena_respuesta.length - 1)]);
-        $('#respuesta').next('p').css({'color':'#844523', 'font-size':'26px', 'top':'25px', 'left':'400px'});
+        espacio = espacio + $('#respuesta').children('input').width() + 15;
+        $('#respuesta').next('p').css({'color':'#844523', 'font-size':'26px', 'top':'25px', 'left':espacio+'px'});
     }
 
     // Manipulate the DOM only when it is ready.
@@ -220,9 +226,9 @@ define(function (require) {
 	        $('#canvas').html(output);
 	    });
 
-	    $('#canvas').on('click', 'button.pantalla_2', function(){
+	    $('#canvas').on('click', '#btn_sig', function(){
 		    uri = $(this).attr('data');
-        	id = $(this).attr('id');
+        	id = $(this).attr('target');
             matriz = select_matrix(temas[id]);
 	    	output = Mustache.render(templates[uri].template, matriz);
 	        $('#canvas').html(output);
@@ -263,7 +269,6 @@ define(function (require) {
             var resp_cont = (Array.isArray(matriz.resp_num))?matriz.resp_num.length:1;
             //var aprovar = matriz.datos.length + matriz.operacion.length + resp_cont;
             var aprovar = matriz.operacion.length + resp_cont;
-            console.log(matriz.resp_num + '-' + resp_cont);
             var aciertos = [-1];
             var contador = 0;
 
@@ -289,18 +294,18 @@ define(function (require) {
             });*/
 
             $('#operacion').children('input').each(function() {
-                var input = ($(this).val() == '')?'1':$(this).val();
-                console.log(input);
-                var indice = $.inArray(input, matriz.operacion);
+                var input = ($(this).val() == '')?'1':$(this).val();    //Colocar 1 si el input esta vacio.
+                var indice = $.inArray(input, matriz.operacion);        //Verificar si el valor del input esta en la matriz.
                 var existe = 0;
                 if ( indice != -1 ) {
                     $.each(aciertos, function(i, v){
+                        console.log(indice + '-' + aciertos[i]);
                         if(indice !=  aciertos[i]){
                             existe = 1;
                         } 
                     });
                     if (existe == 1) {
-                        $(this).css('border', '2px solid red');
+                        //$(this).css('border', '2px solid red');
                         aciertos[contador] = indice;
                         contador++;
                     }
@@ -309,15 +314,11 @@ define(function (require) {
 
             $('#respuesta').children('input').each(function() {
                 var input = ($(this).val() == '')?'1':$(this).val();
-                console.log(input);
                 if(temas[id] == 2) {
                     console.log('fraccionarios');
                     if(matriz.resp_num[1][1]){
-                        console.log('1+');
                         var resrev = 0;
-                        console.log(resrev);
                         $.each(matriz.resp_num, function(index, value){
-                            console.log(value);
                             var indice = $.inArray(input, value);
                             var existe = 0;
                             if (indice != -1) {
@@ -327,19 +328,15 @@ define(function (require) {
                                     } 
                                 });
                                 if (existe == 1 && resrev <= 2) {
-                                    console.log('cal');
-                                    $(this).css('border', '2px solid red');
+                                    //$(this).css('border', '2px solid red');
                                     aciertos[contador] = indice;
                                     contador++;
                                     resrev++;
-                                    console.log(resrev);
                                 }
                             }
                         });
                     }
                     else {
-                        console.log('-1');
-                        console.log(matriz.resp_num);
                         var indice = $.inArray(input, matriz.resp_num);
                         var existe = 0;
                         if ( indice != -1 ) {
@@ -349,7 +346,7 @@ define(function (require) {
                                 } 
                             });
                             if (existe == 1) {
-                                $(this).css('border', '2px solid red');
+                                //$(this).css('border', '2px solid red');
                                 aciertos[contador] = indice;
                                 contador++;
                             }
@@ -359,15 +356,18 @@ define(function (require) {
                 else {
                     console.log('no fraccionarios');
                     if (input == matriz.resp_num) {
-                        $(this).css('border', '2px solid red');
+                        //$(this).css('border', '2px solid red');
                         aciertos[contador] = $(this).val();
                         contador++;
                     }
                 }
             });
-
+            
             if (aprovar == aciertos.length) {
-                $('#canvas div#myModal').css('display', 'block');
+                $('#canvas div#Bien').css('display', 'block');
+            }
+            else {
+                $('#canvas div#Mal').css('display', 'block');
             }
         });
 
@@ -375,7 +375,7 @@ define(function (require) {
             location.reload();
         });
 
-        $('#canvas').on('click', 'button.close', function() {
+        $('#canvas').on('click', '#Bien button.close', function() {
             $('input').each(function() {
                 $(this).css('border', '2px solid green');
             });
@@ -385,9 +385,9 @@ define(function (require) {
             if(temas[id] == 2) nf_nexec(matriz);
             else nexec(matriz);
         });
-
-        $('#canvas').on('click', 'button#myBtn', function() {
-            $('#myModal').css('display', 'block');
+        
+        $('#canvas').on('click', '#Mal button.close', function() {
+            $('#canvas #Mal').hide();
         });
 
     });
