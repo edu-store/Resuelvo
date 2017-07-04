@@ -26,9 +26,14 @@ define(function (require) {
 
     var alto            = 945;
     var ancho           = 1200;
+    var ejercicio       = -1;
 
     function random(array) {
-        return Math.floor(Math.random() * array.length);
+        //ejercicio = Math.floor(Math.random() * array.length);
+        if (ejercicio <= array.length) ejercicio ++;
+        else ejercicio = 0;
+        
+        return ejercicio;
     }
 
     function select_matrix(tema) {
