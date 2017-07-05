@@ -1,7 +1,7 @@
 define(function (require) {
     return [
         {//01
-            'ejercicio' : ' El día lunes Enrique estudió 1/4 de hora, el martes 3/4 de hora y el miércoles 2/4 horas. ¿Cuántas horas ha estudiado Enrique?',
+            'ejercicio' : 'El día lunes Enrique estudió 1/4 de hora, el martes 3/4 de hora y el miércoles 2/4 horas. ¿Cuántas horas ha estudiado Enrique?',
             'datos'     : [ { 'dato' : 'Lunes 1/4 de hora.' }, { 'dato' : 'Martes 3/4 de hora.' }, { 'dato' : 'Miércoles 2/4 de hora.'} ],
             'operacion' : ['1', '4', '+', '3', '4', '+', '2', '4', '=', '6', '4'],
             'respuesta' : 'Ha estudiado 1.5 horas.',
@@ -21,7 +21,7 @@ define(function (require) {
             'datos'     : [ { 'dato' : '60 bombones.' }, { 'dato' : 'Eva 1/3 y Ana 1/3.'} ],
             'operacion' : ['1', '3', '+', '1', '3', '=', '2', '3'],
             'respuesta' : 'Se comieron 2/3 entre las dos.',
-            'resp_num'  : [ ['3', '3'], ['1', '1'] ],
+            'resp_num'  : ['2', '3'],
             'signo'     : '+'
         },
         {//04
@@ -29,7 +29,7 @@ define(function (require) {
             'datos'     : [ { 'dato' : '1/4 de sandía.' }, { 'dato' : '1/4 de melón.'} ],
             'operacion' : ['1', '4', '+', '1', '4', '=', '2', '4'],
             'respuesta' : 'Quedó sin sembrar 2/4 del terreno.',
-            'resp_num'  : [ ['2', '4'], ['1', '2'] ],
+            'resp_num'  : ['2', '4'],
             'signo'     : '+'
         },
         {//05
@@ -37,7 +37,7 @@ define(function (require) {
             'datos'     : [ { 'dato' : '5/9 de una caja.' }, { 'dato' : '2/9 le da a Elizabeth.'} ],
             'operacion' : ['5', '9', '-', '2', '9', '=', '3', '9'],
             'respuesta' : 'Le queda 3/9 de la caja.',
-            'resp_num'  : [ ['3', '9'], ['1', '3'] ],
+            'resp_num'  : ['3', '9'],
             'signo'     : '-'
         },
         {//06
