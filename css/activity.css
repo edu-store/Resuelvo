@@ -125,7 +125,7 @@ hr {
 }
 
 #btn_nn:hover {
-    width: 450px;
+    width: 370px;
     height: 230px;
     background: url('../img/btn_nn_grd.png') 0 0 no-repeat;
 }
@@ -140,7 +140,7 @@ hr {
 }
 
 #btn_nf:hover {
-    width: 450px;
+    width: 350px;
     height: 230px;
     background: url('../img/btn_nf_grd.png') 0 0 no-repeat;
 }
@@ -396,10 +396,9 @@ input:disabled {
 	background: url('../img/btn_rv.png') 0 0 no-repeat;
 }
 
-/*#btn_rv:hover {
-	color: #18a47a;
-	background-color: white;
-}*/
+#btn_rv:hover {
+	background: url('../img/btn_rv_grd.png') 0 0 no-repeat;
+}
 
 /*#cont_btn_ini {
 	width: 170px;
@@ -418,10 +417,9 @@ input:disabled {
 	background: url('../img/inicio_final.png') 0 0 no-repeat;
 }
 
-/*#btn_ini:hover {
-	color: #e4cb22;
-	background-color: white;
-}*/
+#btn_ini:hover {
+	background: url('../img/inicio_final_grd.png') 0 0 no-repeat;
+}
 
 #btn_nv {
 	top: 680px;
@@ -432,10 +430,9 @@ input:disabled {
 	background: url('../img/nuevo.png') 0 0 no-repeat;
 }
 
-/*#btn_nv:hover {
-	color: #c0392b;
-	background-color: white;
-}*/
+#btn_nv:hover {
+	background: url('../img/nuevo_grd.png') 0 0 no-repeat;
+}
 
 .modal {
     display: none;
