@@ -182,7 +182,7 @@ button.pantalla_1:hover{
 
 #tema {
 	color: #006838;
-	top: 220px;
+	top: 190px;
 	left: 250px;
 	font-size: 45px;
     width: 700px;
@@ -192,15 +192,15 @@ button.pantalla_1:hover{
 #concepto {
 	color: #bd1f2d;
     width: 600px;
-    top: 310px;
+    top: 280px;
     left: 300px;
     font-size: 35px;
     text-align: center;
 }
 
-#ejemplo {
+.#ejemplo {
 	color: #bd1f2d;
-	top: 570px;
+	top: 540px;
 	left: 325px;
 	font-size: 35px;
     width: 550px;
