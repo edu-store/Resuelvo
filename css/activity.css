@@ -182,27 +182,29 @@ button.pantalla_1:hover{
 
 #tema {
 	color: #006838;
-	top: 220px;
-	left: 320px;
+	top: 190px;
+	left: 250px;
 	font-size: 45px;
-    width: 550px;
+    width: 700px;
     text-align: center;
 }
 
 #concepto {
 	color: #bd1f2d;
-    width: 500px;
-    top: 310px;
-    left: 357px;
+    width: 600px;
+    top: 280px;
+    left: 300px;
     font-size: 35px;
     text-align: center;
 }
 
-#ejemplo {
+.#ejemplo {
 	color: #bd1f2d;
-	top: 650px;
-	left: 440px;
+	top: 540px;
+	left: 325px;
 	font-size: 35px;
+    width: 550px;
+    text-align: center;
 }
 
 /* Boton Inicio */
