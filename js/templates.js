@@ -12,9 +12,9 @@ define(function (require) {
                 ],
                 'concepts' : [
                     { 'tema' : 'Números Naturales', 'concepto' : 'Los números naturales son aquellos símbolos que nos permiten representar la cantidad de elementos que tiene un conjunto.', 'ejemplo' : 'Ejemplo: 1, 2, 3...', 'id' : 'btn_nn' },
-                    { 'tema' : 'Números Decimales', 'concepto' : 'Un número decimal es aquel que se puede expresar mediante una fracción decimal. Consta de dos partes: entera y decimal.', 'ejemplo' : 'Ejemplo: 0.5 0.25, 0.75...', 'id' : 'btn_nd' },
+                    { 'tema' : 'Números Decimales', 'concepto' : 'Un número decimal es aquel que se puede expresar mediante una fracción decimal. Consta de dos partes: entera y decimal.', 'ejemplo' : 'Ejemplo: 0.5, 0.25, 0.75...', 'id' : 'btn_nd' },
                     { 'tema' : 'Números Fraccionarios', 'concepto' : 'En un número fraccionario o fracción, el denominador indica las partes en que se divide la unidad y el numerador indica las partes que se toman.', 'ejemplo' : 'Ejemplo: 1/2, 1/3, 1/4...', 'id' : 'btn_nf' },
-                    { 'tema' : 'Medidas de Logitud', 'concepto' : 'La longitud determina la distancia que hay entre dos puntos, o dicho de otra manera, longitud es la cantidad de espacio que hay entre dos puntos.', 'ejemplo' : 'Ejemplo: La altura de Mario es de 1.75 metros.', 'id' : 'btn_ml' },
+                    { 'tema' : 'Medidas de Longitud', 'concepto' : 'La longitud determina la distancia que hay entre dos puntos, o dicho de otra manera, longitud es la cantidad de espacio que hay entre dos puntos.', 'ejemplo' : 'Ejemplo: La altura de Mario es de 1.75 metros.', 'id' : 'btn_ml' },
                     { 'tema' : 'Medidas de Peso', 'concepto' : 'El peso equivale a la fuerza que ejerce un cuerpo sobre un punto de apoyo, originada por la acción del campo gravitatorio local sobre la masa del cuerpo.', 'ejemplo' : 'Ejemplo: Daniel pesa 145 libras.', 'id' : 'btn_mp' },
                     { 'tema' : 'Medidas de Capacidad', 'concepto' : 'Para medir el volumen de un objeto se utilizan las medidas de capacidad. La medida más utilizada es el litro.', 'ejemplo' : 'Ejemplo: Compré en el supermercado un litro de aceite.', 'id' : 'btn_mc' }
                 ]
