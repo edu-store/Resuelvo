@@ -182,27 +182,29 @@ button.pantalla_1:hover{
 
 #tema {
 	color: #006838;
-	top: 220px;
-	left: 350px;
+	top: 190px;
+	left: 250px;
 	font-size: 45px;
-    width: 515px;
+    width: 700px;
     text-align: center;
 }
 
 #concepto {
 	color: #bd1f2d;
-    width: 500px;
-    top: 310px;
-    left: 357px;
+    width: 600px;
+    top: 280px;
+    left: 300px;
     font-size: 35px;
     text-align: center;
 }
 
 #ejemplo {
 	color: #bd1f2d;
-	top: 530px;
-	left: 470px;
+	top: 540px;
+	left: 325px;
 	font-size: 35px;
+    width: 550px;
+    text-align: center;
 }
 
 /* Boton Inicio */
@@ -360,7 +362,7 @@ input:disabled {
 	width: 645px;
 	height: 109px;
 	top: 500px;
-	left: 250px;
+	left: 320px;
     background-color: #deeee0;
     border-style: solid;
     border-width: 6px 27px 6px 27px;
@@ -378,7 +380,7 @@ input:disabled {
 .respuesta {
 	width: 135px;
 	top: 50px;
-	left: 250px;
+	left: 350px;
 	height: 40px;
 	font-size: px;
     background-color: #009640;

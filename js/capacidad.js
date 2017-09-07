@@ -45,7 +45,7 @@ define(function (require) {
             'datos'     : [ { 'dato' : 'Tanque de 50 litros.' }, { 'dato' : 'Botellas de 2 litros.' } ],
             'operacion' : [ '50', '/', '2', '=', '25' ],
             'respuesta' : 'Puedo llenar 25 botellas.',
-            'resp_num'  : '50',
+            'resp_num'  : '25',
             'signo'     : '/'
         },
         {//07

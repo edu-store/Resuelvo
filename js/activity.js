@@ -29,9 +29,9 @@ define(function (require) {
     var ejercicio       = -1;
 
     function random(array) {
-        //ejercicio = Math.floor(Math.random() * array.length);
-        if (ejercicio <= array.length) ejercicio ++;
-        else ejercicio = 0;
+        ejercicio = Math.floor(Math.random() * array.length);
+        //if (ejercicio <= array.length) ejercicio ++;
+        //else ejercicio = 0;
         
         return ejercicio;
     }
