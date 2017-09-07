@@ -292,7 +292,7 @@ define(function (require) {
                         } 
                     });
                     if (existe == 1) {
-                        $(this).css('border', '2px solid red');
+                        //$(this).css('border', '2px solid red');
                         aciertos[contador] = indice;
                         contador++;
                     }
