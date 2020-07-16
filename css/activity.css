@@ -278,7 +278,9 @@ button.pantalla_1:hover{
 	height: 100%;
 	width: 100%;
 	background: url('../img/pantalla_3.png') 0 0 no-repeat;
-	background-color: #49ffcb;
+    background-color: #49ffcb;
+    background-size: cover;
+    text-align: center;
 
 }
 
@@ -292,10 +294,15 @@ button.pantalla_1:hover{
 
 #problema {
 	color: #056734;
-	width: 680px;
+	max-width: 42.5em;
 	top: 20px;
 	left: 64px;
 	font-size: 26px;
+}
+
+#problema,.object {
+    margin: 0 auto;
+    padding: .5em;
 }
 
 /*#datos-panel {
@@ -307,24 +314,26 @@ button.pantalla_1:hover{
 
 #datos-label {
 	color: #056734;
-	top: 30px;
-	left: 940px;
-	font-size: 40px;
+    font-size: 40px;
+   
+}
+#datos-label b, #operacion-label b,#respuesta-label b{
+
+    font-weight: bold;
 }
 
 #datos {
     color: #056734;
-	top: 50px;
-	left: 860px;
 	font-size: 26px;
-	width: 320px;
+	max-width: 320px;
 }
 
 #signos {
-	top: 440px;
-    left: 465px;
     z-index: 1;
-    margin-left: 0px;
+    margin: .5em auto;
+    background: white;
+    max-width: 25em;
+    border-radius: 5px
 }
 
 #suma {
@@ -353,33 +362,45 @@ button.pantalla_1:hover{
 }
 
 #operacion-panel {
-	width: 1118px;
-    height: 205px;
-    top: 270px;
-    left: 14px;
+	max-width: 1118px;
     background-color: #deeee0;
     border-style: solid;
-    border-width: 6px 27px 6px 27px;
     border-color: #c2e0cc;
+    border-radius: 5px;
 }
+#operacion{
+    display: flex;
+    padding: 2em;
 
+   
+}
+@media screen and (max-width: 768px){
+    #operacion{
+       
+        overflow-x: scroll;
+       
+    }
+    .operacion {
+        margin-left: .3em;
+    }
+}
 #operacion-label {
 	color: #844523;
 	top: 5px;
 	left: 480px;
     width: 180px;
-	font-size: 35px;
+    font-size: 35px;
+    margin-bottom: .5em;
+   
 }
 
 .operacion {
-	width: 135px;
-	top: 50px;
-	left: 15px;
-	height: 40px;
+
 	font-size: 35px;
     background-color: #009640;
     color: #1a1a1a;
     border-radius: 10px;
+    
 }
 
 .on-op {
@@ -392,10 +413,7 @@ input:disabled {
 }
 
 #respuesta-panel {
-	width: 645px;
-	height: 109px;
-	top: 500px;
-	left: 320px;
+	max-width: 40em;
     background-color: #deeee0;
     border-style: solid;
     border-width: 6px 27px 6px 27px;
@@ -403,7 +421,7 @@ input:disabled {
 }
 
 #respuesta-label {
-	color: #844523;
+	color: #ffffff;
 	top: 540px;
 	left: 60px;
     width: 180px;
