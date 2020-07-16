@@ -9,8 +9,10 @@ body{
     font-size: 16px;
 }
 #canvas {
-    width: 1200px;
-    height: 845px;
+    /*width: 1200px;
+    height: 845px;*/
+    width: 100%;
+    height: 100vh;
 }
 b{
     font-weight: 100;
@@ -507,7 +509,6 @@ input:disabled {
     border: 1px solid #888;
     width: 80%;
     text-align: center;
-    height: 40%;
 }
 
 .modal-content h1 {
@@ -522,10 +523,12 @@ input:disabled {
 
 .close {
     color: white;
-    /*float: right;*/
     font-size: 25px;
-    /*font-weight: bold;*/
     background-color: #18a47a;
+    display: block;
+    margin: 0 auto;
+    padding: .3em;
+    border-radius: 5px;
 }
 
 .close:hover,
@@ -534,6 +537,7 @@ input:disabled {
 	background-color: white;
     text-decoration: none;
     cursor: pointer;
+    border:2px solid #18a47a;
 }
 
 /* Nuevas reglas v2 - Full Responsive */
