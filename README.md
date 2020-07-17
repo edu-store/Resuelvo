@@ -1,5 +1,11 @@
 # Resuelvo
 
+![App Resuelvo - menu principal ](https://raw.githubusercontent.com/edu-store/Resuelvo/master/img/app-resuelvo-menu-pricipal.PNG)
+
+![App Resuelvo - actividad teorica ](https://github.com/edu-store/Resuelvo/blob/master/img/app-resuelvo-actividad-teorica.PNG?raw=true)
+
+![App Resuelvo - actividad practica ](https://github.com/edu-store/Resuelvo/blob/master/img/app-resuelvo-actividad-practica.PNG?raw=true)
+
 ### Una actividad en SugarWeb desde cero.
 
 ## Crear una plantilla para la actividad
